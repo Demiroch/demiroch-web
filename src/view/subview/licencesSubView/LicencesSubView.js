@@ -1,8 +1,9 @@
 import React from 'react';
+import "./LicencesSubView.css";
 
 export default function LicencesSubView(){
     return (
-        <div>
+        <div className="licences-container">
             Licences
         </div>
     )
