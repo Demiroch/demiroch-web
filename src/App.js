@@ -4,7 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 import React from "react";
-import LandingPage from "./view/landingPage/LandingPage";
+import LandingView from "./view/landingView/LandingView";
 
 function App(){
 return (
@@ -12,9 +12,9 @@ return (
         <BrowserRouter>
             <Routes>
                 {/* <Route path="/" element={<Header someClass={"opaque"} />}>
-                    <Route path="" element={<LandingPage />}/>
+                    <Route path="" element={<LandingView />}/>
                 </Route> */}
-                <Route path="/" element={<LandingPage/>}></Route>
+                <Route path="/" element={<LandingView/>}></Route>
             </Routes>
         </BrowserRouter>
     </div>
