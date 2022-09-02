@@ -11,9 +11,6 @@ return (
     <div>
         <BrowserRouter>
             <Routes>
-                {/* <Route path="/" element={<Header someClass={"opaque"} />}>
-                    <Route path="" element={<LandingView />}/>
-                </Route> */}
                 <Route path="/" element={<LandingView/>}></Route>
             </Routes>
         </BrowserRouter>
