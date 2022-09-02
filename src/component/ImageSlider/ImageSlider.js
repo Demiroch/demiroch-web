@@ -49,7 +49,7 @@ export default function ControlledCarousel() {
                 <Carousel.Caption>
                     <h3>Third slide label</h3>
                     <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetu.
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
