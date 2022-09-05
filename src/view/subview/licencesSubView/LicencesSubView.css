@@ -1,6 +1,38 @@
 .licences-container{
-    background-color: lightgoldenrodyellow;
-    width: 100%;
-    height: 100vh;
     text-align: -webkit-center;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 105vh;
+
+    /*background-size: auto 100%;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left top;*/
+
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+
+    /*background-size: contain;*/
+
+    /*height: 100vh;*/
+    /*padding-top: 32.64%; !* (img-height / img-width * container-width) *!*/
+}
+
+#demiroch-logo{
+    width: 50%;
+}
+
+#logo-description{
+    font-family: "Times New Roman", serif;
+    color: #601010;
+    font-size: 2em;
+}
+
+#fingerprint-damian{
+    margin-top: 40%;
+    width: 30%;
+    position: absolute;
+    left: 0;
+    margin-left: -6%;
 }

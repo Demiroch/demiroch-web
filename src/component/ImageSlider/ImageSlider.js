@@ -1,9 +1,10 @@
-// import $ from 'jquery';
-import Licence1 from '../../resources/licence-1.png';
-import Licence2 from '../../resources/licence-2.png';
-import Licence3 from '../../resources/licence-1.png';
+import Licence1 from '../../resources/Licencias/Drrivers_License_Gideon.png';
+import Licence2 from '../../resources/Licencias/Drrivers_License_MArcoDiaz.png';
+import Licence3 from '../../resources/Licencias/Drrivers_License_Abyo.png';
+import Licence4 from '../../resources/Licencias/Drrivers_License_Sprig.png';
+import left from '../../resources/Iconos/Demiroch_arrows_Left.png';
+import right from '../../resources/Iconos/Demiroch_arrows_Right.png';
 import "./ImageSlider.css"
-
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -14,45 +15,39 @@ export default function ControlledCarousel() {
         setIndex(selectedIndex);
     };
 
+    const getCarouselItem = (src, alt) => {
+        return <Carousel.Item className="carousel-item-custom">
+                    <div className="carousel-image-container">
+                        <img
+                            className="d-block w-100 carousel-image"
+                            src={src}
+                            alt={alt}/>
+                    </div>
+                </Carousel.Item>
+    }
+
+    const getLeftIcon = () => {
+        return <img src={left} className="arrow-carousel" id="left-arrow"  alt="Left-Arrow"/>;
+    }
+
+    const getRightIcon = () => {
+        return <img src={right} className="arrow-carousel" id="right-arrow" alt="Right-Arrow"/>;
+    }
+
     return (
-        <Carousel variant="dark" className="slider-container" activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={Licence1}
-                    alt="First slide"
-                />
-                <Carousel.Caption>
-                    <h3>Andy slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={Licence2}
-                    alt="Second slide"
-                />
-
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={Licence3}
-                    alt="Third slide"
-                />
-
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetu.
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+        <div>
+            <Carousel variant="dark"
+                      indicators={false}
+                      controls={true}
+                      prevIcon={getLeftIcon()}
+                      nextIcon={getRightIcon()}
+                      className="slider-container"
+                      activeIndex={index} onSelect={handleSelect}>
+                {getCarouselItem(Licence1, "First")}
+                {getCarouselItem(Licence2, "Second")}
+                {getCarouselItem(Licence3, "Third")}
+                {getCarouselItem(Licence4, "Fourth")}
+            </Carousel>
+        </div>
     );
 }
