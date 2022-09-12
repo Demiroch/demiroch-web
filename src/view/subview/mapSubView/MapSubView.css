@@ -1,3 +1,159 @@
 .map-container{
     width: 100%;
+    display: flex;
+}
+
+/*      PRIMERA COLUMNA       */
+
+#fingerprint-damian-container{
+    margin-top: -70%;
+    z-index: 1;
+    display: inline;
+}
+
+#fingerprint-damian{
+    width: 120%;
+    margin-left: -25%;
+}
+
+#mapaBa-misc{
+    margin-top: 5%;
+    width: 235%;
+    margin-left: -4%;
+}
+#map-container{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#map-image-container{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#latinafy-container{
+    position: absolute;
+    top: 13%;
+    left: -5%;
+    width: 75%;
+}
+
+#latinafy-publicidades{
+    width: 115%;
+}
+
+#animated-series-note-container{
+    position: absolute;
+    top: 41.5%;
+    left: -10%;
+    transform: rotate(-4deg);
+    z-index: 3 !important;
+    display: inline;
+}
+
+#animated-series-note{
+    width: 150%;
+}
+
+#milka-publicidad-container{
+    margin-top: 2%;
+    margin-left: 2%;
+    z-index: 0;
+    display: inline;
+}
+
+#milka-publicidad{
+    width: 100%;
+    transform: rotate(2deg);
+}
+
+/*      SEGUNDA COLUMNA       */
+
+#cartoon-network-container{
+    margin-top: 20%;
+    margin-left: -65%;
+    z-index: 0;
+    display: inline;
+}
+
+#cartoon-network-publicidad{
+    width: 140%;
+    transform: rotate(-2deg);
+}
+
+#danonino-container{
+    margin-top: 10%;
+    margin-left: -15%;
+    z-index: 1;
+    display: inline;
+}
+
+#danonino-publicidad{
+    width: 130%;
+    transform: rotate(3deg);
+}
+
+/*      TERCERA COLUMNA       */
+
+#blueprint-damian-container{
+    margin-top: 35%;
+}
+
+#blueprint-damian{
+    margin-left: -15%;
+    width: 120%;
+
+}
+
+/*      CUARTA COLUMNA       */
+.fotos-publicidades-mapa-container {
+    margin-top: 5%;
+    margin-left: -20%;
+    -webkit-filter: drop-shadow(3px 3px 5px #000);
+    filter: drop-shadow(3px 3px 5px #000);
+}
+
+#uala-publicidad{
+    transform: rotate(4deg);
+}
+
+#menudeldia-publicidad{
+    margin-left: -35%;
+}
+
+#sprite-publicidad{
+    transform: rotate(-4deg);
+}
+
+#mccain-publicidad{
+    transform: rotate(1deg);
+    margin-top: 5%;
+    width: 90%;
+}
+
+#tvSeries-notas{
+    transform: rotate(4deg);
+    margin-left: -33%;
+}
+
+#tvSeries-notas-img{
+    width: 130%;
+}
+
+.fotos-publicidades-mapa {
+    width: 120%;
+}
+
+.black-shadow{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+@media only screen and (max-width: 1400px) {
+    #fingerprint-damian{
+        /*width: 120%;*/
+        /*margin-left: -25%;*/
+    }
 }

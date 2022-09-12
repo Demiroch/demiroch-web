@@ -1,5 +1,6 @@
 .slider-container{
-    width: 45%;
+    height: 40%;
+    width: 40%;
 }
 
 .carousel-item-custom{
@@ -8,7 +9,8 @@
 
 .carousel-image{
     transform: rotate(5deg);
-    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
+    -webkit-filter: drop-shadow(5px 5px 5px #642F00);
+    filter: drop-shadow(-3px 5px 6px #642F00);
 }
 
 #left-arrow{

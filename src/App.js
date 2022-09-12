@@ -5,11 +5,11 @@ import {
 } from "react-router-dom";
 import React from "react";
 import LandingView from "./view/landingView/LandingView";
-import background from "./resources/Backgrounds/texture.jpg";
+import background from "./resources/Backgrounds/BK_Corcho.png";
 
 function App(){
 return (
-    <div style={{backgroundImage: `url(${background})`, height: '100%'}}>
+    <div style={{backgroundImage: `url(${background})`, height: '100%', zIndex: 0, position: "relative"}}>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<LandingView/>}></Route>

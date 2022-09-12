@@ -1,7 +1,7 @@
-import Licence1 from '../../resources/Licencias/Drrivers_License_Gideon.png';
+import Licence4 from '../../resources/Licencias/Drrivers_License_Gideon.png';
 import Licence2 from '../../resources/Licencias/Drrivers_License_MArcoDiaz.png';
 import Licence3 from '../../resources/Licencias/Drrivers_License_Abyo.png';
-import Licence4 from '../../resources/Licencias/Drrivers_License_Sprig.png';
+import Licence1 from '../../resources/Licencias/Drrivers_License_Sprig.png';
 import left from '../../resources/Iconos/Demiroch_arrows_Left.png';
 import right from '../../resources/Iconos/Demiroch_arrows_Right.png';
 import "./ImageSlider.css"
