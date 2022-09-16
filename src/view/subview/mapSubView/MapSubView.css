@@ -1,6 +1,14 @@
+.clickable {
+    cursor: pointer;
+}
+
 .map-container{
     width: 100%;
-    display: flex;
+}
+
+.black-shadow{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 /*      PRIMERA COLUMNA       */
@@ -21,16 +29,17 @@
     width: 235%;
     margin-left: -4%;
 }
-#map-container{
+.relative-container{
     position: relative;
     top: 0;
     left: 0;
+    width: 100%;
 }
 
 #map-image-container{
-    position: relative;
-    top: 0;
-    left: 0;
+    /*position: relative;*/
+    /*top: 0;*/
+    /*left: 0;*/
 }
 
 #latinafy-container{
@@ -72,8 +81,11 @@
 /*      SEGUNDA COLUMNA       */
 
 #cartoon-network-container{
-    margin-top: 20%;
+    /*margin-top: 10%;*/
     margin-left: -65%;
+    top: 21%;
+    position: relative;
+    left: -10%;
     z-index: 0;
     display: inline;
 }
@@ -83,8 +95,21 @@
     transform: rotate(-2deg);
 }
 
+#voice-actor-container{
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    width: 75%;
+    display: inline;
+    z-index: 2;
+}
+
+#voice-actor-note{
+    width: 70%;
+}
+
 #danonino-container{
-    margin-top: 10%;
+    margin-top: 30%;
     margin-left: -15%;
     z-index: 1;
     display: inline;
@@ -93,6 +118,53 @@
 #danonino-publicidad{
     width: 130%;
     transform: rotate(3deg);
+}
+
+#content-creator-container{
+    z-index: 4;
+    display: inline;
+    margin-top: -23%;
+    margin-left: 75%;
+}
+
+#content-creator{
+    transform: rotate(11deg);
+    width: 68%;
+}
+
+#actor-container{
+    z-index: 3;
+    display: inline;
+    margin-top: 5%;
+    margin-left: 16%;
+}
+
+#actor-note{
+    transform: rotate(-5deg);
+    width: 58%;
+}
+
+#sound-container{
+    z-index: 3;
+    display: inline;
+    margin-top: 32%;
+    margin-left: 58%;
+}
+
+#sound-note{
+    transform: rotate(2deg);
+    width: 65%;
+}
+
+#fernet-container{
+    margin-top: -25%;;
+    z-index: 1;
+    display: inline;
+}
+
+#fernet-publicidad{
+    width: 99%;
+    transform: rotate(-1deg);
 }
 
 /*      TERCERA COLUMNA       */
@@ -144,11 +216,6 @@
 
 .fotos-publicidades-mapa {
     width: 120%;
-}
-
-.black-shadow{
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
 }
 
 @media only screen and (max-width: 1400px) {

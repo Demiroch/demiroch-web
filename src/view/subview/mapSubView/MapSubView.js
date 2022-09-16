@@ -1,20 +1,41 @@
 import React from 'react';
 import "./MapSubView.css";
+import {Col, Container, Row} from "react-bootstrap";
+
+// Misc
 import Huella from "../../../resources/Misc/FingerPrint_Demian.png";
 import Blueprint from "../../../resources/Misc/Mic_Blueprint.png";
+
+//Publis
 import Uala from "../../../resources/FotosPublicidades/uala.png";
 import MenuDelDia from "../../../resources/FotosPublicidades/menu del dia.png";
 import Sprite from "../../../resources/FotosPublicidades/Sprite.png";
 import Mccain from "../../../resources/FotosPublicidades/mccain.png";
-import TvSeries from "../../../resources/NotasFilmografía/Filmografia_1_tvymovies.png"
 import Mapa from "../../../resources/Misc/Mapa_BA.png";
 import Latinafy from "../../../resources/FotosPublicidades/latinafy.png";
 import CartoonNetwork from "../../../resources/FotosPublicidades/CN.png";
 import Danonino from "../../../resources/FotosPublicidades/danonino2.png";
 import Milka from "../../../resources/FotosPublicidades/milka.png";
-// import Fernet from "../../../resources/FotosPublicidades/branca.png";
+import Fernet from "../../../resources/FotosPublicidades/branca.png";
+
+// Notas filmografía
+import TvSeries from "../../../resources/NotasFilmografía/Filmografia_1_tvymovies.png"
 import AnimatedSeries from "../../../resources/NotasFilmografía/Filmografia_2_seriesanim.png";
-import {Col, Container, Row} from "react-bootstrap";
+
+// Sticky notes
+import VoiceActorNote from "../../../resources/StickyNotes/stickyNote_VOICE_ACTOR.png";
+import ArtistNote from "../../../resources/StickyNotes/stickyNote_ARTIST.png";
+import ActorNote from "../../../resources/StickyNotes/stickyNote_ACTOR.png";
+import ContentCreatorNote from "../../../resources/StickyNotes/stickyNote_CONTENT_CREATOR.png";
+import SoundProductionNote from "../../../resources/StickyNotes/stickyNote_SOUND_PRODUCTION.png";
+
+// Fotos Personajes
+import Kiko from "../../../resources/FotosPersonajes/UNDERDOGS-KIKOphoto.png";
+import Theo from "../../../resources/FotosPersonajes/Theophoto.png";
+import EvanTreborn from "../../../resources/FotosPersonajes/ElEfectoMariposaphoto.png";
+import Zamba from "../../../resources/FotosPersonajes/zambaphoto.png";
+
+import Note from "../../../resources/FotosPersonajes/etiquetas_fotos.png";
 
 export default function MapSubView(){
     return (
@@ -23,18 +44,18 @@ export default function MapSubView(){
                 <Row>
                     <Col>
                         <Row>
-                            <div id="fingerprint-damian-container">
+                            <div id="fingerprint-damian-container" className="black-shadow">
                                 <img src={Huella} id="fingerprint-damian" alt="huella-dactilar"/>
                             </div>
                         </Row>
                         <Row>
-                            <div id="map-container">
+                            <div className="relative-container">
                                 <div id="map-image-container">
                                     <img src={Mapa} id="mapaBa-misc" alt="mapa"/>
                                 </div>
                                 <Row>
                                     <div id="latinafy-container" className="black-shadow">
-                                        <img src={Latinafy} id="latinafy-publicidades" alt="latinafy"/>
+                                        <img src={Latinafy} id="latinafy-publicidades" className="clickable" alt="latinafy"/>
                                     </div>
                                 </Row>
                                 <Row>
@@ -46,34 +67,45 @@ export default function MapSubView(){
                         </Row>
                         <Row>
                             <div id="milka-publicidad-container" className="black-shadow">
-                                <img src={Milka} id="milka-publicidad" alt="latinafy"/>
+                                <img src={Milka} id="milka-publicidad" className="clickable" alt="latinafy"/>
                             </div>
                         </Row>
                     </Col>
                     <Col>
                         <Row>
-                            <div id="cartoon-network-container" className="black-shadow">
-                                <img src={CartoonNetwork} id="cartoon-network-publicidad" alt="cartoonetwork"/>
+                            <div className="relative-container">
+                                <div id="cartoon-network-container" className="black-shadow">
+                                    <img src={CartoonNetwork} id="cartoon-network-publicidad" className="clickable" alt="cartoonetwork"/>
+                                </div>
+                                <div id="voice-actor-container" className="black-shadow">
+                                    <img src={VoiceActorNote} id="voice-actor-note" alt="voice-actor-note"/>
+                                </div>
                             </div>
                         </Row>
                         <Row>
                             <div id="danonino-container" className="black-shadow">
-                                <img src={Danonino} id="danonino-publicidad" alt="danonino"/>
+                                <img src={Danonino} id="danonino-publicidad" className="clickable" alt="danonino"/>
                             </div>
                         </Row>
                         <Row>
-
+                            <div id="content-creator-container" className="black-shadow">
+                                <img src={ContentCreatorNote} id="content-creator" alt="content-creator"/>
+                            </div>
                         </Row>
                         <Row>
-
+                            <div id="actor-container" className="black-shadow">
+                                <img src={ActorNote} id="actor-note" alt="content-creator"/>
+                            </div>
                         </Row>
                         <Row>
-
+                            <div id="sound-container" className="black-shadow">
+                                <img src={SoundProductionNote} id="sound-note" alt="content-creator"/>
+                            </div>
                         </Row>
                         <Row>
-                            {/*<div id="danonino-container" className="black-shadow">*/}
-                            {/*    <img src={Fernet} id="danonino-publicidad" alt="danonino"/>*/}
-                            {/*</div>*/}
+                            <div id="fernet-container" className="black-shadow">
+                                <img src={Fernet} id="fernet-publicidad" className="clickable" alt="fernet"/>
+                            </div>
                         </Row>
                     </Col>
                     <Col>
@@ -85,22 +117,22 @@ export default function MapSubView(){
                     <Col>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="uala-publicidad" >
-                                <img className="fotos-publicidades-mapa" src={Uala} alt="uala"/>
+                                <img className="fotos-publicidades-mapa clickable" src={Uala} alt="uala"/>
                             </div>
                         </Row>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="menudeldia-publicidad">
-                                <img className="fotos-publicidades-mapa"  src={MenuDelDia} alt="menudeldia"/>
+                                <img className="fotos-publicidades-mapa clickable"  src={MenuDelDia} alt="menudeldia"/>
                             </div>
                         </Row>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="sprite-publicidad">
-                                <img className="fotos-publicidades-mapa"  src={Sprite} alt="sprite"/>
+                                <img className="fotos-publicidades-mapa clickable"  src={Sprite} alt="sprite"/>
                             </div>
                         </Row>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="mccain-publicidad">
-                                <img className="fotos-publicidades-mapa"  src={Mccain} alt="mccain"/>
+                                <img className="fotos-publicidades-mapa clickable"  src={Mccain} alt="mccain"/>
                             </div>
                         </Row>
                         <Row>

@@ -1,0 +1,23 @@
+.custom-modal{
+    width: 100%;
+}
+
+.modal-content {
+    height: 70%;
+}
+
+.modal-header-custom{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+    .custom-modal{
+        width: 59vw;
+        height: 44.5vh;
+    }
+
+}
