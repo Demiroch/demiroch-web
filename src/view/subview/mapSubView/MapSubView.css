@@ -11,6 +11,18 @@
     filter: drop-shadow(5px 5px 5px #222);
 }
 
+#threads-mapa{
+    position: absolute;
+    height: 58%;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 3.5%;
+    display: inline;
+    z-index: 1;
+    transform: rotate(-2deg);
+
+}
+
 /*      PRIMERA COLUMNA       */
 
 #fingerprint-damian-container{
@@ -20,8 +32,8 @@
 }
 
 #fingerprint-damian{
-    width: 120%;
-    margin-left: -25%;
+    width: 100%;
+    margin-left: -10%;
 }
 
 #mapaBa-misc{
@@ -47,6 +59,8 @@
     top: 13%;
     left: -5%;
     width: 75%;
+    display: inline;
+    z-index: 2;
 }
 
 #latinafy-publicidades{
@@ -56,14 +70,14 @@
 #animated-series-note-container{
     position: absolute;
     top: 41.5%;
-    left: -10%;
+    left: 0%;
     transform: rotate(-4deg);
     z-index: 3 !important;
     display: inline;
 }
 
 #animated-series-note{
-    width: 150%;
+    width: 140%;
 }
 
 #milka-publicidad-container{
@@ -82,16 +96,16 @@
 
 #cartoon-network-container{
     /*margin-top: 10%;*/
-    margin-left: -65%;
-    top: 21%;
+    margin-left: -60%;
+    top: 33%;
     position: relative;
     left: -10%;
-    z-index: 0;
+    z-index: 2;
     display: inline;
 }
 
 #cartoon-network-publicidad{
-    width: 140%;
+    width: 120%;
     transform: rotate(-2deg);
 }
 
@@ -189,25 +203,35 @@
 
 #uala-publicidad{
     transform: rotate(4deg);
+    display: inline;
+    z-index: 2;
 }
 
 #menudeldia-publicidad{
     margin-left: -35%;
+    display: inline;
+    z-index: 2;
 }
 
 #sprite-publicidad{
     transform: rotate(-4deg);
+    display: inline;
+    z-index: 2;
 }
 
 #mccain-publicidad{
     transform: rotate(1deg);
     margin-top: 5%;
     width: 90%;
+    display: inline;
+    z-index: 3;
 }
 
 #tvSeries-notas{
     transform: rotate(4deg);
     margin-left: -33%;
+    display: inline;
+    z-index: 2;
 }
 
 #tvSeries-notas-img{

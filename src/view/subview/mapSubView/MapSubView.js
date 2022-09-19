@@ -8,7 +8,7 @@ import Blueprint from "../../../resources/Misc/Mic_Blueprint.png";
 
 //Publis
 import Uala from "../../../resources/FotosPublicidades/uala.png";
-import MenuDelDia from "../../../resources/FotosPublicidades/menu del dia.png";
+import MenuDelDia from "../../../resources/FotosPublicidades/menuDelDia.png";
 import Sprite from "../../../resources/FotosPublicidades/Sprite.png";
 import Mccain from "../../../resources/FotosPublicidades/mccain.png";
 import Mapa from "../../../resources/Misc/Mapa_BA.png";
@@ -35,11 +35,15 @@ import Theo from "../../../resources/FotosPersonajes/Theophoto.png";
 import EvanTreborn from "../../../resources/FotosPersonajes/ElEfectoMariposaphoto.png";
 import Zamba from "../../../resources/FotosPersonajes/zambaphoto.png";
 
-import Note from "../../../resources/FotosPersonajes/etiquetas_fotos.png";
+// import Note from "../../../resources/FotosPersonajes/etiquetas_fotos.png";
+import Threads from "../../../resources/Misc/Hilos.png";
 
 export default function MapSubView(){
     return (
         <section className="map-container">
+            {/*<div>*/}
+            {/*    <img src={Threads} id="threads-mapa"/>*/}
+            {/*</div>*/}
             <Container fluid>
                 <Row>
                     <Col>
@@ -122,7 +126,7 @@ export default function MapSubView(){
                         </Row>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="menudeldia-publicidad">
-                                <img className="fotos-publicidades-mapa clickable"  src={MenuDelDia} alt="menudeldia"/>
+                                <img className="fotos-publicidades-mapa clickable"  src={Mccain} alt="menudeldia"/>
                             </div>
                         </Row>
                         <Row>
@@ -132,7 +136,7 @@ export default function MapSubView(){
                         </Row>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="mccain-publicidad">
-                                <img className="fotos-publicidades-mapa clickable"  src={Mccain} alt="mccain"/>
+                                <img className="fotos-publicidades-mapa clickable"  src={MenuDelDia} alt="mccain"/>
                             </div>
                         </Row>
                         <Row>
