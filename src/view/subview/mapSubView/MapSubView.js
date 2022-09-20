@@ -1,12 +1,13 @@
 import React from 'react';
 import "./MapSubView.css";
 import {Col, Container, Row} from "react-bootstrap";
+import Threads from "../../../resources/Misc/Hilos.png";
 
 // Misc
 import Huella from "../../../resources/Misc/FingerPrint_Demian.png";
 import Blueprint from "../../../resources/Misc/Mic_Blueprint.png";
 
-//Publis
+// Publicidades
 import Uala from "../../../resources/FotosPublicidades/uala_pin.png";
 import MenuDelDia from "../../../resources/FotosPublicidades/menuDelDia_pin.png";
 import Sprite from "../../../resources/FotosPublicidades/Sprite_pin.png";
@@ -17,26 +18,31 @@ import CartoonNetwork from "../../../resources/FotosPublicidades/CN.png";
 import Danonino from "../../../resources/FotosPublicidades/danonino2.png";
 import Milka from "../../../resources/FotosPublicidades/milka.png";
 import Fernet from "../../../resources/FotosPublicidades/branca_pin.png";
+import MilkaNote from "../../../resources/FotosPublicidades/etiquetas_Milka.png";
+import FernetNote from "../../../resources/FotosPublicidades/etiquetas_Branca.png";
 
 // Notas filmografía
 import TvSeries from "../../../resources/NotasFilmografía/Filmografia_1_tvymovies_pin.png"
 import AnimatedSeries from "../../../resources/NotasFilmografía/Filmografia_2_seriesanim_pin.png";
 
 // Sticky notes
+import FeaturedCommercial from "../../../resources/StickyNotes/stickyNote_Featured_Commercial.png";
 import VoiceActorNote from "../../../resources/StickyNotes/stickyNote_VOICE_ACTOR.png";
-// import ArtistNote from "../../../resources/StickyNotes/stickyNote_ARTIST.png";
+import ArtistNote from "../../../resources/StickyNotes/stickyNote_ARTIST.png";
 import ActorNote from "../../../resources/StickyNotes/stickyNote_ACTOR.png";
 import ContentCreatorNote from "../../../resources/StickyNotes/stickyNote_CONTENT_CREATOR.png";
 import SoundProductionNote from "../../../resources/StickyNotes/stickyNote_SOUND_PRODUCTION.png";
 
 // Fotos Personajes
-// import Kiko from "../../../resources/FotosPersonajes/UNDERDOGS-KIKOphoto.png";
-// import Theo from "../../../resources/FotosPersonajes/Theophoto.png";
-// import EvanTreborn from "../../../resources/FotosPersonajes/ElEfectoMariposaphoto.png";
-// import Zamba from "../../../resources/FotosPersonajes/zambaphoto.png";
+import Kiko from "../../../resources/FotosPersonajes/UNDERDOGS-KIKOphoto_pin.png";
+import Theo from "../../../resources/FotosPersonajes/Theophoto_pin.png";
+import EvanTreborn from "../../../resources/FotosPersonajes/ElEfectoMariposaphoto_pin.png";
+import Zamba from "../../../resources/FotosPersonajes/zambaphoto_pin.png";
+import ZambaNote from "../../../resources/FotosPersonajes/etiquetas_Zamba.png";
+import EvanNote from "../../../resources/FotosPersonajes/etiquetas_Evan.png";
+import TheoNote from "../../../resources/FotosPersonajes/etiquetas_Theo.png";
+import KikoNote from "../../../resources/FotosPersonajes/etiquetas_Kiko.png";
 
-// import Note from "../../../resources/FotosPersonajes/etiquetas_fotos.png";
-import Threads from "../../../resources/Misc/Hilos.png";
 
 export default function MapSubView(){
     return (
@@ -72,6 +78,11 @@ export default function MapSubView(){
                         <Row>
                             <div id="milka-publicidad-container" className="black-shadow">
                                 <img src={Milka} id="milka-publicidad" className="clickable" alt="latinafy"/>
+                            </div>
+                        </Row>
+                        <Row>
+                            <div className="publi-note-container">
+                                <img src={MilkaNote} className="publi-note"/>
                             </div>
                         </Row>
                     </Col>
@@ -111,12 +122,55 @@ export default function MapSubView(){
                                 <img src={Fernet} id="fernet-publicidad" className="clickable" alt="fernet"/>
                             </div>
                         </Row>
+                        <Row>
+                            <div className="publi-note-container" id="fernet-ntoe">
+                                <img src={FernetNote} className="publi-note"/>
+                            </div>
+                        </Row>
                     </Col>
                     <Col>
-                        <div id="blueprint-damian-container" className="black-shadow">
-                            {/*<img src={Cinta} id="blueprint-damian" alt="blueprint"/>*/}
-                            <img src={Blueprint} id="blueprint-damian" alt="blueprint"/>
-                        </div>
+                        <Row>
+                            <div id="blueprint-note-container">
+                                <div id="blueprint-damian-container" className="black-shadow">
+                                    <img src={Blueprint} id="blueprint-damian" alt="blueprint"/>
+                                </div>
+                                <div id="featured-commercial-note-container" className="black-shadow">
+                                    <img src={FeaturedCommercial} id="featured-commercial-note"/>
+                                </div>
+                            </div>
+                        </Row>
+                        <Row>
+                            <div id="kiko-container" className="black-shadow">
+                                <img src={Kiko} className="personajes-img"/>
+                            </div>
+                            <div id="kiko-note-container" className="black-shadow">
+                                <img src={KikoNote} className="personajes-img"/>
+                            </div>
+                        </Row>
+                        <Row>
+                            <div id="theo-container" className="black-shadow">
+                                <img src={Theo} className="personajes-img"/>
+                            </div>
+                            <div id="theo-note-container" className="black-shadow">
+                                <img src={TheoNote} className="personajes-img"/>
+                            </div>
+                        </Row>
+                        <Row>
+                            <div id="evan-container" className="black-shadow">
+                                <img src={EvanTreborn} className="personajes-img"/>
+                            </div>
+                            <div id="evan-note-container" className="black-shadow">
+                                <img src={EvanNote} className="personajes-img"/>
+                            </div>
+                        </Row>
+                        <Row>
+                            <div id="zamba-container" className="black-shadow">
+                                <img src={Zamba} className="personajes-img"/>
+                            </div>
+                            <div id="zamba-note-container" className="black-shadow">
+                                <img src={ZambaNote} className="personajes-img"/>
+                            </div>
+                        </Row>
                     </Col>
                     <Col>
                         <Row>
@@ -140,8 +194,13 @@ export default function MapSubView(){
                             </div>
                         </Row>
                         <Row>
-                            <div className="fotos-publicidades-mapa-container" id="tvSeries-notas">
-                                <img className="fotos-publicidades-mapa" id="tvSeries-notas-img" src={TvSeries} alt="tvseries"/>
+                            <div className="relative-container">
+                                <div className="fotos-publicidades-mapa-container" id="tvSeries-notas">
+                                    <img className="fotos-publicidades-mapa" id="tvSeries-notas-img" src={TvSeries} alt="tvseries"/>
+                                </div>
+                                <div id="artistic-note-continer" className="black-shadow">
+                                    <img src={ArtistNote} id="artistic-note"/>
+                                </div>
                             </div>
                         </Row>
                     </Col>

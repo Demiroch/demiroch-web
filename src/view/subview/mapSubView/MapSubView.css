@@ -4,6 +4,7 @@
 
 .map-container{
     width: 100%;
+    position: relative;
 }
 
 .black-shadow{
@@ -13,14 +14,13 @@
 
 #threads-mapa{
     position: absolute;
-    height: 58%;
-    width: 80%;
-    margin-left: 8%;
-    margin-top: 4%;
+    height: 82%;
+    width: 78%;
+    margin-left: 9.9%;
+    margin-top: 3.5%;
     display: inline;
     z-index: 1;
-    transform: rotate(-1deg);
-
+    transform: rotate(-0.5deg);
 }
 
 /*      PRIMERA COLUMNA       */
@@ -48,15 +48,9 @@
     width: 100%;
 }
 
-#map-image-container{
-    /*position: relative;*/
-    /*top: 0;*/
-    /*left: 0;*/
-}
-
 #latinafy-container{
     position: absolute;
-    top: 18%;
+    top: 18.3%;
     left: 0%;
     width: 75%;
     display: inline;
@@ -69,19 +63,20 @@
 
 #animated-series-note-container{
     position: absolute;
-    top: 42.5%;
-    left: 0%;
+    top: 43.5%;
+    left: 4%;
     transform: rotate(-4deg);
     z-index: 3 !important;
     display: inline;
 }
 
 #animated-series-note{
-    width: 140%;
+    width: 143%;
+    transform: rotate(-2deg);
 }
 
 #milka-publicidad-container{
-    margin-top: 2%;
+    margin-top: -5%;
     margin-left: 2%;
     z-index: 0;
     display: inline;
@@ -89,15 +84,23 @@
 
 #milka-publicidad{
     width: 100%;
-    transform: rotate(2deg);
+    transform: rotate(-1deg);
+}
+.publi-note-container{
+    margin-top: 5%;
+    margin-left: 27%;
+    width: 48%;
+}
+
+.publi-note{
+    width: 100%;
 }
 
 /*      SEGUNDA COLUMNA       */
 
 #cartoon-network-container{
-    /*margin-top: 10%;*/
-    margin-left: -60%;
-    top: 27%;
+    margin-left: -57%;
+    top: 25%;
     position: relative;
     left: -10%;
     z-index: 2;
@@ -105,14 +108,14 @@
 }
 
 #cartoon-network-publicidad{
-    width: 115%;
+    width: 120%;
     transform: rotate(-4deg);
 }
 
 #voice-actor-container{
     position: absolute;
     top: 5%;
-    left: 30%;
+    left: 37%;
     width: 75%;
     display: inline;
     z-index: 2;
@@ -125,7 +128,7 @@
 
 #danonino-container{
     margin-top: 35%;
-    margin-left: -5%;
+    margin-left: -8%;
     z-index: 1;
     display: inline;
 }
@@ -144,7 +147,7 @@
 
 #content-creator{
     transform: rotate(11deg);
-    width: 60%;
+    width: 55%;
 }
 
 #actor-container{
@@ -162,17 +165,18 @@
 #sound-container{
     z-index: 3;
     display: inline;
-    margin-top: 38%;
+    margin-top: 35%;
     margin-left: 58%;
 }
 
 #sound-note{
     transform: rotate(2deg);
-    width: 65%;
+    width: 55%;
 }
 
 #fernet-container{
-    margin-top: -30%;;
+    margin-top: -20%;;
+    margin-left: -2%;
     z-index: 1;
     display: inline;
 }
@@ -180,6 +184,11 @@
 #fernet-publicidad{
     width: 99%;
     transform: rotate(-1deg);
+}
+
+#fernet-ntoe{
+    margin-top: 2.5%;
+    margin-left: 26%;
 }
 
 /*      TERCERA COLUMNA       */
@@ -191,7 +200,95 @@
 #blueprint-damian{
     margin-left: -25%;
     width: 140%;
+}
+#blueprint-note-container {
+    position: relative;
+    left: 0;
+    top: 0;
+}
 
+#featured-commercial-note-container {
+    position: absolute;
+    display: inline;
+    z-index: 4;
+    top: 14.5%;
+    margin-left: 61%;
+    width: 50%;
+}
+
+#featured-commercial-note {
+    width: 100%;
+    transform: rotate(3deg);
+}
+
+.personajes-img {
+    width: 100%;
+}
+
+#kiko-container{
+    margin-top: 12%;
+    margin-left: 15%;
+    width: 70%;
+    display: inline;
+    z-index: 4;
+}
+
+#kiko-note-container{
+    width: 45%;
+    margin-top: -10%;
+    margin-left: 27%;
+    display: inline;
+    z-index: 3;
+}
+
+#theo-container{
+    margin-top: 10%;
+    margin-left: 17%;
+    width: 70%;
+    display: inline;
+    z-index: 4;
+    transform: rotate(-2deg);
+}
+
+#theo-note-container{
+    width: 49%;
+    margin-top: 2%;
+    margin-left: 33%;
+    display: inline;
+    z-index: 3;
+}
+
+#evan-container{
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 65%;
+    display: inline;
+    z-index: 4;
+    transform: rotate(3deg);
+}
+
+#evan-note-container{
+    width: 50%;
+    margin-top: -4%;
+    margin-left: 10%;
+    display: inline;
+    z-index: 3;
+}
+
+#zamba-container{
+    margin-top: 15%;
+    margin-left: -6%;
+    width: 70%;
+    display: inline;
+    z-index: 4;
+}
+
+#zamba-note-container{
+    width: 45%;
+    margin-top: 2%;
+    margin-left: 10%;
+    display: inline;
+    z-index: 3;
 }
 
 /*      CUARTA COLUMNA       */
@@ -209,14 +306,16 @@
 }
 
 #mccain-publicidad{
-    margin-left: -35%;
-    /*margin-top: -5%;*/
+    margin-left: -30%;
+    margin-top: 6%;
     display: inline;
     z-index: 2;
 }
 
 #sprite-publicidad{
     transform: rotate(-4deg);
+    margin-left: -11%;
+    width: 90%;
     display: inline;
     z-index: 2;
 }
@@ -230,15 +329,29 @@
 }
 
 #tvSeries-notas{
-    transform: rotate(4deg);
+    position: relative;
     margin-left: -33%;
-    margin-top: 10%;
+    top: 10%;
     display: inline;
-    z-index: 2;
+    z-index: 1;
 }
 
 #tvSeries-notas-img{
-    width: 130%;
+    width: 132%;
+    transform: rotate(2deg);
+}
+
+#artistic-note-continer{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    z-index: 2;
+    width: 40%;
+}
+
+#artistic-note{
+    width: 100%;
+    transform: rotate(13deg);
 }
 
 .fotos-publicidades-mapa {
