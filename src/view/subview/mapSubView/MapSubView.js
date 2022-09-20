@@ -82,7 +82,7 @@ export default function MapSubView(){
                         </Row>
                         <Row>
                             <div className="publi-note-container">
-                                <img src={MilkaNote} className="publi-note"/>
+                                <img src={MilkaNote} className="publi-note" alt="milka-note"/>
                             </div>
                         </Row>
                     </Col>
@@ -124,7 +124,7 @@ export default function MapSubView(){
                         </Row>
                         <Row>
                             <div className="publi-note-container" id="fernet-ntoe">
-                                <img src={FernetNote} className="publi-note"/>
+                                <img src={FernetNote} className="publi-note" alt="fernet-note"/>
                             </div>
                         </Row>
                     </Col>
@@ -135,40 +135,40 @@ export default function MapSubView(){
                                     <img src={Blueprint} id="blueprint-damian" alt="blueprint"/>
                                 </div>
                                 <div id="featured-commercial-note-container" className="black-shadow">
-                                    <img src={FeaturedCommercial} id="featured-commercial-note"/>
+                                    <img src={FeaturedCommercial} id="featured-commercial-note" alt="featured-commercial-note"/>
                                 </div>
                             </div>
                         </Row>
                         <Row>
                             <div id="kiko-container" className="black-shadow">
-                                <img src={Kiko} className="personajes-img"/>
+                                <img src={Kiko} className="personajes-img" alt="kiko-img"/>
                             </div>
                             <div id="kiko-note-container" className="black-shadow">
-                                <img src={KikoNote} className="personajes-img"/>
+                                <img src={KikoNote} className="personajes-img" alt="kiko-note"/>
                             </div>
                         </Row>
                         <Row>
                             <div id="theo-container" className="black-shadow">
-                                <img src={Theo} className="personajes-img"/>
+                                <img src={Theo} className="personajes-img" alt="theo-img"/>
                             </div>
                             <div id="theo-note-container" className="black-shadow">
-                                <img src={TheoNote} className="personajes-img"/>
+                                <img src={TheoNote} className="personajes-img" alt="theo-note"/>
                             </div>
                         </Row>
                         <Row>
                             <div id="evan-container" className="black-shadow">
-                                <img src={EvanTreborn} className="personajes-img"/>
+                                <img src={EvanTreborn} className="personajes-img" alt="evan-img"/>
                             </div>
                             <div id="evan-note-container" className="black-shadow">
-                                <img src={EvanNote} className="personajes-img"/>
+                                <img src={EvanNote} className="personajes-img" alt="evan-note"/>
                             </div>
                         </Row>
                         <Row>
                             <div id="zamba-container" className="black-shadow">
-                                <img src={Zamba} className="personajes-img"/>
+                                <img src={Zamba} className="personajes-img" alt="zamba-img"/>
                             </div>
                             <div id="zamba-note-container" className="black-shadow">
-                                <img src={ZambaNote} className="personajes-img"/>
+                                <img src={ZambaNote} className="personajes-img" alt="zamba-note"/>
                             </div>
                         </Row>
                     </Col>
@@ -199,7 +199,7 @@ export default function MapSubView(){
                                     <img className="fotos-publicidades-mapa" id="tvSeries-notas-img" src={TvSeries} alt="tvseries"/>
                                 </div>
                                 <div id="artistic-note-continer" className="black-shadow">
-                                    <img src={ArtistNote} id="artistic-note"/>
+                                    <img src={ArtistNote} id="artistic-note" alt="artistic-note"/>
                                 </div>
                             </div>
                         </Row>
