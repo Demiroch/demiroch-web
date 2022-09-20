@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import React from "react";
 import LandingView from "./view/landingView/LandingView";
-import background from "./resources/Backgrounds/BK_Corcho.png";
+import background from "./resources/Backgrounds/BK_Corcho-min.png";
 
 function App(){
 return (

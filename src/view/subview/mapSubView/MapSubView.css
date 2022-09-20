@@ -22,6 +22,13 @@
     z-index: 1;
     transform: rotate(-0.5deg);
 }
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
 /*      PRIMERA COLUMNA       */
 
