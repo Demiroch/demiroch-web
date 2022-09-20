@@ -7,20 +7,20 @@ import Huella from "../../../resources/Misc/FingerPrint_Demian.png";
 import Blueprint from "../../../resources/Misc/Mic_Blueprint.png";
 
 //Publis
-import Uala from "../../../resources/FotosPublicidades/uala.png";
-import MenuDelDia from "../../../resources/FotosPublicidades/menuDelDia.png";
-import Sprite from "../../../resources/FotosPublicidades/Sprite.png";
-import Mccain from "../../../resources/FotosPublicidades/mccain.png";
+import Uala from "../../../resources/FotosPublicidades/uala_pin.png";
+import MenuDelDia from "../../../resources/FotosPublicidades/menuDelDia_pin.png";
+import Sprite from "../../../resources/FotosPublicidades/Sprite_pin.png";
+import Mccain from "../../../resources/FotosPublicidades/mccain_pin.png";
 import Mapa from "../../../resources/Misc/Mapa_BA.png";
-import Latinafy from "../../../resources/FotosPublicidades/latinafy.png";
+import Latinafy from "../../../resources/FotosPublicidades/latinafy_pin.png";
 import CartoonNetwork from "../../../resources/FotosPublicidades/CN.png";
 import Danonino from "../../../resources/FotosPublicidades/danonino2.png";
 import Milka from "../../../resources/FotosPublicidades/milka.png";
-import Fernet from "../../../resources/FotosPublicidades/branca.png";
+import Fernet from "../../../resources/FotosPublicidades/branca_pin.png";
 
 // Notas filmografía
-import TvSeries from "../../../resources/NotasFilmografía/Filmografia_1_tvymovies.png"
-import AnimatedSeries from "../../../resources/NotasFilmografía/Filmografia_2_seriesanim.png";
+import TvSeries from "../../../resources/NotasFilmografía/Filmografia_1_tvymovies_pin.png"
+import AnimatedSeries from "../../../resources/NotasFilmografía/Filmografia_2_seriesanim_pin.png";
 
 // Sticky notes
 import VoiceActorNote from "../../../resources/StickyNotes/stickyNote_VOICE_ACTOR.png";
@@ -41,9 +41,9 @@ import Threads from "../../../resources/Misc/Hilos.png";
 export default function MapSubView(){
     return (
         <section className="map-container">
-            {/*<div>*/}
-            {/*    <img src={Threads} id="threads-mapa"/>*/}
-            {/*</div>*/}
+            <div>
+                <img src={Threads} id="threads-mapa" className="black-shadow"/>
+            </div>
             <Container fluid>
                 <Row>
                     <Col>
@@ -125,7 +125,7 @@ export default function MapSubView(){
                             </div>
                         </Row>
                         <Row>
-                            <div className="fotos-publicidades-mapa-container" id="menudeldia-publicidad">
+                            <div className="fotos-publicidades-mapa-container" id="mccain-publicidad">
                                 <img className="fotos-publicidades-mapa clickable"  src={Mccain} alt="menudeldia"/>
                             </div>
                         </Row>
@@ -135,7 +135,7 @@ export default function MapSubView(){
                             </div>
                         </Row>
                         <Row>
-                            <div className="fotos-publicidades-mapa-container" id="mccain-publicidad">
+                            <div className="fotos-publicidades-mapa-container" id="menudeldia-publicidad">
                                 <img className="fotos-publicidades-mapa clickable"  src={MenuDelDia} alt="mccain"/>
                             </div>
                         </Row>

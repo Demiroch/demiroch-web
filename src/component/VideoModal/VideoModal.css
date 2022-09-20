@@ -6,6 +6,10 @@
     height: 70%;
 }
 
+.modal-body {
+    padding: unset;
+}
+
 .modal-header-custom{
     display: flex;
     justify-content: center;
