@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
+import React from 'react';
+// import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Iframe from "../IFrame/IFrame";
 import './VideoModal.css';

@@ -24,16 +24,16 @@ import AnimatedSeries from "../../../resources/NotasFilmografía/Filmografia_2_s
 
 // Sticky notes
 import VoiceActorNote from "../../../resources/StickyNotes/stickyNote_VOICE_ACTOR.png";
-import ArtistNote from "../../../resources/StickyNotes/stickyNote_ARTIST.png";
+// import ArtistNote from "../../../resources/StickyNotes/stickyNote_ARTIST.png";
 import ActorNote from "../../../resources/StickyNotes/stickyNote_ACTOR.png";
 import ContentCreatorNote from "../../../resources/StickyNotes/stickyNote_CONTENT_CREATOR.png";
 import SoundProductionNote from "../../../resources/StickyNotes/stickyNote_SOUND_PRODUCTION.png";
 
 // Fotos Personajes
-import Kiko from "../../../resources/FotosPersonajes/UNDERDOGS-KIKOphoto.png";
-import Theo from "../../../resources/FotosPersonajes/Theophoto.png";
-import EvanTreborn from "../../../resources/FotosPersonajes/ElEfectoMariposaphoto.png";
-import Zamba from "../../../resources/FotosPersonajes/zambaphoto.png";
+// import Kiko from "../../../resources/FotosPersonajes/UNDERDOGS-KIKOphoto.png";
+// import Theo from "../../../resources/FotosPersonajes/Theophoto.png";
+// import EvanTreborn from "../../../resources/FotosPersonajes/ElEfectoMariposaphoto.png";
+// import Zamba from "../../../resources/FotosPersonajes/zambaphoto.png";
 
 // import Note from "../../../resources/FotosPersonajes/etiquetas_fotos.png";
 import Threads from "../../../resources/Misc/Hilos.png";
@@ -42,7 +42,7 @@ export default function MapSubView(){
     return (
         <section className="map-container">
             <div>
-                <img src={Threads} id="threads-mapa" className="black-shadow"/>
+                <img src={Threads} id="threads-mapa" className="black-shadow" alt={"threads"}/>
             </div>
             <Container fluid>
                 <Row>
