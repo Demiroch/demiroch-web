@@ -1,3 +1,28 @@
-.cassete-container{
+.clients-container{
+    margin-top: 2%;
+    width: 100%;
+    position: relative;
+}
+
+#clients-title-container{
+    position: absolute;
+    width: 12%;
+    transform: rotate(-6deg);
+    display: inline;
+    z-index: 2;
+    margin-left: 2.5%;
+    margin-top: -1%;
+}
+
+#clients-title-img {
+    width: 100%;
+}
+
+#clients-container{
+    margin-left: 7%;
+    width: 88%;
+}
+
+#clients-img {
     width: 100%;
 }

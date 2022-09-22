@@ -14,10 +14,10 @@
 
 #threads-mapa{
     position: absolute;
-    height: 82%;
+    height: 83.4%;
     width: 78%;
     margin-left: 9.9%;
-    margin-top: 3.5%;
+    margin-top: 2.2%;
     display: inline;
     z-index: 1;
     transform: rotate(-0.5deg);
@@ -57,7 +57,7 @@
 
 #latinafy-container{
     position: absolute;
-    top: 18.3%;
+    top: 18.7%;
     left: 0%;
     width: 75%;
     display: inline;
@@ -70,28 +70,28 @@
 
 #animated-series-note-container{
     position: absolute;
-    top: 43.5%;
-    left: 4%;
+    top: 44.8%;
+    left: 6.5%;
     transform: rotate(-4deg);
     z-index: 3 !important;
     display: inline;
 }
 
 #animated-series-note{
-    width: 143%;
+    width: 140%;
     transform: rotate(-2deg);
 }
 
 #milka-publicidad-container{
     margin-top: -5%;
-    margin-left: 2%;
+    margin-left: 6%;
     z-index: 0;
     display: inline;
 }
 
 #milka-publicidad{
     width: 100%;
-    transform: rotate(-1deg);
+    transform: rotate(3deg);
 }
 .publi-note-container{
     margin-top: 5%;
@@ -106,22 +106,21 @@
 /*      SEGUNDA COLUMNA       */
 
 #cartoon-network-container{
-    margin-left: -57%;
-    top: 25%;
+    margin-left: -63%;
+    top: 27.5%;
     position: relative;
-    left: -10%;
     z-index: 2;
     display: inline;
 }
 
 #cartoon-network-publicidad{
-    width: 120%;
+    width: 115%;
     transform: rotate(-4deg);
 }
 
 #voice-actor-container{
     position: absolute;
-    top: 5%;
+    top: 9%;
     left: 37%;
     width: 75%;
     display: inline;
@@ -135,21 +134,21 @@
 
 #danonino-container{
     margin-top: 35%;
-    margin-left: -8%;
+    margin-left: -4%;
     z-index: 1;
     display: inline;
 }
 
 #danonino-publicidad{
-    width: 115%;
+    width: 105%;
     transform: rotate(3deg);
 }
 
 #content-creator-container{
     z-index: 4;
     display: inline;
-    margin-top: -23%;
-    margin-left: 95%;
+    margin-top: -16%;
+    margin-left: 90%;
 }
 
 #content-creator{
@@ -160,30 +159,29 @@
 #actor-container{
     z-index: 3;
     display: inline;
-    margin-top: 30%;
-    margin-left: 20%;
+    margin-top: 25%;
+    margin-left: 29%;
 }
 
 #actor-note{
     transform: rotate(5deg);
-    width: 58%;
+    width: 50%;
 }
 
 #sound-container{
     z-index: 3;
     display: inline;
-    margin-top: 35%;
+    margin-top: 42%;
     margin-left: 58%;
 }
 
 #sound-note{
     transform: rotate(2deg);
-    width: 55%;
+    width: 50%;
 }
 
 #fernet-container{
-    margin-top: -20%;;
-    margin-left: -2%;
+    margin-top: -18%;;
     z-index: 1;
     display: inline;
 }
@@ -194,19 +192,19 @@
 }
 
 #fernet-ntoe{
-    margin-top: 2.5%;
+    margin-top: -3%;
     margin-left: 26%;
 }
 
 /*      TERCERA COLUMNA       */
 
 #blueprint-damian-container{
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 #blueprint-damian{
     margin-left: -25%;
-    width: 140%;
+    width: 130%;
 }
 #blueprint-note-container {
     position: relative;
@@ -218,9 +216,9 @@
     position: absolute;
     display: inline;
     z-index: 4;
-    top: 14.5%;
-    margin-left: 61%;
-    width: 50%;
+    top: 19%;
+    margin-left: 55%;
+    width: 45%;
 }
 
 #featured-commercial-note {
@@ -233,34 +231,34 @@
 }
 
 #kiko-container{
-    margin-top: 12%;
+    margin-top: 14%;
     margin-left: 15%;
-    width: 70%;
+    width: 65%;
     display: inline;
     z-index: 4;
 }
 
 #kiko-note-container{
-    width: 45%;
-    margin-top: -10%;
+    width: 40%;
+    margin-top: -2%;
     margin-left: 27%;
     display: inline;
     z-index: 3;
 }
 
 #theo-container{
-    margin-top: 10%;
-    margin-left: 17%;
-    width: 70%;
+    margin-top: 1%;
+    margin-left: 12%;
+    width: 64%;
     display: inline;
     z-index: 4;
     transform: rotate(-2deg);
 }
 
 #theo-note-container{
-    width: 49%;
+    width: 47%;
     margin-top: 2%;
-    margin-left: 33%;
+    margin-left: 26%;
     display: inline;
     z-index: 3;
 }
@@ -268,14 +266,14 @@
 #evan-container{
     margin-top: 2%;
     margin-left: 5%;
-    width: 65%;
+    width: 60%;
     display: inline;
     z-index: 4;
     transform: rotate(3deg);
 }
 
 #evan-note-container{
-    width: 50%;
+    width: 48%;
     margin-top: -4%;
     margin-left: 10%;
     display: inline;
@@ -283,9 +281,9 @@
 }
 
 #zamba-container{
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: -6%;
-    width: 70%;
+    width: 65%;
     display: inline;
     z-index: 4;
 }
@@ -300,7 +298,7 @@
 
 /*      CUARTA COLUMNA       */
 .fotos-publicidades-mapa-container {
-    margin-top: 5%;
+    margin-top: 4%;
     margin-left: -20%;
     -webkit-filter: drop-shadow(3px 3px 5px #000);
     filter: drop-shadow(3px 3px 5px #000);
@@ -313,16 +311,18 @@
 }
 
 #mccain-publicidad{
-    margin-left: -30%;
+    margin-left: -20%;
     margin-top: 6%;
     display: inline;
     z-index: 2;
+    width: 90%;
 }
 
 #sprite-publicidad{
     transform: rotate(-4deg);
+    margin-top: 4%;
     margin-left: -11%;
-    width: 90%;
+    width: 93%;
     display: inline;
     z-index: 2;
 }
