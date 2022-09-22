@@ -1,5 +1,4 @@
 import React from 'react';
-// import {Col, Container, Row} from "react-bootstrap";
 import "./ClientsSubView.css";
 import Clients from "../../../resources/Clientes/Clientes.png";
 import Title from "../../../resources/Clientes/clients_title.png";
