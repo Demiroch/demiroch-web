@@ -5,10 +5,12 @@ import BackgroundImage from "../../../resources/Backgrounds/Inicio_BK.png"
 import Logo from "../../../resources/Logo/Logo_Demiroch.png";
 import {Col, Container, Row} from "react-bootstrap";
 import Huella from "../../../resources/Misc/FingerPrint_Demian.png";
+import GoDown from "../../../resources/Misc/WhereHasDemianBeen.png"
 
 export default function LicencesSubView(){
     return (
-        <section className="licences-container black-shadow" style={{backgroundImage: `url(${BackgroundImage})`, zIndex: 2, position: "relative", display: "block"}}>
+        <section className="licences-container black-shadow" style={{backgroundImage: `url(${BackgroundImage})`}}>
+            <div id="home-anchor"/>
             <Container fluid>
                 <Row>
                     <Col>
@@ -26,6 +28,11 @@ export default function LicencesSubView(){
                 <Row>
                     <div id="fingerprint-damian-container" className="black-shadow">
                         <img src={Huella} id="fingerprint-damian" alt="huella-dactilar"/>
+                    </div>
+                </Row>
+                <Row>
+                    <div id="where-has-been-container" >
+                        <img src={GoDown} alt="huella-dactilar"/>
                     </div>
                 </Row>
             </Container>

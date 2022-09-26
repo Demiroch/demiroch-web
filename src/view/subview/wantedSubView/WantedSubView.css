@@ -1,3 +1,24 @@
 .wanted-container{
+    margin-top: -2%;
     width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+#contacto-anchor{
+    display: block;
+    position: relative;
+    visibility: hidden;
+}
+
+#wanted-image{
+    width: 100%;
+    transform: rotate(-1deg);
+}
+
+#wanted-container{
+    padding: 5%;
+    width: 80vh;
 }

@@ -1,7 +1,10 @@
 .cassete-container{
     width: 100%;
     padding: 3% 8% 3%;
-    background-size: cover;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    z-index: 1;
 }
 
 .cassete-for-all{

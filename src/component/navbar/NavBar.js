@@ -1,30 +1,27 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
+import "./NavBar.css";
+// import {AiFillInstagram} from "react-icons/ai";
+import React from "react";
 
 export default function NavBar() {
     return (
         <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="black-shadow">
             <Container>
-                <Navbar.Brand href="#home">DEMIROCH</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto" >
-                        <Nav.Link href="#map-anchor">¿Donde Estuvo?</Nav.Link>
+                <Navbar.Brand href="#home-anchor">DEMIROCH</Navbar.Brand>
+                <Navbar.Collapse id="basic-navbar-nav" className="align-right">
+                    <Nav >
+                        <Nav.Link href="#map-anchor">¿Where has he been?</Nav.Link>
                         <Nav.Link href="#cassete-anchor">Demos</Nav.Link>
-                        <Nav.Link href="#link">Contacto</Nav.Link>
-                        {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">*/}
-                        {/*    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>*/}
-                        {/*    <NavDropdown.Item href="#action/3.2">*/}
-                        {/*        Another action*/}
-                        {/*    </NavDropdown.Item>*/}
-                        {/*    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>*/}
-                        {/*    <NavDropdown.Divider />*/}
-                        {/*    <NavDropdown.Item href="#action/3.4">*/}
-                        {/*        Separated link*/}
-                        {/*    </NavDropdown.Item>*/}
-                        {/*</NavDropdown>*/}
+                        <Nav.Link href="#contacto-anchor">Contact</Nav.Link>
+
+                        {/*<Nav.Link href="#contacto-anchor">*/}
+                        {/*    <AiFillInstagram color="white" size="20%"/>*/}
+                        {/*</Nav.Link>*/}
+                        {/*<Nav.Item>*/}
+                        {/**/}
+                        {/*</Nav.Item>*/}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
