@@ -1,7 +1,16 @@
 .cassete-container{
     width: 100%;
+    padding: 3% 8% 3%;
+    background-size: cover;
 }
 
-#cassete-argentina-acting{
+.cassete-for-all{
     width: 90%;
+}
+
+#demos-title{
+    width: 45%;
+    display: block;
+    margin-left: 32%;
+    margin-bottom: 3%;
 }

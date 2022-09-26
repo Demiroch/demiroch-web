@@ -5,39 +5,42 @@
     /*margin-left: 5%;*/
 }
 .cassete-img-container{
-    position: relative;
+    /*position: relative;*/
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
 .cassete-button-container{
     position: absolute;
-    top: 0;
-    width: 96%;
-    height: 95%;
+    top: -5%;
+    left: -3%;
+    width: 103%;
+    height: 103%;
+    padding-left: calc(var(--bs-gutter-x) * .5);
 }
 .cassete-button{
-    /*display: none;*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    width: 98.5%;
-    height: 106%;
-    /*cursor: pointer;*/
-    /*margin-top: -3%;*/
-    /*margin-left: -3%;*/
+    display: none;
 }
 
-.button-play{
-    /*display: none;*/
-    top: 78.2%;
-    left: 35.5%;
-    width: 10%;
-}
-
-.square{
+.square {
     position: absolute;
-    height: 4vw;
-    width: 4vw;
-    top: 50%;
-    background-color: #555;
+    height: 2.7vw;
+    width: 2.7vw;
+    top: 77%;
+    display: block;
+    z-index: 8;
+    cursor: pointer;
+}
+
+.square-play{
+    left: 36%;
+}
+
+.square-stop{
+    left: 46%;
+}
+
+.square-replay{
+    left: 56%;
 }

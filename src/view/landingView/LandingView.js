@@ -14,7 +14,6 @@ export default function LandingView(){
                     <MapSubView/>
                     <ClientsSubView/>
                 </div>
-
                 <CassetteSubView/>
                 <WantedSubView/>
         </div>)
