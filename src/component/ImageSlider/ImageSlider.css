@@ -1,6 +1,6 @@
 .slider-container{
     height: 100%;
-    width: 45%;
+    width: 78vh;
 }
 
 .carousel-item-custom{
@@ -23,4 +23,10 @@
 
 .arrow-carousel{
     width: 60%;
+}
+
+@media (orientation: portrait) {
+    .slider-container{
+        width: 40%;
+    }
 }
