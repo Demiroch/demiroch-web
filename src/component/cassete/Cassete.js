@@ -65,7 +65,7 @@ export default function Cassete({id, src, className, audio}){
     }
 
     return (
-        <section id={id} className={"relative-container " + className}>
+        <section id={id} className={"black-shadow relative-container " + className}>
             <figure className="cassete-img-container">
                 <img src={src} alt="cassete-img" />
             </figure>

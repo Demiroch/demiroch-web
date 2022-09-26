@@ -41,6 +41,13 @@
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+#map-anchor{
+    display: block;
+    position: relative;
+    top: -10vh;
+    visibility: hidden;
+}
+
 /*      PRIMERA COLUMNA       */
 
 #cartoon-network-container{

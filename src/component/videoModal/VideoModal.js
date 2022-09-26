@@ -1,7 +1,7 @@
 import React from 'react';
 // import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Iframe from "../IFrame/IFrame";
+import Iframe from "../iFrame/IFrame";
 import './VideoModal.css';
 
 export default function VideoModal({show, setShow, videoUrl, _title}) {

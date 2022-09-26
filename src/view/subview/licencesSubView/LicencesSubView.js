@@ -1,6 +1,6 @@
 import React from 'react';
 import "./LicencesSubView.css";
-import ImageSlider from "../../../component/ImageSlider/ImageSlider";
+import ImageSlider from "../../../component/imageSlider/ImageSlider";
 import BackgroundImage from "../../../resources/Backgrounds/Inicio_BK.png"
 import Logo from "../../../resources/Logo/Logo_Demiroch.png";
 import {Col, Container, Row} from "react-bootstrap";

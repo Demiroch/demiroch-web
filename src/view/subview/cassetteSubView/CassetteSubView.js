@@ -1,6 +1,6 @@
 import React from 'react';
 import "./CasseteSubView.css";
-import Cassete from "../../../component/Cassete/Cassete";
+import Cassete from "../../../component/cassete/Cassete";
 import CasseteArgActing from "../../../resources/Demos_Cassettes/Cassettes_ARGActing.png";
 import CasseteArgVoiceOver from "../../../resources/Demos_Cassettes/Cassettes_ARGVoiceOver.png";
 import CasseteCrazyVoices from "../../../resources/Demos_Cassettes/Cassettes_CrazyVoices.png";
@@ -15,6 +15,7 @@ import {Col, Container, Row} from "react-bootstrap";
 export default function CassetteSubView(){
     return (
         <section className="cassete-container" style={{backgroundImage: `url(${background})`}}>
+            <div id="cassete-anchor"/>
             <Container fluid id="container-demos">
                 <Row>
                     <div id="demos-title">

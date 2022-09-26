@@ -7,7 +7,7 @@ import right from '../../resources/Iconos/Demiroch_arrows_Right.png';
 import "./ImageSlider.css"
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import VideoModal from "../VideoModal/VideoModal";
+import VideoModal from "../videoModal/VideoModal";
 
 export default function ControlledCarousel() {
     const [index, setIndex] = useState(0);

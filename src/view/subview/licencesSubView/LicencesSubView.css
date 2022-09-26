@@ -3,12 +3,12 @@
     background-size:100% 100%;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 105vh;
+    min-height: 82vh;
 }
 
 #demiroch-logo{
     margin-top: 2vh;
-    width: 60%;
+    width: 50%;
 }
 
 #logo-description{
@@ -21,7 +21,7 @@
 
 #fingerprint-damian-container{
     width: 20%;
-    margin-top: -18%;
+    margin-top: -21%;
 }
 
 #fingerprint-damian{
@@ -31,6 +31,6 @@
 
 @media (orientation: portrait) {
     .licences-container{
-        min-height: 27vh;
+        min-height: 29vh;
     }
 }

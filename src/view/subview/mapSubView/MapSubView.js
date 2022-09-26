@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import "./MapSubView.css";
 import {Col, Container, Row} from "react-bootstrap";
 import Threads from "../../../resources/Misc/Hilos.png";
-import VideoModal from "../../../component/VideoModal/VideoModal";
+import VideoModal from "../../../component/videoModal/VideoModal";
 
 // Misc
 import Blueprint from "../../../resources/Misc/Mic_Blueprint.png";
@@ -54,9 +54,9 @@ export default function MapSubView(){
         setmMdalTitle(title)
     }
 
-
     return (
         <section className="map-container">
+            <div id="map-anchor"/>
             <div>
                 <img src={Threads} id="threads-mapa" className="black-shadow" alt={"threads"}/>
             </div>
