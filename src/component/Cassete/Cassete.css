@@ -1,0 +1,43 @@
+
+#cassete-comp-container{
+    width: 100%;
+    height: 100%;
+    /*margin-left: 5%;*/
+}
+.cassete-img-container{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.cassete-button-container{
+    position: absolute;
+    top: 0;
+    width: 96%;
+    height: 95%;
+}
+.cassete-button{
+    /*display: none;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    width: 98.5%;
+    height: 106%;
+    /*cursor: pointer;*/
+    /*margin-top: -3%;*/
+    /*margin-left: -3%;*/
+}
+
+.button-play{
+    /*display: none;*/
+    top: 78.2%;
+    left: 35.5%;
+    width: 10%;
+}
+
+.square{
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+    top: 50%;
+    background-color: #555;
+}

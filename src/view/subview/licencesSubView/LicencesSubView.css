@@ -4,20 +4,6 @@
     background-repeat: no-repeat;
     width: 100%;
     min-height: 105vh;
-    /*height: 105vh;*/
-
-    /*background-size: auto 100%;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: left top;*/
-
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-
-    /*background-size: contain;*/
-
-    /*height: 100vh;*/
-    /*padding-top: 32.64%; !* (img-height / img-width * container-width) *!*/
 }
 
 #demiroch-logo{
@@ -26,9 +12,19 @@
 }
 
 #logo-description{
-    font-family: "Times New Roman", serif;
+    font-family: Arvo-Regular, serif;
+    /*font-family: "Times New Roman", serif;*/
     color: #601010;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 2.5vw;
+    font-weight: 500;
 }
 
+#fingerprint-damian-container{
+    width: 20%;
+    margin-top: -18%;
+}
+
+#fingerprint-damian{
+    width: 100%;
+    margin-left: -10%;
+}
