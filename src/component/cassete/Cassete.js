@@ -70,15 +70,15 @@ export default function Cassete({id, src, className, audio}){
                 <img src={src} alt="cassete-img" />
             </figure>
             <figure className="cassete-button-container">
-                <div id={"square-play-" + id} className="square-play square" onClick={onPlay} onMouseEnter={onHoverPlayIn} onMouseLeave={onHoverPlayOut}/>
+                <div id={"square-play-" + id} className="square-play square-cassete" onClick={onPlay} onMouseEnter={onHoverPlayIn} onMouseLeave={onHoverPlayOut}/>
                 <img id={"button-play-" + id} src={ButtonPlay} alt="button-play" className="cassete-button"/>
             </figure>
             <figure className="cassete-button-container">
-                <div id={"square-stop-" + id} className="square-stop square" onClick={onStop} onMouseEnter={onHoverStopIn} onMouseLeave={onHoverStopOut}/>
+                <div id={"square-stop-" + id} className="square-stop square-cassete" onClick={onStop} onMouseEnter={onHoverStopIn} onMouseLeave={onHoverStopOut}/>
                 <img id={"button-stop-" + id} src={ButtonStop} alt="button-stop" className="cassete-button"/>
             </figure>
             <figure className="cassete-button-container">
-                <div id={"square-replay-" + id} className="square-replay square" onClick={onReplay} onMouseEnter={onHoverReplayIn} onMouseLeave={onHoverReplayOut}/>
+                <div id={"square-replay-" + id} className="square-replay square-cassete" onClick={onReplay} onMouseEnter={onHoverReplayIn} onMouseLeave={onHoverReplayOut}/>
                 <img id={"button-replay-" + id} src={ButtonReplay} alt="button-play" className="cassete-button"/>
             </figure>
         </section>)

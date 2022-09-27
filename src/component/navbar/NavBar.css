@@ -1,3 +1,20 @@
 .align-right{
     justify-content: end;
 }
+
+
+#instagram-icon{
+    margin-left: 2vw;
+}
+
+
+
+@media (orientation: portrait) {
+    #instagram-icon{
+        margin-left: 0;
+    }
+
+    .navbar-nav{
+        align-items: center;
+    }
+}
