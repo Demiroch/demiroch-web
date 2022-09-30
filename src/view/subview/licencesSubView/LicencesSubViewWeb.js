@@ -6,7 +6,7 @@ import Logo from "../../../resources/Logo/Logo_Demiroch.png";
 import {Col, Container, Row} from "react-bootstrap";
 import Huella from "../../../resources/Misc/FingerPrint_Demian.png";
 import GoDown from "../../../resources/Misc/WhereHasDemianBeen.png"
-import SlickSlider from "../../../component/imageSlider/SlickSlider";
+// import SlickSlider from "../../../component/imageSlider/SlickSlider";
 
 export default function LicencesSubViewWeb(){
     return (
