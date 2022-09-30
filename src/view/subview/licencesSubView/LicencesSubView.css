@@ -11,6 +11,10 @@
     width: 50%;
 }
 
+.slider-andy{
+    max-height: 50vh;
+}
+
 #logo-description{
     font-family: Arvo-Regular, serif;
     /*font-family: "Times New Roman", serif;*/
@@ -44,6 +48,19 @@
 
 @media (orientation: portrait) {
     .licences-container{
-        min-height: 29vh;
+        min-height: 40vh;
+    }
+
+    #logo-description{
+        font-family: Arvo-Regular, serif;
+        /*font-family: "Times New Roman", serif;*/
+        color: #601010;
+        font-size: 4vw;
+        font-weight: 500;
+    }
+
+    #demiroch-logo{
+        margin-top: 2vh;
+        width: 70%;
     }
 }

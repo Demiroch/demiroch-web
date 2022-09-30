@@ -1,13 +1,11 @@
 import React from 'react';
 import "./LicencesSubView.css";
 import ImageSlider from "../../../component/imageSlider/ImageSlider";
-import BackgroundImage from "../../../resources/Backgrounds/Inicio_BK.png"
+import BackgroundImage from "../../../resources/Mobile/Backgrounds/Inicio_Mobile_BK.png";
 import Logo from "../../../resources/Logo/Logo_Demiroch.png";
 import {Col, Container, Row} from "react-bootstrap";
-import Huella from "../../../resources/Misc/FingerPrint_Demian.png";
-import GoDown from "../../../resources/Misc/WhereHasDemianBeen.png"
 
-export default function LicencesSubView(){
+export default function LicencesSubViewMobile(){
     return (
         <section className="licences-container black-shadow" style={{backgroundImage: `url(${BackgroundImage})`}}>
             <div id="home-anchor"/>
@@ -22,18 +20,8 @@ export default function LicencesSubView(){
                 </Row>
                 <Row>
                     <Col>
-                        <ImageSlider></ImageSlider>
+                        <ImageSlider showControls={false} showIndicators={true}/>
                     </Col>
-                </Row>
-                <Row>
-                    <div id="fingerprint-damian-container" className="black-shadow">
-                        <img src={Huella} id="fingerprint-damian" alt="huella-dactilar"/>
-                    </div>
-                </Row>
-                <Row>
-                    <div id="where-has-been-container" >
-                        <img src={GoDown} alt="huella-dactilar"/>
-                    </div>
                 </Row>
             </Container>
         </section>

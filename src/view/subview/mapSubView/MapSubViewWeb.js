@@ -43,7 +43,7 @@ import EvanNote from "../../../resources/FotosPersonajes/etiquetas_Evan.png";
 import TheoNote from "../../../resources/FotosPersonajes/etiquetas_Theo.png";
 import KikoNote from "../../../resources/FotosPersonajes/etiquetas_Kiko.png";
 
-export default function MapSubView(){
+export default function MapSubViewWeb(){
     const [showModal, setShowModal] = useState(false);
     const [videoSrc, setVideoSrc] = useState("");
     const [modalTitle, setmMdalTitle] = useState("");

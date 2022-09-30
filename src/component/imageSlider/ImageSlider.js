@@ -9,7 +9,7 @@ import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import VideoModal from "../videoModal/VideoModal";
 
-export default function ControlledCarousel() {
+export default function ImageSlider({showIndicators, showControls}) {
     const [index, setIndex] = useState(0);
     const [showModal, setShowModal] = useState(false);
     const [videoSrc, setVideoSrc] = useState("");
@@ -48,12 +48,15 @@ export default function ControlledCarousel() {
     return (
         <div>
             <Carousel variant="dark"
-                      indicators={false}
-                      controls={true}
+                      indicators={showIndicators}
+                      controls={showControls}
                       prevIcon={getLeftIcon()}
                       nextIcon={getRightIcon()}
                       className="slider-container"
-                      activeIndex={index} onSelect={handleSelect}>
+                      activeIndex={index}
+                      onSelect={handleSelect}
+                      // interval={null}
+                      touch={true}>
                 {getCarouselItem(Licence1, "AMPHIBIA", "https://www.youtube.com/embed/zeA3ItAoCaQ")}
                 {getCarouselItem(Licence2, "GRAVITY FALLS", "https://www.youtube.com/embed/gWMcyYyVsjw")}
                 {getCarouselItem(Licence3, "PUKKA", "https://www.youtube.com/embed/TrtlYgU3IFI")}

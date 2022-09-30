@@ -2,12 +2,31 @@
     justify-content: end;
 }
 
+.navbar {
+    transition: 0.2s;
+}
+
+.bg-dark {
+    background-color: #401414 !important;
+}
 
 #instagram-icon{
     margin-left: 2vw;
 }
 
+.bg-red{
+    background-color: #401414 !important;
+    opacity: 0.8;
+}
 
+@media (max-width: 1050px) {
+    .navbar-brand{
+        display: none;
+    }
+    .navbar > .container {
+        justify-content: end;
+    }
+}
 
 @media (orientation: portrait) {
     #instagram-icon{

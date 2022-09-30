@@ -12,7 +12,7 @@ import CrazyVoicesAudio from "../../../resources/Audio/prueba-andy.mp3";
 import DemosTitle from "../../../resources/Misc/Titulo_Demos.png"
 import {Col, Container, Row} from "react-bootstrap";
 
-export default function CassetteSubView(){
+export default function CassetteSubViewMobile(){
     return (
         <section className="cassete-container" style={{backgroundImage: `url(${background})`}}>
             <div id="cassete-anchor"/>
