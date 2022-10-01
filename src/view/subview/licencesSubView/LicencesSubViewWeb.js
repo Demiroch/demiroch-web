@@ -6,7 +6,7 @@ import Logo from "../../../resources/Logo/Logo_Demiroch.png";
 import {Col, Container, Row} from "react-bootstrap";
 import Huella from "../../../resources/Misc/FingerPrint_Demian.png";
 import GoDown from "../../../resources/Misc/WhereHasDemianBeen.png"
-// import SlickSlider from "../../../component/imageSlider/SlickSlider";
+
 
 export default function LicencesSubViewWeb(){
     return (
@@ -23,10 +23,7 @@ export default function LicencesSubViewWeb(){
                 </Row>
                 <Row>
                     <Col>
-                        <ImageSlider showControls={true} showIndicators={false} className="black-shadow"/>
-                        {/*<div className="slider-andy">*/}
-                        {/*    <SlickSlider></SlickSlider>*/}
-                        {/*</div>*/}
+                        <ImageSlider showControls={true} showIndicators={false} isMobile={false} isForCassete={false} className="black-shadow"/>
                     </Col>
                 </Row>
                 <Row>

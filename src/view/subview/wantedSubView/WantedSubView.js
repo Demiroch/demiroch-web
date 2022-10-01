@@ -6,7 +6,7 @@ import Followers from "../../../resources/WantedPoster/Followers_Poster.png";
 import Contact from "../../../resources/WantedPoster/Contacto_Poster.png";
 import $ from "jquery";
 
-export default function WantedSubView(){
+export default function WantedSubView({isMobile}){
 
     let open = (url) => {
         window.open(url, '_blank').focus();
@@ -25,11 +25,15 @@ export default function WantedSubView(){
     }
 
     let onMouseEnter = () => {
-        $("#contact-image").css('transform', 'scale(1.2)');
+        if (!isMobile) {
+            $("#contact-image").css('transform', 'scale(1.2)');
+        }
     }
 
     let onMouseLeave = () => {
-        $("#contact-image").css({'transform': '', '':''});
+        if (!isMobile) {
+            $("#contact-image").css({'transform': '', '': ''});
+        }
     }
 
     return (

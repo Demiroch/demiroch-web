@@ -13,7 +13,7 @@ import VideoModal from "../../../component/videoModal/VideoModal";
 // import Sprite from "../../../resources/FotosPublicidades/Sprite_pin.png";
 // import Mccain from "../../../resources/FotosPublicidades/mccain_pin.png";
 // import Latinafy from "../../../resources/FotosPublicidades/latinafy_pin.png";
-import CartoonNetwork from "../../../resources/FotosPublicidades/CN.png";
+// import CartoonNetwork from "../../../resources/FotosPublicidades/CN.png";
 // import Danonino from "../../../resources/FotosPublicidades/danonino.png";
 // import Milka from "../../../resources/FotosPublicidades/milka.png";
 // import Fernet from "../../../resources/FotosPublicidades/branca_pin.png";
@@ -61,13 +61,13 @@ export default function MapSubViewMobile(){
                 <img src={Threads} id="threads-mapa" className="black-shadow" alt={"threads"}/>
             </div>
             <Container fluid>
-                <Row>
+                <Row onClick={clickOnImage}>
                     {/*<Col>*/}
                     {/*    <Row>*/}
-                            <div id="cartoon-network-container" className="black-shadow zoom-mini clickable">
-                                <img src={CartoonNetwork} id="cartoon-network-publicidad" className="clickable" alt="cartoonetwork"
-                                     onClick={() => clickOnImage("https://www.youtube.com/embed/-T9pxXteUmQ", "Cartoon Network")}/>
-                            </div>
+                    {/*        <div id="cartoon-network-container" className="black-shadow zoom-mini clickable">*/}
+                    {/*            <img src={CartoonNetwork} id="cartoon-network-publicidad" className="clickable" alt="cartoonetwork"*/}
+                    {/*                 onClick={() => clickOnImage("https://www.youtube.com/embed/-T9pxXteUmQ", "Cartoon Network")}/>*/}
+                    {/*        </div>*/}
                     {/*    </Row>*/}
                     {/*    <Row>*/}
                     {/*        <div className="relative-container">*/}
