@@ -30,6 +30,7 @@
     transform: rotate(5deg);
     -webkit-filter: drop-shadow(5px 5px 5px #642F00);
     filter: drop-shadow(-3px 5px 6px #642F00);
+    /*width: 105% !important;*/
 }
 
 #left-arrow{
@@ -46,21 +47,70 @@
 
 @media (orientation: portrait) {
     .slider-container{
-        width: 80%;
+        width: 109%;
+        margin-left: -6%;
     }
 
     .carousel-item-custom{
-        padding-bottom: 10%;
+        margin-top: 4%;
+        margin-bottom: 4%;
     }
 }
 
 @media (max-width: 1200px ) {
+
+    .carousel-item-custom{
+        padding: 0%;
+    }
+
     .carousel-image{
-        -webkit-filter: drop-shadow(2px 2px 2px #642F00);
-        filter: drop-shadow(-1px 2px 2px #642F00);
+        transform: rotate(0deg);
+        -webkit-filter: none;
+        filter: none;
     }
 
     .carousel-indicators{
         margin-bottom: 0;
+    }
+
+    .show-neighbors {
+        overflow: hidden;
+    }
+    .show-neighbors .item__third:first-child,
+    .show-neighbors .item__third:last-child {
+        display: none;
+    }
+    .show-neighbors .carousel-indicators {
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+    .show-neighbors .carousel-control-start,
+    .show-neighbors .carousel-control-end {
+        background: rgba(255, 255, 255, 0.3);
+        width: 25%;
+        z-index: 11;
+    }
+    .show-neighbors .carousel-inner {
+        width: 150%;
+        left: -25%;
+    }
+    .show-neighbors .carousel-item-next:not(.carousel-item-start),
+    .show-neighbors .carousel-item-end.active {
+        -webkit-transform: translate3d(32.9%, 0, 0);
+        transform: translate3d(32.9%, 0, 0);
+    }
+
+
+    .show-neighbors .carousel-item-prev:not(.carousel-item-end),
+    .show-neighbors .carousel-item-start.active {
+        -webkit-transform: translate3d(-32.9%, 0, 0);
+        transform: translate3d(-32.9%, 0, 0);
+    }
+    .show-neighbors .item__third {
+        display: block !important;
+        float: left;
+        position: relative;
+        /* captions can now be added */
+        width: 33%;
     }
 }

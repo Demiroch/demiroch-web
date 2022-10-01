@@ -5,41 +5,54 @@ import ButtonStop from "../../resources/Demos_Cassettes/Buttons_STOP_ON.png";
 import ButtonReplay from "../../resources/Demos_Cassettes/Buttons_REPLAY_ON.png";
 import $ from "jquery";
 
-export default function Cassete({id, src, className, audio}){
+export default function Cassete({id, src, className, audio, isMobile}){
     const [isPlaying, setIsPlaying] = useState(false);
     const [isInsidePlay, setIsInsidePlay] = useState(false);
 
     let onHoverPlayIn = () => {
-        setIsInsidePlay(true);
-        if (!isPlaying) {
-            $("#button-play-" + id).show();
+        if (!isMobile) {
+            setIsInsidePlay(true);
+            if (!isPlaying) {
+                $("#button-play-" + id).show();
+            }
         }
     }
 
     let onHoverPlayOut = () => {
-        setIsInsidePlay(false);
-        if (!isPlaying) {
-            $("#button-play-" + id).hide();
+        if (!isMobile) {
+            setIsInsidePlay(false);
+            if (!isPlaying) {
+                $("#button-play-" + id).hide();
+            }
         }
     }
 
     let onHoverStopIn = () => {
-        $("#button-stop-" + id).show();
+        if (!isMobile) {
+            $("#button-stop-" + id).show();
+        }
     }
 
     let onHoverStopOut = () => {
-        $("#button-stop-" + id).hide();
+        if (!isMobile) {
+            $("#button-stop-" + id).hide();
+        }
     }
 
     let onHoverReplayIn = () => {
-        $("#button-replay-" + id).show();
+        if (!isMobile) {
+            $("#button-replay-" + id).show();
+        }
     }
 
     let onHoverReplayOut = () => {
-        $("#button-replay-" + id).hide();
+        if (!isMobile) {
+            $("#button-replay-" + id).hide();
+        }
     }
 
     let onPlay = () => {
+        console.log("play")
         if (!isInsidePlay){
             $("#button-play-" + id).toggle();
         }
@@ -51,12 +64,14 @@ export default function Cassete({id, src, className, audio}){
     }
 
     let onStop = () => {
+        console.log("stop")
         audio.pause();
         $("#button-play-" + id).hide();
         setIsPlaying(false);
     }
 
     let onReplay = () => {
+        console.log("replay")
         audio.load();
         audio.play();
         audio.volume = 0.5;
@@ -64,13 +79,15 @@ export default function Cassete({id, src, className, audio}){
         setIsPlaying(true);
     }
 
+    const sectionClassName = isMobile ? "" : " black-shadow ";
+
     return (
-        <section id={id} className={"black-shadow relative-container " + className}>
+        <section id={id} className={"relative-container " + className + sectionClassName}>
             <figure className="cassete-img-container">
                 <img src={src} alt="cassete-img" />
             </figure>
             <figure className="cassete-button-container">
-                <div id={"square-play-" + id} className="square-play square-cassete" onClick={onPlay} onMouseEnter={onHoverPlayIn} onMouseLeave={onHoverPlayOut}/>
+                <div id={"square-play-" + id} className="square-play square-cassete" onClick={onPlay} onMouseEnter={isMobile ? onHoverPlayIn : null} onMouseLeave={isMobile ? onHoverPlayOut : null}/>
                 <img id={"button-play-" + id} src={ButtonPlay} alt="button-play" className="cassete-button"/>
             </figure>
             <figure className="cassete-button-container">

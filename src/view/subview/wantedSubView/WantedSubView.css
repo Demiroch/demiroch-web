@@ -64,3 +64,33 @@
     top: 5vh;
     left: 34%;
 }
+
+@media (max-width: 1200px) {
+    #followers-container{
+        top: 17%;
+    }
+
+    #contact-container{
+        top: 85%;
+    }
+
+    .square-wanted{
+        height: 35%;
+        width: 8%;
+    }
+
+    #square-youtube{
+        top: 50%;
+        left: 51%;
+    }
+
+    #square-tiktok{
+        top: 50%;
+        left: 42.5%;
+    }
+
+    #square-instagram{
+        top: 50%;
+        left: 34%;
+    }
+}

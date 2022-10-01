@@ -38,7 +38,7 @@ export default function LandingView(){
                     <ClientsSubView/>
                 </div>
                 <CassetteSubViewMobile/>
-                <WantedSubView/>
+                <WantedSubView isMobile={isMobile}/>
             </div>)
     } else {
         return (<div id="landing-view">
@@ -49,7 +49,7 @@ export default function LandingView(){
                     <ClientsSubView/>
                 </div>
                 <CassetteSubViewWeb/>
-                <WantedSubView/>
+                <WantedSubView isMobile={isMobile}/>
             </div>)
     }
 }

@@ -6,6 +6,7 @@ import Logo from "../../../resources/Logo/Logo_Demiroch.png";
 import {Col, Container, Row} from "react-bootstrap";
 
 export default function LicencesSubViewMobile(){
+
     return (
         <section className="licences-container black-shadow" style={{backgroundImage: `url(${BackgroundImage})`}}>
             <div id="home-anchor"/>
@@ -20,7 +21,7 @@ export default function LicencesSubViewMobile(){
                 </Row>
                 <Row>
                     <Col>
-                        <ImageSlider showControls={false} showIndicators={true}/>
+                        <ImageSlider showControls={false} showIndicators={true} isMobile={true} isForCassete={false}/>
                     </Col>
                 </Row>
             </Container>

@@ -21,6 +21,7 @@ export default function NavBar({isMobile}) {
     let fixed = isMobile? "top" : "";
     let sticky = isMobile? "" : "top";
     let bg = isMobile? "transparent" : "dark";
+    let iconSize = isMobile? "40px" : "25px";
 
     return (
         <Navbar bg={bg} variant="dark" expand="lg" fixed={fixed} sticky={sticky} className="black-shadow">
@@ -38,21 +39,23 @@ export default function NavBar({isMobile}) {
                         <Nav.Item>
                             <Nav.Link href="#contacto-anchor">Contact</Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link target="_blank" id="instagram-icon" href="https://www.instagram.com/demiroch/?hl=es">
-                                <FaInstagram color="white" size="25px"/>
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link target="_blank"  href="https://www.tiktok.com/@demiroch?lang=es">
-                                <FaTiktok color="white" size="25px"/>
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link target="_blank"  href="https://www.youtube.com/channel/UCIHvN-mFrLyzhoZ3iyKU8DQ?app=desktop">
-                                <FaYoutube color="white" size="25px"/>
-                            </Nav.Link>
-                        </Nav.Item>
+                        <div id="icon-link-container">
+                            <Nav.Item>
+                                <Nav.Link target="_blank" id="instagram-icon" href="https://www.instagram.com/demiroch/?hl=es">
+                                    <FaInstagram color="white" size={iconSize}/>
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link target="_blank"  href="https://www.tiktok.com/@demiroch?lang=es">
+                                    <FaTiktok color="white" size={iconSize}/>
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link target="_blank"  href="https://www.youtube.com/channel/UCIHvN-mFrLyzhoZ3iyKU8DQ?app=desktop">
+                                    <FaYoutube color="white" size={iconSize}/>
+                                </Nav.Link>
+                            </Nav.Item>
+                        </div>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
