@@ -80,6 +80,14 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
         </Carousel.Item>
     }
 
+    let stopAudios = () => {
+        console.log("asd");
+        $('audio').each(function(){
+            console.log(this)
+            this.pause();
+        });
+    }
+
     return (
         <div>
             <Carousel variant="dark"
@@ -91,6 +99,8 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
                       activeIndex={index}
                       onSelect={handleSelect}
                       interval={null}
+                      onSlide={stopAudios}
+                      onSlid={stopAudios}
                       touch={true}>
                 {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro", new Audio(CrazyVoicesAudio)) : ""}
                 {isForCassete ? getCarouselCassete(CasseteLocuciones, "locuciones", new Audio(CrazyVoicesAudio)) : ""}

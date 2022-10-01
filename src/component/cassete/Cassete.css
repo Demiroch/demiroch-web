@@ -29,7 +29,7 @@
     display: block;
     z-index: 8;
     cursor: pointer;
-    background-color: black;
+    /*background-color: black;*/
 }
 
 .square-play{
@@ -54,4 +54,12 @@
     .cassete-container {
         padding: 5% 0 !important;
     }
+
+    .cassete-button-container{
+        top: 2%;
+        left: -6%;
+        width: 105%;
+        height: 105%;
+    }
+
 }
