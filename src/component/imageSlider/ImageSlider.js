@@ -25,8 +25,9 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
     const [modalTitle, setmMdalTitle] = useState("");
 
     useEffect(() => {
+        let classToSearch = isForCassete ? ".cassete-item" : ".licence-item";
         if (isMobile) {
-            $('.carousel-item', '.show-neighbors', `${isForCassete}`).each(function(){
+            $(classToSearch, '.show-neighbors').each(function(){
                 var next = $(this).next();
                 if (!next.length) {
                     next = $(this).siblings(':first');
@@ -47,7 +48,7 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
     };
 
     const getCarouselLicence = (src, alt, videoSrcFromClick) => {
-        return <Carousel.Item className="carousel-item-custom clickable" onClick={() => clickOnSlider(videoSrcFromClick, alt)}>
+        return <Carousel.Item className="carousel-item-custom licence-item clickable" onClick={() => clickOnSlider(videoSrcFromClick, alt)}>
                     <div className="carousel-image-container item__third">
                         <img
                             className="d-block w-100 carousel-image"
@@ -72,7 +73,7 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
     }
 
     const getCarouselCassete = (src, id, audio) => {
-        return <Carousel.Item className="carousel-item-custom clickable" >
+        return <Carousel.Item className="carousel-item-custom cassete-item clickable" >
             <div className="carousel-image-container item__third">
                 <Cassete id={id} className="cassete-for-all" src={src} audio={audio} isMobile={isMobile}/>
             </div>

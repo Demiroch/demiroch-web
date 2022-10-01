@@ -14,7 +14,7 @@ export default function CassetteSubViewMobile(){
                     <div id="demos-title">
                         <img src={DemosTitle} alt={"demos-title"}/>
                     </div>
-                    {/*<ImageSlider isMobile={true} showIndicators={true} showControls={false} isForCassete={true}/>*/}
+                    <ImageSlider isMobile={true} showIndicators={true} showControls={false} isForCassete={true}/>
                 </Row>
             </Container>
         </section>
