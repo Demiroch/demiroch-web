@@ -7,11 +7,14 @@ import {MdCloseFullscreen} from "react-icons/md";
 
 export default function VideoModal({show, setShow, videoUrl, _title, isMobile}) {
 
-    // function getCloseHeader() {
-    //     if (isMobile) {
-    //         return <Modal.Header closeButton/>
-    //     }
-    // }
+    function getCloseHeader() {
+        if (isMobile) {
+            // return  <div className="prueba">
+            //             <MdCloseFullscreen color={'white'} size={'100%'} onClick={onClose}/>
+            //         </div>
+            // return      <Modal.Header closeButton style={{backgroundColor: "#646464"}}/>
+        }
+    }
 
     const onClose = () => {
         setShow(false);
@@ -23,16 +26,13 @@ export default function VideoModal({show, setShow, videoUrl, _title, isMobile}) 
                 show={show}
                 onHide={() => setShow(false)}
                 scrollable={false}
-                fullscreen="md-down"
+                // fullscreen="md-down"
                 dialogClassName="custom-modal"
                 aria-labelledby="example-custom-modal-styling-title"
                 centered
             >
-                {/*{getCloseHeader()}*/}
                 <Modal.Body>
-                    <div className="prueba">
-                        <MdCloseFullscreen color={'white'} size={'100%'} onClick={onClose}/>
-                    </div>
+                    {getCloseHeader()}
                     <Iframe src={videoUrl} id="" className="" title="" />
                 </Modal.Body>
             </Modal>

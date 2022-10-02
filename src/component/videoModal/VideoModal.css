@@ -3,11 +3,12 @@
 }
 
 .modal-content {
-    height: 70%;
+    height: 70vh;
 }
 
 .modal-body {
     padding: unset;
+    height: 70vh;
 }
 
 .modal-header-custom{
@@ -18,12 +19,18 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 700px) {
-    /*.custom-modal{*/
-    /*    width: 59vw;*/
-    /*    height: 44.5vh;*/
-    /*}*/
+@media (orientation: portrait) {
+    .modal-content {
+        height: 30vh;
+    }
 
+    .modal-body {
+        padding: unset;
+        height: 30vh;
+    }
+}
+
+@media (max-width: 1000px) {
     .prueba{
         position: absolute;
         top: 0%;

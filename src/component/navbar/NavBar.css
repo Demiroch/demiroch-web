@@ -23,7 +23,7 @@
     opacity: 0.9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .navbar-brand{
         display: none;
     }
@@ -58,9 +58,6 @@
         width: 60%;
         justify-content: space-around;
     }
-}
-
-@media (orientation: portrait) {
     #instagram-icon{
         margin-left: 0;
     }

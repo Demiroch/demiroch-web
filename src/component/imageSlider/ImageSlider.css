@@ -45,7 +45,7 @@
     width: 60%;
 }
 
-@media (orientation: portrait) {
+@media (max-width: 1000px ) {
     .slider-container{
         width: 109%;
         margin-left: -6%;
@@ -55,9 +55,6 @@
         margin-top: 4%;
         margin-bottom: 4%;
     }
-}
-
-@media (max-width: 768px ) {
 
     .carousel-inner {
         width: 200% !important;

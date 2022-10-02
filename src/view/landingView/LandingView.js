@@ -26,7 +26,7 @@ export default function LandingView(){
         }
     }, []);
 
-    const isMobile = width <= 768;
+    const isMobile = width <= 1000;
 
     if (isMobile) {
         return (

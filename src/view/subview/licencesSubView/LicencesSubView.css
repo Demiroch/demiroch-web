@@ -46,7 +46,7 @@
     visibility: hidden;
 }
 
-@media (orientation: portrait) {
+@media (max-width: 1000px) {
     .licences-container{
         min-height: 50vh;
     }
