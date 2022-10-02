@@ -48,7 +48,7 @@
 
 @media (orientation: portrait) {
     .licences-container{
-        min-height: 40vh;
+        min-height: 50vh;
     }
 
     #logo-description{
@@ -60,7 +60,10 @@
     }
 
     #demiroch-logo{
-        margin-top: 2vh;
+        /*margin-top: 5vh;*/
+        margin-top: 15%;
         width: 70%;
+        margin-bottom: 3%;
+        /*margin-bottom: 1vh;*/
     }
 }

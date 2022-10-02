@@ -382,9 +382,3 @@
     width: 120%;
 }
 
-@media only screen and (max-width: 1400px) {
-    #fingerprint-damian{
-        /*width: 120%;*/
-        /*margin-left: -25%;*/
-    }
-}

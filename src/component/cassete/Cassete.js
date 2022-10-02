@@ -11,6 +11,7 @@ export default function Cassete({id, src, className, audio, isMobile}){
 
     let onHoverPlayIn = () => {
         if (!isMobile) {
+            console.log("in")
             setIsInsidePlay(true);
             if (!isPlaying) {
                 $("#button-play-" + id).show();
@@ -59,6 +60,9 @@ export default function Cassete({id, src, className, audio, isMobile}){
             setIsPlaying(!isPlaying);
             audio.play();
             audio.volume = 0.5;
+            if (isMobile) {
+                $(".button-play-" + id).show();
+            }
         }
     }
 
@@ -92,15 +96,15 @@ export default function Cassete({id, src, className, audio, isMobile}){
                 <img src={src} alt="cassete-img" />
             </figure>
             <figure className="cassete-button-container">
-                <div id={"square-play-" + id} className="square-play square-cassete" onClick={onPlay} onMouseEnter={isMobile ? onHoverPlayIn : null} onMouseLeave={isMobile ? onHoverPlayOut : null}/>
+                <div id={"square-play-" + id} className="square-play square-cassete" onClick={onPlay} onMouseEnter={isMobile ? null : onHoverPlayIn} onMouseLeave={isMobile ? null : onHoverPlayOut}/>
                 <img id={"button-play-" + id} src={ButtonPlay} alt="button-play" className={"cassete-button button-play-" + id}/>
             </figure>
             <figure className="cassete-button-container">
-                <div id={"square-stop-" + id} className="square-stop square-cassete" onClick={onStop} onMouseEnter={onHoverStopIn} onMouseLeave={onHoverStopOut}/>
+                <div id={"square-stop-" + id} className="square-stop square-cassete" onClick={onStop} onMouseEnter={isMobile ? null : onHoverStopIn} onMouseLeave={isMobile ? null : onHoverStopOut}/>
                 <img id={"button-stop-" + id} src={ButtonStop} alt="button-stop" className={"cassete-button button-stop-" + id}/>
             </figure>
             <figure className="cassete-button-container">
-                <div id={"square-replay-" + id} className="square-replay square-cassete" onClick={onReplay} onMouseEnter={onHoverReplayIn} onMouseLeave={onHoverReplayOut}/>
+                <div id={"square-replay-" + id} className="square-replay square-cassete" onClick={onReplay} onMouseEnter={isMobile ? null : onHoverReplayIn} onMouseLeave={isMobile ? null : onHoverReplayOut}/>
                 <img id={"button-replay-" + id} src={ButtonReplay} alt="button-play" className={"cassete-button button-replay-" + id}/>
             </figure>
         </section>)

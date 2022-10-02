@@ -57,8 +57,12 @@
     }
 }
 
-@media (max-width: 1200px ) {
+@media (max-width: 768px ) {
 
+    .carousel-inner {
+        width: 200% !important;
+        left: -47% !important;
+    }
     .carousel-item-custom{
         padding: 0%;
     }
@@ -99,7 +103,6 @@
         -webkit-transform: translate3d(32.9%, 0, 0);
         transform: translate3d(32.9%, 0, 0);
     }
-
 
     .show-neighbors .carousel-item-prev:not(.carousel-item-end),
     .show-neighbors .carousel-item-start.active {

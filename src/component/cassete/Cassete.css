@@ -29,7 +29,6 @@
     display: block;
     z-index: 8;
     cursor: pointer;
-    /*background-color: black;*/
 }
 
 .square-play{
@@ -41,14 +40,14 @@
 }
 
 .square-replay{
-    left: 56%;
+    left: 56.5%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .square-cassete {
-        height: 15%;
-        width: 11%;
-        top: 83%
+        height: 22%;
+        width: 10.5%;
+        top: 99%;
     }
 
     .cassete-container {
@@ -56,10 +55,10 @@
     }
 
     .cassete-button-container{
-        top: 2%;
-        left: -6%;
-        width: 105%;
-        height: 105%;
+        top: -23%;
+        left: -19.9%;
+        width: 135.5%;
+        height: 100%;
     }
 
 }
