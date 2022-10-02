@@ -1,9 +1,8 @@
 import React from 'react';
-// import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Iframe from "../iFrame/IFrame";
 import './VideoModal.css';
-import {MdCloseFullscreen} from "react-icons/md";
+// import {MdCloseFullscreen} from "react-icons/md";
 
 export default function VideoModal({show, setShow, videoUrl, _title, isMobile}) {
 
@@ -16,9 +15,9 @@ export default function VideoModal({show, setShow, videoUrl, _title, isMobile}) 
         }
     }
 
-    const onClose = () => {
-        setShow(false);
-    }
+    // const onClose = () => {
+    //     setShow(false);
+    // }
 
     return (
             <Modal
