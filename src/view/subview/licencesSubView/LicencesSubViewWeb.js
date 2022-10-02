@@ -11,6 +11,8 @@ import GoDown from "../../../resources/Misc/WhereHasDemianBeen.png"
 export default function LicencesSubViewWeb(){
     return (
         <section className="licences-container black-shadow" style={{backgroundImage: `url(${BackgroundImage})`}}>
+            <div style={{position: "absolute", top: 0, left: "50%"}}>{window.innerWidth}</div>
+            <div style={{position: "absolute", top: 0, left: "50%"}}>{window.innerHeight}</div>
             <div id="home-anchor"/>
             <Container fluid>
                 <Row>

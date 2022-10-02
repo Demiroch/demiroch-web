@@ -18,7 +18,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import VideoModal from "../videoModal/VideoModal";
 import $ from "jquery";
 
-export default function ImageSlider({showIndicators, showControls, isMobile, isForCassete}) {
+export default function ImageSlider({showIndicators, showControls, isMobile, isForCassete, className}) {
     const [index, setIndex] = useState(0);
     const [showModal, setShowModal] = useState(false);
     const [videoSrc, setVideoSrc] = useState("");
@@ -94,7 +94,7 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
                       controls={showControls}
                       prevIcon={getLeftIcon()}
                       nextIcon={getRightIcon()}
-                      className={`slider-container show-neighbors`}
+                      className={`slider-container show-neighbors ${className}`}
                       activeIndex={index}
                       onSelect={handleSelect}
                       interval={null}
@@ -112,7 +112,7 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
                 {isForCassete ? "" : getCarouselLicence(Licence3, "PUKKA", "https://www.youtube.com/embed/TrtlYgU3IFI")}
                 {isForCassete ? "" : getCarouselLicence(Licence4, "MEWNI", "https://www.youtube.com/embed/JBHv4D8e0bM")}
             </Carousel>
-            <VideoModal videoUrl={videoSrc} show={showModal} setShow={setShowModal} title={modalTitle}/>
+            <VideoModal videoUrl={videoSrc} show={showModal} setShow={setShowModal} title={modalTitle} isMobile={isMobile}/>
         </div>
     );
 }

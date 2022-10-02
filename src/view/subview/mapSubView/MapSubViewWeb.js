@@ -225,7 +225,7 @@ export default function MapSubViewWeb(){
                     </Col>
                 </Row>
             </Container>
-            <VideoModal videoUrl={videoSrc} show={showModal} setShow={setShowModal} title={modalTitle}/>
+            <VideoModal videoUrl={videoSrc} show={showModal} setShow={setShowModal} title={modalTitle} isMobile={false}/>
         </section>
     )
 }

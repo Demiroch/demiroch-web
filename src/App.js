@@ -8,7 +8,7 @@ import LandingView from "./view/landingView/LandingView";
 
 function App(){
     return (
-        <div >
+        <div>
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<LandingView/>}></Route>

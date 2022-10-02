@@ -26,5 +26,18 @@
 }
 
 @media (max-width: 768px) {
-    
+    #demos-title{
+        width: 70%;
+        display: block;
+        margin-left: 21%;
+        margin-bottom: 0;
+    }
+
+    .cassete-container{
+        padding: 0;
+    }
+
+    .cassetes-mobile-container{
+        margin-top: -4%;
+    }
 }

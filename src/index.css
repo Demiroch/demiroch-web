@@ -6,6 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  position: relative;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 code {
@@ -17,7 +22,9 @@ img {
   width: 100%;
 }
 
-
+/** {*/
+/*  overflow-x: hidden;*/
+/*}*/
 
 /*@font-face {*/
 /*  font-family: Arvo-Regular;*/

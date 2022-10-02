@@ -18,10 +18,16 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 700px) {
-    .custom-modal{
-        width: 59vw;
-        height: 44.5vh;
-    }
+@media only screen and (max-width: 700px) {
+    /*.custom-modal{*/
+    /*    width: 59vw;*/
+    /*    height: 44.5vh;*/
+    /*}*/
 
+    .prueba{
+        position: absolute;
+        top: 0%;
+        right: 0;
+        width: 20%;
+    }
 }
