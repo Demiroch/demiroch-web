@@ -11,7 +11,6 @@ export default function Cassete({id, src, className, audio, isMobile}){
 
     let onHoverPlayIn = () => {
         if (!isMobile) {
-            console.log("in")
             setIsInsidePlay(true);
             if (!isPlaying) {
                 $("#button-play-" + id).show();

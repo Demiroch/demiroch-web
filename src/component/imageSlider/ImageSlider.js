@@ -82,7 +82,6 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
 
     let stopAudios = () => {
         $('audio').each(function(){
-            console.log(this)
             this.pause();
         });
     }

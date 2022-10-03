@@ -75,7 +75,7 @@ export default function MapSubViewWeb(){
                                         <img src={ActorNote} id="actor-note" alt="content-creator"/>
                                     </div>
                                 <div id="animated-series-note-container" className="black-shadow">
-                                    <img src={AnimatedSeries} id="animated-series-note" alt="latinafy"/>
+                                    <img src={AnimatedSeries} id="animated-series-note" alt="animated-series"/>
                                 </div>
                             </div>
                         </Row>

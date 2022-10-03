@@ -9,8 +9,6 @@ export default function LicencesSubViewMobile(){
 
     return (
         <section className="licences-container black-shadow" style={{backgroundImage: `url(${BackgroundImage})`}}>
-            <div style={{position: "absolute", top: 0, left: "50%"}}>{window.innerWidth}</div>
-            <div style={{position: "absolute", top: 0, left: "40%"}}>{window.innerHeight}</div>
             <div id="home-anchor"/>
             <Container fluid>
                 <Row>
@@ -26,11 +24,12 @@ export default function LicencesSubViewMobile(){
                         <ImageSlider showControls={false} showIndicators={true} isMobile={true} isForCassete={false}/>
                     </Col>
                 </Row>
-                <Row className="relative-container">
-                    <div id="tap-to-play">
-                        <img src={TapToPlay} alt="tap-to-play"/>
-                    </div>
-                </Row>
+                {/*<Row className="relative-container">*/}
+                {/*    <div id="tap-to-play">*/}
+                {/*        <img src={TapToPlay} alt="tap-to-play"/>*/}
+                {/*    </div>*/}
+                {/*</Row>*/}
+                {/*TODO: Ir por los distintos @media y ajustar el tap to play/*/}
             </Container>
         </section>
     )

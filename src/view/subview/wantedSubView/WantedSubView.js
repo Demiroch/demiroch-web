@@ -1,7 +1,8 @@
 import React from 'react';
 import "./WantedSubView.css";
 import WantedImage from "../../../resources/WantedPoster/WANTED_poster_Base.png";
-import background from "../../../resources/Backgrounds/BK_WantedPoster.png";
+import backgroundWeb from "../../../resources/Backgrounds/BK_WantedPoster.png";
+import backgroundMobile from "../../../resources/Mobile/Backgrounds/BK_WantedPoster.png";
 import Followers from "../../../resources/WantedPoster/Followers_Poster.png";
 import Contact from "../../../resources/WantedPoster/Contacto_Poster.png";
 import $ from "jquery";
@@ -35,6 +36,8 @@ export default function WantedSubView({isMobile}){
             $("#contact-image").css({'transform': '', '': ''});
         }
     }
+
+    let background = isMobile? backgroundMobile : backgroundWeb;
 
     return (
         <section className="wanted-container" style={{backgroundImage: `url(${background})`}}>

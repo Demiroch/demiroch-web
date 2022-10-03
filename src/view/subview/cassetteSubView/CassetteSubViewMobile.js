@@ -1,6 +1,6 @@
 import React from 'react';
 import "./CasseteSubView.css";
-import background from "../../../resources/Backgrounds/BK_Demos.png";
+import background from "../../../resources/Mobile/Backgrounds/BK_Demos_Mobile.png";
 import DemosTitle from "../../../resources/Misc/Titulo_Demos.png"
 import {Container, Row} from "react-bootstrap";
 import ImageSlider from "../../../component/imageSlider/ImageSlider";
