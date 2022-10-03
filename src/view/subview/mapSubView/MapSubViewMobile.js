@@ -1,24 +1,24 @@
 import React, {useState} from 'react';
 import "./MapSubViewMobile.css";
 import {Col, Container, Row} from "react-bootstrap";
-import Threads from "../../../resources/Mobile/Misc/Hilos.png";
+// import Threads from "../../../resources/Mobile/Misc/Hilos.png";
 import VideoModal from "../../../component/videoModal/VideoModal";
 
 // Misc
 // import Blueprint from "../../../resources/Misc/Mic_Blueprint.png";
 
 // Publicidades
-import Uala from "../../../resources/FotosPublicidades/uala_pin.png";
-import MenuDelDia from "../../../resources/FotosPublicidades/menuDelDia_pin.png";
-import Sprite from "../../../resources/FotosPublicidades/Sprite_pin.png";
+// import Uala from "../../../resources/FotosPublicidades/uala_pin.png";
+// import MenuDelDia from "../../../resources/FotosPublicidades/menuDelDia_pin.png";
+// import Sprite from "../../../resources/FotosPublicidades/Sprite_pin.png";
 import Mccain from "../../../resources/FotosPublicidades/mccain_pin.png";
 import Latinafy from "../../../resources/FotosPublicidades/latinafy_pin.png";
 import CartoonNetwork from "../../../resources/FotosPublicidades/CN.png";
-import Danonino from "../../../resources/FotosPublicidades/danonino.png";
-import Milka from "../../../resources/FotosPublicidades/milka.png";
+// import Danonino from "../../../resources/FotosPublicidades/danonino.png";
+// import Milka from "../../../resources/FotosPublicidades/milka.png";
 import Fernet from "../../../resources/FotosPublicidades/branca_pin.png";
-import MilkaNote from "../../../resources/FotosPublicidades/etiquetas_Milka.png";
-import FernetNote from "../../../resources/FotosPublicidades/etiquetas_Branca.png";
+// import MilkaNote from "../../../resources/FotosPublicidades/etiquetas_Milka.png";
+// import FernetNote from "../../../resources/FotosPublicidades/etiquetas_Branca.png";
 import FanClub from "../../../resources/FotosPublicidades/Fanclub_pin.png";
 
 // Notas filmografía
@@ -28,20 +28,20 @@ import FanClub from "../../../resources/FotosPublicidades/Fanclub_pin.png";
 // Sticky notes
 import FeaturedCommercial from "../../../resources/StickyNotes/stickyNote_Featured_Commercial.png";
 import VoiceActorNote from "../../../resources/StickyNotes/stickyNote_VOICE_ACTOR.png";
-import ArtistNote from "../../../resources/StickyNotes/stickyNote_ARTIST.png";
+// import ArtistNote from "../../../resources/StickyNotes/stickyNote_ARTIST.png";
 import ActorNote from "../../../resources/StickyNotes/stickyNote_ACTOR.png";
-import ContentCreatorNote from "../../../resources/StickyNotes/stickyNote_CONTENT_CREATOR.png";
-import SoundProductionNote from "../../../resources/StickyNotes/stickyNote_SOUND_PRODUCTION.png";
+// import ContentCreatorNote from "../../../resources/StickyNotes/stickyNote_CONTENT_CREATOR.png";
+// import SoundProductionNote from "../../../resources/StickyNotes/stickyNote_SOUND_PRODUCTION.png";
 
 // Fotos Personajes
-import Kiko from "../../../resources/FotosPersonajes/UNDERDOGS-KIKOphoto_pin.png";
-import Theo from "../../../resources/FotosPersonajes/Theophoto_pin.png";
+// import Kiko from "../../../resources/FotosPersonajes/UNDERDOGS-KIKOphoto_pin.png";
+// import Theo from "../../../resources/FotosPersonajes/Theophoto_pin.png";
 import EvanTreborn from "../../../resources/FotosPersonajes/ElEfectoMariposaphoto_pin.png";
-import Zamba from "../../../resources/FotosPersonajes/zambaphoto_pin.png";
-import ZambaNote from "../../../resources/FotosPersonajes/etiquetas_Zamba.png";
+// import Zamba from "../../../resources/FotosPersonajes/zambaphoto_pin.png";
+// import ZambaNote from "../../../resources/FotosPersonajes/etiquetas_Zamba.png";
 import EvanNote from "../../../resources/FotosPersonajes/etiquetas_Evan.png";
-import TheoNote from "../../../resources/FotosPersonajes/etiquetas_Theo.png";
-import KikoNote from "../../../resources/FotosPersonajes/etiquetas_Kiko.png";
+// import TheoNote from "../../../resources/FotosPersonajes/etiquetas_Theo.png";
+// import KikoNote from "../../../resources/FotosPersonajes/etiquetas_Kiko.png";
 
 export default function MapSubViewMobile(){
     const [showModal, setShowModal] = useState(false);

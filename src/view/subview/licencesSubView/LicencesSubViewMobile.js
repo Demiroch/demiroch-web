@@ -4,7 +4,7 @@ import ImageSlider from "../../../component/imageSlider/ImageSlider";
 import BackgroundImage from "../../../resources/Mobile/Backgrounds/Inicio_Mobile_BK.png";
 import Logo from "../../../resources/Logo/Logo_Demiroch.png";
 import {Col, Container, Row} from "react-bootstrap";
-import TapToPlay from "../../../resources/Mobile/Misc/TapToPlay.png";
+// import TapToPlay from "../../../resources/Mobile/Misc/TapToPlay.png";
 export default function LicencesSubViewMobile(){
 
     return (

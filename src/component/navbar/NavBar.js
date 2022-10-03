@@ -5,7 +5,10 @@ import "./NavBar.css";
 import React from "react";
 import $ from "jquery";
 import {FaTiktok, FaInstagram, FaYoutube} from "react-icons/fa";
-
+// import TikTokLogo from "../../resources/Mobile/Iconos/Tiktok.png";
+// import InstagramLogo from "../../resources/Mobile/Iconos/Instagram.png";
+// import MailLogo from "../../resources/Mobile/Iconos/mail.png";
+// import DemiRochLogo from "../../resources/Logo/"
 export default function NavBar({isMobile}) {
     function clickToggle() {
         if (isMobile) {
@@ -26,7 +29,10 @@ export default function NavBar({isMobile}) {
     return (
         <Navbar bg={bg} variant="dark" expand="lg" fixed={fixed} sticky={sticky} className="black-shadow">
             <Container>
-                <Navbar.Brand href="#home-anchor">DEMIROCH</Navbar.Brand>
+                <Navbar.Brand href="#home-anchor">
+                    {/*<img src={}/>*/}
+                    DEMIROCH
+                </Navbar.Brand>
                 <Navbar.Toggle onClick={clickToggle} aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="align-right">
                     <Nav >
@@ -41,18 +47,22 @@ export default function NavBar({isMobile}) {
                         </Nav.Item>
                         <div id="icon-link-container">
                             <Nav.Item>
-                                <Nav.Link target="_blank" id="instagram-icon" href="https://www.instagram.com/demiroch/?hl=es">
-                                    <FaInstagram color="white" size={iconSize}/>
-                                </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link target="_blank"  href="https://www.tiktok.com/@demiroch?lang=es">
+                                <Nav.Link target="_blank" id="instagram-icon"  href="https://www.tiktok.com/@demiroch?lang=es">
                                     <FaTiktok color="white" size={iconSize}/>
+                                    {/*<img src={TikTokLogo} style={{width: "20%"}} alt="tiktok-logo"/>*/}
+                                </Nav.Link>
+
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link target="_blank"  href="https://www.instagram.com/demiroch/?hl=es">
+                                    <FaInstagram color="white" size={iconSize}/>
+                                    {/*<img src={InstagramLogo} style={{width: "20%"}} alt="instagram-logo"/>*/}
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link target="_blank"  href="https://www.youtube.com/channel/UCIHvN-mFrLyzhoZ3iyKU8DQ?app=desktop">
+                                <Nav.Link target="_blank"  href="https://www.youtube.com/channel/UCIHvN-mFrLyzhoZ3iyKU8DQ">
                                     <FaYoutube color="white" size={iconSize}/>
+                                    {/*<img src={MailLogo} style={{width: "20%"}} alt="mail-logo"/>*/}
                                 </Nav.Link>
                             </Nav.Item>
                         </div>
