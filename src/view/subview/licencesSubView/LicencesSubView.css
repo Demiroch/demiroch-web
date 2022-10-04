@@ -7,7 +7,7 @@
 }
 
 #demiroch-logo{
-    margin-top: 2vh;
+    margin-top: 5vh;
     width: 50%;
 }
 
@@ -49,13 +49,14 @@
 @media (max-width: 1000px) {
     .licences-container{
         min-height: 50vh;
+        padding-bottom: 10%;
     }
 
     #tap-to-play{
         position: absolute;
         width: 40%;
         margin-left: 50%;
-        margin-top: -7%;
+        margin-top: -6%;
     }
 
     #logo-description{

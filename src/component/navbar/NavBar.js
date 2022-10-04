@@ -8,7 +8,7 @@ import {FaTiktok, FaInstagram, FaYoutube} from "react-icons/fa";
 // import TikTokLogo from "../../resources/Mobile/Iconos/Tiktok.png";
 // import InstagramLogo from "../../resources/Mobile/Iconos/Instagram.png";
 // import MailLogo from "../../resources/Mobile/Iconos/mail.png";
-// import DemiRochLogo from "../../resources/Logo/"
+import DemiRochLogo from "../../resources/Logo/Logo_Demiroch_Blanco.png";
 export default function NavBar({isMobile}) {
     function clickToggle() {
         if (isMobile) {
@@ -21,17 +21,16 @@ export default function NavBar({isMobile}) {
         }
     }
 
-    let fixed = isMobile? "top" : "";
-    let sticky = isMobile? "" : "top";
     let bg = isMobile? "transparent" : "dark";
     let iconSize = isMobile? "40px" : "25px";
+    let variant = isMobile? "white" : "dark";
 
     return (
-        <Navbar bg={bg} variant="dark" expand="lg" fixed={fixed} sticky={sticky} className="black-shadow">
+        <Navbar bg={bg} variant={variant} expand="lg" fixed={"top"} className="black-shadow">
             <Container>
                 <Navbar.Brand href="#home-anchor">
-                    {/*<img src={}/>*/}
-                    DEMIROCH
+                    <img id="logo-menu-dr" src={DemiRochLogo} alt='logo-menu'/>
+                    {/*DEMIROCH*/}
                 </Navbar.Brand>
                 <Navbar.Toggle onClick={clickToggle} aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="align-right">

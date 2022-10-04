@@ -26,3 +26,27 @@
 #clients-img {
     width: 100%;
 }
+
+
+@media (max-width: 1000px) {
+    .clients-container{
+        margin-top: 5%;
+        width: 100%;
+        position: relative;
+        padding-bottom: 6%;
+    }
+
+    #clients-title-container{
+        position: absolute;
+        width: 18%;
+        transform: rotate(6deg);
+        display: inline;
+        z-index: 2;
+        margin-left: 6%;
+        margin-top: -12%;
+    }
+    #clients-container{
+        margin-left: 3%;
+        width: 94%;
+    }
+}

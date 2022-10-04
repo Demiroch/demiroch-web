@@ -23,6 +23,12 @@
     opacity: 0.9;
 }
 
+#logo-menu-dr{
+    width: 55%;
+}
+
+/*navbar-toggler hacer que sea blanco cuando está colapsado?*/
+
 @media (max-width: 1000px) {
     .navbar-brand{
         display: none;
@@ -64,5 +70,18 @@
 
     .navbar-nav{
         align-items: center;
+    }
+
+    .navbar-toggler-icon {
+        width: 2.9em;
+        height: 2.9em;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar-toggler-icon {
+        width: 1.9em;
+        height: 1.9em;
     }
 }

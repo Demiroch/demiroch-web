@@ -5,7 +5,7 @@ import BackgroundImage from "../../../resources/Backgrounds/Inicio_BK.png"
 import Logo from "../../../resources/Logo/Logo_Demiroch.png";
 import {Col, Container, Row} from "react-bootstrap";
 import Huella from "../../../resources/Misc/FingerPrint_Demian.png";
-import GoDown from "../../../resources/Misc/WhereHasDemianBeen.png"
+import GoDown from "../../../resources/Misc/ClickToDiscover.png"
 
 
 export default function LicencesSubViewWeb(){

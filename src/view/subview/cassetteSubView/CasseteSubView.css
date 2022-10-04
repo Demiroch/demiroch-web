@@ -31,10 +31,12 @@
         display: block;
         margin-left: 21%;
         margin-bottom: 0;
+        margin-top: 12%;
     }
 
     .cassete-container{
         padding: 0;
+        padding-bottom: 12% !important; ;
     }
 
     .cassetes-mobile-container{

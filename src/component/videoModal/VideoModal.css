@@ -20,6 +20,10 @@
 }
 
 @media (orientation: portrait) {
+
+    .modal-dialog {
+        margin: 0;
+    }
     .modal-content {
         height: 30vh;
     }
