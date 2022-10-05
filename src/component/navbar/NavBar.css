@@ -2,6 +2,10 @@
     justify-content: end;
 }
 
+.navbar-nav .nav-link.active {
+    color: var(--bs-nav-link-color);
+}
+
 #icon-link-container{
     display: flex;
 }
@@ -30,7 +34,21 @@
 .yellow-color {
     color: yellow !important;
 }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
 
+.navbar-toggler {
+    background-color: rgb(255,255,255, 0.1);
+}
+
+.navbar-toggler.collapsed {
+    background-color: rgb(96,16,16, 0.2);
+}
 /*navbar-toggler hacer que sea blanco cuando está colapsado?*/
 
 @media (max-width: 1000px) {
@@ -49,11 +67,14 @@
     }
 
     .navbar > .container {
+        max-width: 95%;
         justify-content: end;
+        margin-top: 2%;
     }
 
     .navbar-collapse {
         margin-top: 35%;
+        right: 0;
     }
 
     .nav-item > a {
@@ -87,5 +108,10 @@
     .navbar-toggler-icon {
         width: 1.9em;
         height: 1.9em;
+    }
+
+    .navbar > .container {
+        max-width: 100%;
+        margin-top: 0;
     }
 }
