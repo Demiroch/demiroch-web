@@ -20,7 +20,6 @@ import FanClub from "../../../resources/FotosPublicidades/Fanclub_pin.png";
 import FeaturedCommercial from "../../../resources/StickyNotes/stickyNote_Featured_Commercial.png";
 import VoiceActorNote from "../../../resources/StickyNotes/stickyNote_VOICE_ACTOR.png";
 import ArtistNote from "../../../resources/StickyNotes/stickyNote_ARTIST.png";
-import ActorNote from "../../../resources/StickyNotes/stickyNote_ACTOR.png";
 import ContentCreatorNote from "../../../resources/StickyNotes/stickyNote_CONTENT_CREATOR.png";
 import SoundProductionNote from "../../../resources/StickyNotes/stickyNote_SOUND_PRODUCTION.png";
 

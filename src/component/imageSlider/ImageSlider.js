@@ -72,18 +72,30 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
         setmMdalTitle(title)
     }
 
-    const getCarouselCassete = (src, id, audio) => {
+    const getCarouselCassete = (src, id) => {
         return <Carousel.Item className="carousel-item-custom cassete-item clickable" >
             <div className="carousel-image-container item__third">
-                <Cassete id={id} className="cassete-for-all" src={src} audio={audio} isMobile={isMobile}/>
+                <Cassete id={id} className="cassete-for-all" src={src} audio="" isMobile={isMobile}/>
             </div>
         </Carousel.Item>
     }
 
-    let stopAudios = () => {
-        $('audio').each(function(){
-            this.pause();
-        });
+    const ids = [
+        "esp-neutro",
+        "locuciones",
+        "arg-acting",
+        "songs",
+        "crazy-notes",
+        "arg-voice-over"
+    ]
+
+    const stopAudios = () => {
+        if (isForCassete) {
+            ids.forEach(function (item) {
+                $('#' + item + '-audio')[0].pause();
+                $(".button-play-"  + item).hide();
+            });
+        }
     }
 
     return (
@@ -98,19 +110,26 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
                       onSelect={handleSelect}
                       interval={null}
                       onSlide={stopAudios}
-                      onSlid={stopAudios}
                       touch={true}>
-                {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro", new Audio(CrazyVoicesAudio)) : ""}
-                {isForCassete ? getCarouselCassete(CasseteLocuciones, "locuciones", new Audio(CrazyVoicesAudio)) : ""}
-                {isForCassete ?   getCarouselCassete(CasseteArgActing, "arg-acting", new Audio(CrazyVoicesAudio)) : ""}
-                {isForCassete ?   getCarouselCassete(CasseteSongs, "songs", new Audio(CrazyVoicesAudio)) : ""}
-                {isForCassete ?  getCarouselCassete(CasseteCrazyVoices, "crazy-notes", new Audio(CrazyVoicesAudio)) : ""}
-                {isForCassete ?  getCarouselCassete(CasseteArgVoiceOver, "arg-voice-over", new Audio(CrazyVoicesAudio)) : ""}
+                {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro"): ""}
+                {isForCassete ? getCarouselCassete(CasseteLocuciones, "locuciones") : ""}
+                {isForCassete ?   getCarouselCassete(CasseteArgActing, "arg-acting") : ""}
+                {isForCassete ?   getCarouselCassete(CasseteSongs, "songs") : ""}
+                {isForCassete ?  getCarouselCassete(CasseteCrazyVoices, "crazy-notes") : ""}
+                {isForCassete ?  getCarouselCassete(CasseteArgVoiceOver, "arg-voice-over") : ""}
+
                 {isForCassete ? "" : getCarouselLicence(Licence1, "AMPHIBIA", "https://www.youtube.com/embed/zeA3ItAoCaQ")}
                 {isForCassete ? "" : getCarouselLicence(Licence2, "GRAVITY FALLS", "https://www.youtube.com/embed/gWMcyYyVsjw")}
                 {isForCassete ? "" : getCarouselLicence(Licence3, "PUKKA", "https://www.youtube.com/embed/TrtlYgU3IFI")}
                 {isForCassete ? "" : getCarouselLicence(Licence4, "MEWNI", "https://www.youtube.com/embed/JBHv4D8e0bM")}
             </Carousel>
+            <audio id="esp-neutro-audio" src={CrazyVoicesAudio}/>
+            <audio id="locuciones-audio" src={CrazyVoicesAudio}/>
+            <audio id="arg-acting-audio" src={CrazyVoicesAudio}/>
+            <audio id="songs-audio" src={CrazyVoicesAudio}/>
+            <audio id="crazy-notes-audio" src={CrazyVoicesAudio}/>
+            <audio id="arg-voice-over-audio" src={CrazyVoicesAudio}/>
+
             <VideoModal videoUrl={videoSrc} show={showModal} setShow={setShowModal} title={modalTitle} isMobile={isMobile}/>
         </div>
     );

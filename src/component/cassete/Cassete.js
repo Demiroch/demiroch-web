@@ -7,11 +7,9 @@ import $ from "jquery";
 
 export default function Cassete({id, src, className, audio, isMobile}){
     const [isPlaying, setIsPlaying] = useState(false);
-    const [isInsidePlay, setIsInsidePlay] = useState(false);
 
     let onHoverPlayIn = () => {
         if (!isMobile) {
-            setIsInsidePlay(true);
             if (!isPlaying) {
                 $("#button-play-" + id).show();
             }
@@ -20,7 +18,6 @@ export default function Cassete({id, src, className, audio, isMobile}){
 
     let onHoverPlayOut = () => {
         if (!isMobile) {
-            setIsInsidePlay(false);
             if (!isPlaying) {
                 $("#button-play-" + id).hide();
             }
@@ -52,20 +49,19 @@ export default function Cassete({id, src, className, audio, isMobile}){
     }
 
     let onPlay = () => {
-        if (!isInsidePlay){
-            $(".button-play-" + id).toggle();
+        if (isMobile) {
+            audio = $("#" + id + '-audio')[0]
         }
-        if (!isPlaying) {
-            setIsPlaying(!isPlaying);
-            audio.play();
-            audio.volume = 0.5;
-            if (isMobile) {
-                $(".button-play-" + id).show();
-            }
-        }
+        audio.play();
+        audio.volume = 0.5;
+        $(".button-play-" + id).show();
+        setIsPlaying(true);
     }
 
     let onStop = () => {
+        if (isMobile) {
+            audio = $("#" + id + '-audio')[0]
+        }
         audio.pause();
         if (isMobile) {
             $(".button-stop-" + id).show();
@@ -76,6 +72,9 @@ export default function Cassete({id, src, className, audio, isMobile}){
     }
 
     let onReplay = () => {
+        if (isMobile) {
+            audio = $("#" + id + '-audio')[0]
+        }
         audio.load();
         audio.play();
         audio.volume = 0.5;
