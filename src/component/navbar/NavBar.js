@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "./NavBar.css";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import $ from "jquery";
 import {FaTiktok, FaInstagram, FaYoutube} from "react-icons/fa";
 // import TikTokLogo from "../../resources/Mobile/Iconos/Tiktok.png";
@@ -21,6 +21,38 @@ export default function NavBar({isMobile}) {
         }
     }
 
+
+    const [portfolioClass, setPortfolioClass] = useState("");
+    const [demosClass, setDemosClass] = useState("");
+    const [contactClass, setContactClass] = useState("");
+
+    useEffect(() => {
+
+        document.addEventListener('scroll', (event) => {
+            let actY = window.scrollY;
+            let mapY = document.getElementById("map-anchor").getBoundingClientRect().top + window.scrollY - 100;
+            let casseteY = document.getElementById("cassete-anchor").getBoundingClientRect().top + window.scrollY - 100;
+            let wantedY = document.getElementById("contacto-anchor").getBoundingClientRect().top + window.scrollY - 100;
+            if (actY < mapY) {
+                setPortfolioClass("")
+                setDemosClass("")
+                setContactClass("")
+            }else if (actY > mapY && actY < casseteY) {
+                setPortfolioClass("yellow-color")
+                setDemosClass("")
+                setContactClass("")
+            } else if (actY > casseteY && actY < wantedY) {
+                setPortfolioClass("")
+                setDemosClass("yellow-color")
+                setContactClass("")
+            } else if (actY > wantedY) {
+                setPortfolioClass("")
+                setDemosClass("")
+                setContactClass("yellow-color")
+            }
+        });
+    }, [])
+
     let bg = isMobile? "transparent" : "dark";
     let iconSize = isMobile? "40px" : "25px";
     let variant = isMobile? "white" : "dark";
@@ -30,19 +62,18 @@ export default function NavBar({isMobile}) {
             <Container>
                 <Navbar.Brand href="#home-anchor">
                     <img id="logo-menu-dr" src={DemiRochLogo} alt='logo-menu'/>
-                    {/*DEMIROCH*/}
                 </Navbar.Brand>
                 <Navbar.Toggle onClick={clickToggle} aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="align-right">
                     <Nav >
                         <Nav.Item>
-                            <Nav.Link href="#map-anchor">Portfolio</Nav.Link>
+                            <Nav.Link href="#map-anchor" className={portfolioClass} >Portfolio</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="#cassete-anchor">Demos</Nav.Link>
+                            <Nav.Link href="#cassete-anchor" className={demosClass}>Demos</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="#contacto-anchor">Contact</Nav.Link>
+                            <Nav.Link href="#contacto-anchor" className={contactClass}>Contact</Nav.Link>
                         </Nav.Item>
                         <div id="icon-link-container">
                             <Nav.Item>

@@ -151,11 +151,6 @@ export default function MapSubViewMobile(){
                             </div>
                         </Row>
                         <Row>
-                            <div id="actor-container" className="black-shadow">
-                                <img src={ActorNote} id="actor-note" alt="actor"/>
-                            </div>
-                        </Row>
-                        <Row>
                             <div className="fotos-publicidades-mapa-container" id="uala-publicidad" >
                                 <img className="fotos-publicidades-mapa clickable zoom-mini"
                                      onClick={() => clickOnImage("https://www.youtube.com/embed/dJyRl1bq9eg", "Ualá")}

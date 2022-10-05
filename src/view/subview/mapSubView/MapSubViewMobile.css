@@ -81,16 +81,6 @@
         width: 170%;
     }
 
-    #actor-container{
-        position: relative;
-        width: 54%;
-        margin-left: 36%;
-    }
-
-    #actor-note{
-        transform: rotate(5deg);
-    }
-
     #milka-publicidad-container{
         width: 90%;
         margin-left: 21%;
@@ -108,7 +98,7 @@
     }
 
     #uala-publicidad{
-        margin-top: 108%;
+        margin-top: 158%;
         margin-left: -73%;
         transform: rotate(-3deg);
         width: 143%;
@@ -248,12 +238,6 @@
         margin-top: 79%;
     }
 
-    #actor-container{
-        width: 70%;
-        margin-left: 25%;
-        margin-top: 3%;
-    }
-
     #milka-publicidad-container{
         width: 105%;
         margin-left: 20%;
@@ -271,7 +255,7 @@
     }
 
     #uala-publicidad{
-        margin-top: 120%;
+        margin-top: 170%;
         margin-left: -83%;
         transform: rotate(-2deg);
         width: 158%;

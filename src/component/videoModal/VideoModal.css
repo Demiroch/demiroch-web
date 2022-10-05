@@ -23,21 +23,27 @@
 
     .modal-dialog {
         margin: 0;
+        max-width: none;
     }
     .modal-content {
-        height: 30vh;
+        height: auto;
+        background-color: transparent;
     }
 
     .modal-body {
         padding: unset;
-        height: 30vh;
+        max-height: 75vw !important;
+        /*height:  !important;*/
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media (max-width: 1000px) {
     .prueba{
         position: absolute;
-        top: 0%;
+        top: 0;
         right: 0;
         width: 20%;
     }
