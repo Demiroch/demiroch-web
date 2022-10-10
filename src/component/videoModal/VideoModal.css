@@ -2,12 +2,10 @@
 .modal {
     background-color: rgba(0, 0, 0, 0.6);
 }
-.custom-modal{
-    width: 100%;
-}
 
 .modal-content {
-    height: 70vh;
+    border: none;
+    background-color: transparent;
 }
 
 .modal-body {
@@ -15,16 +13,28 @@
     height: 70vh;
 }
 
-.modal-header-custom{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    width: 100%;
+.close-arrow{
+    position: absolute;
+    top: -10%;
+    right: -21%;
+    cursor: pointer;
+}
+
+.click-left-arrow, .click-right-arrow {
+    position: absolute;
+    top: 50%;
+}
+
+.click-left-arrow {
+    left: -10%;
+}
+
+.click-right-arrow {
+    right: -10%;
+    transform: rotate(180deg);
 }
 
 @media (orientation: portrait) {
-
     .modal-dialog {
         margin: 0;
         max-width: none;
@@ -44,22 +54,38 @@
     }
 }
 
-.prueba{
-    position: absolute;
-    top: -10%;
-    right: -21%;
-    cursor: pointer;
+@media (max-width: 1400px) {
+    .custom-modal{
+        max-width: 100vh !important;
+    }
+
+    .close-arrow{
+        right: -38%;
+    }
 }
 
-@media (max-width: 100px) {
-    .prueba{
+
+@media (max-width: 1000px) {
+    .close-arrow{
         top: -10%;
         right: -30%;
+    }
+
+    .click-left-arrow, .click-right-arrow {
+        top: 115%;
+    }
+
+    .click-left-arrow {
+        left: 20%;
+    }
+
+    .click-right-arrow {
+        right: 20%;
     }
 }
 
 @media (max-width: 700px) {
-    .prueba{
+    .close-arrow{
         top: -15%;
         right: -60%;
     }
