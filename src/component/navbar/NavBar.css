@@ -6,9 +6,9 @@
     color: var(--bs-nav-link-color);
 }
 
-#icon-link-container{
-    display: flex;
-}
+/*#icon-link-container{*/
+/*    display: flex;*/
+/*}*/
 
 .navbar {
     transition: 1s;
@@ -18,7 +18,7 @@
     background-color: #401414 !important;
 }
 
-#instagram-icon{
+.margin-left-icons{
     margin-left: 2vw;
 }
 
@@ -28,7 +28,7 @@
 }
 
 #logo-menu-dr{
-    width: 55%;
+    width: 50%;
 }
 
 .yellow-color {
@@ -49,11 +49,32 @@
 .navbar-toggler.collapsed {
     background-color: rgb(96,16,16, 0.2);
 }
-/*navbar-toggler hacer que sea blanco cuando está colapsado?*/
+
+.navbar-icon {
+    width: 6%;
+}
+
+.navbar-nav {
+    justify-content: end;
+}
+
+.mail-icon{
+    margin-top: -0.5%;
+    width: 7% !important;
+}
 
 @media (max-width: 1000px) {
     .navbar-brand{
         display: none;
+    }
+
+    .mail-icon{
+        margin-top: -2%;
+        width: 20% !important;
+    }
+
+    .navbar-icon {
+        width: 16%;
     }
 
     .bg-red{
@@ -89,9 +110,6 @@
         width: 60%;
         justify-content: space-around;
     }
-    #instagram-icon{
-        margin-left: 0;
-    }
 
     .navbar-nav{
         align-items: center;
@@ -100,7 +118,6 @@
     .navbar-toggler-icon {
         width: 2.9em;
         height: 2.9em;
-
     }
 }
 
@@ -113,5 +130,10 @@
     .navbar > .container {
         max-width: 100%;
         margin-top: 0;
+    }
+
+    .mail-icon{
+        margin-top: -0.5%;
+        width: 20% !important;
     }
 }

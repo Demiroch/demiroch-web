@@ -2,12 +2,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "./NavBar.css";
-import React, {useEffect, useState} from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import $ from "jquery";
 import {FaTiktok, FaInstagram, FaYoutube} from "react-icons/fa";
-// import TikTokLogo from "../../resources/Mobile/Iconos/Tiktok.png";
-// import InstagramLogo from "../../resources/Mobile/Iconos/Instagram.png";
-// import MailLogo from "../../resources/Mobile/Iconos/mail.png";
+import TikTokLogo from "../../resources/Mobile/Iconos/Tiktok.png";
+import InstagramLogo from "../../resources/Mobile/Iconos/Instagram.png";
+import MailLogo from "../../resources/Mobile/Iconos/mail.png";
 import DemiRochLogo from "../../resources/Logo/Logo_Demiroch_Blanco.png";
 export default function NavBar({isMobile}) {
     function clickToggle() {
@@ -56,6 +56,36 @@ export default function NavBar({isMobile}) {
     let iconSize = isMobile? "40px" : "25px";
     let variant = isMobile? "white" : "dark";
 
+    const getMediaButtons = () => {
+        return <Fragment>
+            <Nav.Item className="navbar-icon margin-left-icons">
+                <Nav.Link target="_blank" id="instagram-icon"  href="https://www.tiktok.com/@demiroch?lang=es">
+                    <img src={TikTokLogo} alt="tiktok-logo"/>
+                </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="navbar-icon">
+                <Nav.Link target="_blank"  href="https://www.instagram.com/demiroch/?hl=es">
+                    <img src={InstagramLogo} alt="instagram-logo"/>
+                </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="navbar-icon mail-icon">
+                <Nav.Link target="_blank"  href="mailto: andyjalife@gmail.com">
+                    <img src={MailLogo} alt="mail-logo"/>
+                </Nav.Link>
+            </Nav.Item>
+        </Fragment>
+    }
+
+    const getMediaButtonsContainer = () => {
+        if (!isMobile) {
+            return getMediaButtons();
+        }
+        return <div id="icon-link-container">
+                    {getMediaButtons()}
+                </div>
+    }
+
+
     return (
         <Navbar bg={bg} variant={variant} expand="lg" fixed={"top"} className="black-shadow">
             <Container>
@@ -74,27 +104,7 @@ export default function NavBar({isMobile}) {
                         <Nav.Item>
                             <Nav.Link href="#contacto-anchor" className={contactClass}>Contact</Nav.Link>
                         </Nav.Item>
-                        <div id="icon-link-container">
-                            <Nav.Item>
-                                <Nav.Link target="_blank" id="instagram-icon"  href="https://www.tiktok.com/@demiroch?lang=es">
-                                    <FaTiktok color="white" size={iconSize}/>
-                                    {/*<img src={TikTokLogo} style={{width: "20%"}} alt="tiktok-logo"/>*/}
-                                </Nav.Link>
-
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link target="_blank"  href="https://www.instagram.com/demiroch/?hl=es">
-                                    <FaInstagram color="white" size={iconSize}/>
-                                    {/*<img src={InstagramLogo} style={{width: "20%"}} alt="instagram-logo"/>*/}
-                                </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link target="_blank"  href="https://www.youtube.com/channel/UCIHvN-mFrLyzhoZ3iyKU8DQ">
-                                    <FaYoutube color="white" size={iconSize}/>
-                                    {/*<img src={MailLogo} style={{width: "20%"}} alt="mail-logo"/>*/}
-                                </Nav.Link>
-                            </Nav.Item>
-                        </div>
+                        {getMediaButtonsContainer()}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

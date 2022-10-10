@@ -46,6 +46,16 @@
     visibility: hidden;
 }
 
+@media (max-width: 1400px) {
+    .licences-container{
+        min-height: 90vh;
+    }
+
+    #demiroch-logo{
+        margin-top: 10vh;
+    }
+}
+
 @media (max-width: 1000px) {
     .licences-container{
         min-height: 50vh;
