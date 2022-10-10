@@ -27,16 +27,21 @@
 
 @media (max-width: 1000px) {
     #demos-title{
-        width: 70%;
+        width: 65%;
         display: block;
-        margin-left: 21%;
+        margin-left: 16%;
         margin-bottom: 0;
         margin-top: 12%;
     }
 
+    #click-top-play-cassete{
+        width: 38%;
+        margin-left: 5%;
+    }
+
     .cassete-container{
         padding: 0;
-        padding-bottom: 12% !important; ;
+        padding-bottom: 8% !important; ;
     }
 
     .cassetes-mobile-container{

@@ -22,8 +22,8 @@ import FernetNote from "../../../resources/FotosPublicidades/etiquetas_Branca.pn
 import FanClub from "../../../resources/FotosPublicidades/Fanclub_pin.png";
 
 // Notas filmografía
-import TvSeries from "../../../resources/NotasFilmografía/Filmografia_1_tvymovies_pin.png"
-import AnimatedSeries from "../../../resources/NotasFilmografía/Filmografia_2_seriesanim_pin.png";
+import TvSeries from "../../../resources/NotasFilmografia/Filmografia_1_tvymovies_pin.png"
+import AnimatedSeries from "../../../resources/NotasFilmografia/Filmografia_2_seriesanim_pin.png";
 
 // Sticky notes
 import FeaturedCommercial from "../../../resources/StickyNotes/stickyNote_Featured_Commercial.png";

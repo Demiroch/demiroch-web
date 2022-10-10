@@ -27,12 +27,11 @@ export default function NavBar({isMobile}) {
     const [contactClass, setContactClass] = useState("");
 
     useEffect(() => {
-
         document.addEventListener('scroll', (event) => {
             let actY = window.scrollY;
             let mapY = document.getElementById("map-anchor").getBoundingClientRect().top + window.scrollY - 100;
-            let casseteY = document.getElementById("cassete-anchor").getBoundingClientRect().top + window.scrollY - 100;
-            let wantedY = document.getElementById("contacto-anchor").getBoundingClientRect().top + window.scrollY - 100;
+            let casseteY = document.getElementById("cassete-anchor").getBoundingClientRect().top + window.scrollY - 200;
+            let wantedY = document.getElementById("contacto-anchor").getBoundingClientRect().top + window.scrollY - 400;
             if (actY < mapY) {
                 setPortfolioClass("")
                 setDemosClass("")

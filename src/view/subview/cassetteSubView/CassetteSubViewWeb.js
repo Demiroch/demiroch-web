@@ -25,26 +25,26 @@ export default function CassetteSubViewWeb(){
                 <Row>
                     <Col>
                         <Row>
-                            <Cassete isMobile={false} id="crazy-notes" className="cassete-for-all" src={CasseteCrazyVoices} audio={new Audio(CrazyVoicesAudio)}/>
+                            <Cassete isMobile={false} id="crazy-notes" className="cassete-for-all" src={CasseteCrazyVoices} audio={new Audio(CrazyVoicesAudio)} audioSrc={CrazyVoicesAudio}/>
                         </Row>
                         <Row>
-                            <Cassete isMobile={false} id="songs" className="cassete-for-all" src={CasseteSongs} audio={new Audio(CrazyVoicesAudio)}/>
-                        </Row>
-                    </Col>
-                    <Col>
-                        <Row>
-                            <Cassete isMobile={false} id="arg-acting" className="cassete-for-all" src={CasseteArgActing} audio={new Audio(CrazyVoicesAudio)}/>
-                        </Row>
-                        <Row>
-                            <Cassete isMobile={false} id="locuciones" className="cassete-for-all" src={CasseteLocuciones} audio={new Audio(CrazyVoicesAudio)}/>
+                            <Cassete isMobile={false} id="songs" className="cassete-for-all" src={CasseteSongs} audio={new Audio(CrazyVoicesAudio)} audioSrc={CrazyVoicesAudio}/>
                         </Row>
                     </Col>
                     <Col>
                         <Row>
-                            <Cassete isMobile={false} id="esp-neutro" className="cassete-for-all" src={CasseteEspNeutro} audio={new Audio(CrazyVoicesAudio)}/>
+                            <Cassete isMobile={false} id="arg-acting" className="cassete-for-all" src={CasseteArgActing} audio={new Audio(CrazyVoicesAudio)} audioSrc={CrazyVoicesAudio}/>
                         </Row>
                         <Row>
-                            <Cassete isMobile={false} id="arg-voice-over" className="cassete-for-all" src={CasseteArgVoiceOver} audio={new Audio(CrazyVoicesAudio)}/>
+                            <Cassete isMobile={false} id="locuciones" className="cassete-for-all" src={CasseteLocuciones} audio={new Audio(CrazyVoicesAudio)} audioSrc={CrazyVoicesAudio}/>
+                        </Row>
+                    </Col>
+                    <Col>
+                        <Row>
+                            <Cassete isMobile={false} id="esp-neutro" className="cassete-for-all" src={CasseteEspNeutro} audio={new Audio(CrazyVoicesAudio)} audioSrc={CrazyVoicesAudio}/>
+                        </Row>
+                        <Row>
+                            <Cassete isMobile={false} id="arg-voice-over" className="cassete-for-all" src={CasseteArgVoiceOver} audio={new Audio(CrazyVoicesAudio)} audioSrc={CrazyVoicesAudio}/>
                         </Row>
                     </Col>
                 </Row>

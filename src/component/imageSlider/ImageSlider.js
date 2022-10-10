@@ -72,10 +72,10 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
         setmMdalTitle(title)
     }
 
-    const getCarouselCassete = (src, id) => {
+    const getCarouselCassete = (src, id, audioSrc) => {
         return <Carousel.Item className="carousel-item-custom cassete-item clickable" >
             <div className="carousel-image-container item__third">
-                <Cassete id={id} className="cassete-for-all" src={src} audio="" isMobile={isMobile}/>
+                <Cassete id={id} className="cassete-for-all" src={src} audio="" isMobile={isMobile} audioSrc={audioSrc}/>
             </div>
         </Carousel.Item>
     }
@@ -111,12 +111,12 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
                       interval={null}
                       onSlide={stopAudios}
                       touch={true}>
-                {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro"): ""}
-                {isForCassete ? getCarouselCassete(CasseteLocuciones, "locuciones") : ""}
-                {isForCassete ?   getCarouselCassete(CasseteArgActing, "arg-acting") : ""}
-                {isForCassete ?   getCarouselCassete(CasseteSongs, "songs") : ""}
-                {isForCassete ?  getCarouselCassete(CasseteCrazyVoices, "crazy-notes") : ""}
-                {isForCassete ?  getCarouselCassete(CasseteArgVoiceOver, "arg-voice-over") : ""}
+                {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro", CrazyVoicesAudio) : ""}
+                {isForCassete ? getCarouselCassete(CasseteLocuciones, "locuciones", CrazyVoicesAudio) : ""}
+                {isForCassete ?   getCarouselCassete(CasseteArgActing, "arg-acting", CrazyVoicesAudio) : ""}
+                {isForCassete ?   getCarouselCassete(CasseteSongs, "songs", CrazyVoicesAudio) : ""}
+                {isForCassete ?  getCarouselCassete(CasseteCrazyVoices, "crazy-notes", CrazyVoicesAudio) : ""}
+                {isForCassete ?  getCarouselCassete(CasseteArgVoiceOver, "arg-voice-over", CrazyVoicesAudio) : ""}
 
                 {isForCassete ? "" : getCarouselLicence(Licence1, "AMPHIBIA", "https://www.youtube.com/embed/zeA3ItAoCaQ")}
                 {isForCassete ? "" : getCarouselLicence(Licence2, "GRAVITY FALLS", "https://www.youtube.com/embed/gWMcyYyVsjw")}
