@@ -4,7 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import "./NavBar.css";
 import React, {Fragment, useEffect, useState} from "react";
 import $ from "jquery";
-import {FaTiktok, FaInstagram, FaYoutube} from "react-icons/fa";
 import TikTokLogo from "../../resources/Mobile/Iconos/Tiktok.png";
 import InstagramLogo from "../../resources/Mobile/Iconos/Instagram.png";
 import MailLogo from "../../resources/Mobile/Iconos/mail.png";
@@ -53,7 +52,6 @@ export default function NavBar({isMobile}) {
     }, [])
 
     let bg = isMobile? "transparent" : "dark";
-    let iconSize = isMobile? "40px" : "25px";
     let variant = isMobile? "white" : "dark";
 
     const getMediaButtons = () => {
