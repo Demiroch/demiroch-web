@@ -3,12 +3,8 @@
 }
 
 .navbar-nav .nav-link.active {
-    color: var(--bs-nav-link-color);
+    color: white;
 }
-
-/*#icon-link-container{*/
-/*    display: flex;*/
-/*}*/
 
 .navbar {
     transition: 1s;

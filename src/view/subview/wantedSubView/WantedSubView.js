@@ -41,7 +41,6 @@ export default function WantedSubView({isMobile}){
 
     return (
         <section className="wanted-container" style={{backgroundImage: `url(${background})`}}>
-                <div id="contacto-anchor"/>
                 <div id="wanted-container" className="black-shadow relative-container">
                     <img id="wanted-image" src={WantedImage} alt="wanted"/>
                     <div id="followers-container" >
@@ -58,6 +57,7 @@ export default function WantedSubView({isMobile}){
                         </div>
                     </div>
                 </div>
+            <div id="contacto-anchor"/>
         </section>
     )
 }

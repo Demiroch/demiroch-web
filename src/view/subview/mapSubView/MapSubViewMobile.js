@@ -65,32 +65,32 @@ export default function MapSubViewMobile(){
                         </Row>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="mccain-publicidad">
-                                <img className="fotos-publicidades-mapa clickable zoom-mini"
+                                <img className="fotos-publicidades-mapa clickable"
                                      onClick={() => clickOnImage("https://www.youtube.com/embed/ycuR_xsmGa0", "Mccain")}
                                      src={Mccain} alt="mccain"/>
                             </div>
                         </Row>
                         <Row>
-                            <div id="fernet-container" className="black-shadow zoom-mini">
+                            <div id="fernet-container" className="black-shadow">
                                 <img src={Fernet} id="fernet-publicidad" className="clickable" alt="fernet"
                                      onClick={() => clickOnImage("https://www.youtube.com/embed/lu8gXodHMWs", "Fernet Branca")}/>
                             </div>
                         </Row>
                         <Row>
                             <div id="milka-publicidad-container" className="black-shadow">
-                                <img src={Milka} id="milka-publicidad" className="clickable zoom" alt="milka"
+                                <img src={Milka} id="milka-publicidad" className="clickable" alt="milka"
                                      onClick={() => clickOnImage("https://www.youtube.com/embed/zUmeVzfR1J0", "Milka")}/>
                             </div>
                         </Row>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="sprite-publicidad">
-                                <img className="fotos-publicidades-mapa clickable zoom-mini"
+                                <img className="fotos-publicidades-mapa clickable"
                                      onClick={() => clickOnImage("https://www.youtube.com/embed/sAeEuGHyduc", "Sprite")}
                                      src={Sprite} alt="sprite"/>
                             </div>
                         </Row>
                         <Row>
-                            <div id="kiko-container" className="black-shadow clickable zoom">
+                            <div id="kiko-container" className="black-shadow clickable">
                                 <img src={Kiko} className="personajes-img" alt="kiko-img"
                                      onClick={() => clickOnImage("https://www.youtube.com/embed/MyRrRVp0ObU", "Kiko")}/>
                             </div>
@@ -120,8 +120,8 @@ export default function MapSubViewMobile(){
                             </div>
                         </Row>
                         <Row>
-                            <div id="fan-club-container">
-                                <img src={FanClub} id="fan-club" alt="fan-club"/>
+                            <div id="fan-club-container" className="clickable">
+                                <img src={FanClub} id="fan-club" alt="fan-club" onClick={() => clickOnImage("https://www.youtube.com/embed/1HK-T6wAo8E", "Fan Club")}/>
                             </div>
                         </Row>
                         <Row>
@@ -151,13 +151,13 @@ export default function MapSubViewMobile(){
                         </Row>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="uala-publicidad" >
-                                <img className="fotos-publicidades-mapa clickable zoom-mini"
+                                <img className="fotos-publicidades-mapa clickable"
                                      onClick={() => clickOnImage("https://www.youtube.com/embed/dJyRl1bq9eg", "Ualá")}
                                      src={Uala} alt="uala"/>
                             </div>
                         </Row>
                         <Row>
-                            <div id="zamba-container" className="black-shadow clickable zoom">
+                            <div id="zamba-container" className="black-shadow clickable">
                                 <img src={Zamba} className="personajes-img" alt="zamba-img"
                                      onClick={() => clickOnImage("https://www.youtube.com/embed/nQhNhXSUmDQ", "Zamba")}/>
                             </div>
@@ -167,13 +167,13 @@ export default function MapSubViewMobile(){
                         </Row>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="menudeldia-publicidad">
-                                <img className="fotos-publicidades-mapa clickable zoom-mini"
+                                <img className="fotos-publicidades-mapa clickable"
                                      onClick={() => clickOnImage("https://www.youtube.com/embed/5aHWDN2V8L4", "Menu del Día")}
                                      src={MenuDelDia} alt="menu-del-dia"/>
                             </div>
                         </Row>
                         <Row>
-                            <div id="danonino-container" className="black-shadow zoom-mini">
+                            <div id="danonino-container" className="black-shadow">
                                 <img src={Danonino} id="danonino-publicidad" className="clickable" alt="danonino"
                                      onClick={() => clickOnImage("https://www.youtube.com/embed/dI4v2IAPSnw", "Danonino")}/>
                             </div>

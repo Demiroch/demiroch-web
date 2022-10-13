@@ -17,12 +17,54 @@ import React, {useEffect, useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import VideoModal from "../videoModal/VideoModal";
 import $ from "jquery";
+import swipe from "bootstrap/js/src/util/swipe";
 
 export default function ImageSlider({showIndicators, showControls, isMobile, isForCassete, className}) {
     const [index, setIndex] = useState(0);
     const [showModal, setShowModal] = useState(false);
     const [videoSrc, setVideoSrc] = useState("");
     const [modalTitle, setmMdalTitle] = useState("");
+
+    useEffect(() => {
+        var touch = {};
+
+        window.onload = function () {
+
+            document.body.addEventListener("touchstart", touchHandler);
+            document.body.addEventListener("touchend", touchHandler);
+        };
+
+        function touchHandler(e) {
+            var el = e.target;
+
+            if (el.parentNode.id === "sl-m") {
+                if (e.type === "touchstart") {
+                    touch.startX = e.changedTouches[0].screenX;
+                    touch.startY = e.changedTouches[0].screenY;
+                } else {
+                    touch.endX = e.changedTouches[0].screenX;
+                    touch.endY = e.changedTouches[0].screenY;
+
+                    touch.lenX = Math.abs(touch.endX - touch.startX);
+                    touch.lenY = Math.abs(touch.endY - touch.startY);
+
+                    if (touch.lenY < 20) {
+                        // disable scroll
+                        document.body.style.overflowY = "hidden";
+
+                        // do swipe related stuff
+                        swipe(el.parentNode);
+                    } else {
+                        // enable scroll if swipe was not intended
+                        document.body.style.overflowY = "scroll";
+                    }
+                }
+            } else {
+                // keep scroll enabled if touch is outside the image slider
+                document.body.style.overflowY = "scroll";
+            }
+        }
+    })
 
     useEffect(() => {
         let classToSearch = isForCassete ? ".cassete-item" : ".licence-item";

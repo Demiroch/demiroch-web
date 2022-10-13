@@ -114,8 +114,8 @@ export default function MapSubViewWeb(){
                             </div>
                         </Row>
                         <Row>
-                            <div id="fan-club-container">
-                                <img src={FanClub} id="fan-club" alt="fan-club"/>
+                            <div id="fan-club-container" className="clickable">
+                                <img src={FanClub} id="fan-club" alt="fan-club" className="zoom-mini" onClick={() => clickOnImage("https://www.youtube.com/embed/1HK-T6wAo8E", "Fan Club")}/>
                             </div>
                         </Row>
                         <Row>
