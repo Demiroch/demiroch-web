@@ -47,8 +47,8 @@
     .slider-container{
         width: 109%;
         margin-left: -6%;
-        -ms-touch-action: pan-y;
-        touch-action: pan-y;
+        /*-ms-touch-action: pan-y;*/
+        /*touch-action: pan-y;*/
     }
 
     .carousel-item-custom{
