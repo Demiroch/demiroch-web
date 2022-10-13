@@ -43,12 +43,17 @@
     width: 60%;
 }
 
+#button-download-crazy-notes, #button-download-songs,
+#button-replay-crazy-notes, #button-replay-songs {
+    margin-left: -1%;
+}
+
 @media (max-width: 1000px ) {
     .slider-container{
         width: 109%;
         margin-left: -6%;
-        /*-ms-touch-action: pan-y;*/
-        /*touch-action: pan-y;*/
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
     }
 
     .carousel-item-custom{
@@ -72,6 +77,11 @@
 
     .carousel-indicators{
         margin-bottom: 0;
+    }
+
+    #button-download-crazy-notes, #button-download-songs,
+    #button-replay-crazy-notes, #button-replay-songs {
+        margin-left: 0%;
     }
 
     .show-neighbors {

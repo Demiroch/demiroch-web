@@ -102,7 +102,7 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
         <div>
             <Carousel variant="dark"
                       indicators={showIndicators}
-                      controls={showControls}
+                      controls={true}
                       prevIcon={getLeftIcon()}
                       nextIcon={getRightIcon()}
                       className={`slider-container show-neighbors ${className}`}
