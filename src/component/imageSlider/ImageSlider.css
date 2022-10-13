@@ -69,6 +69,10 @@
         margin-left: 0;
     }
 
+    .cassete-arrow {
+        filter: invert(1);
+    }
+
     .carousel-inner {
         width: 200% !important;
         left: -47% !important;
@@ -130,5 +134,10 @@
         position: relative;
         /* captions can now be added */
         width: 33%;
+    }
+
+    .margin-cassete{
+        width: 32% !important;
+        margin-left: 1%;
     }
 }

@@ -49,7 +49,7 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
 
     const getCarouselLicence = (src, alt, videoSrcFromClick) => {
         return <Carousel.Item className="carousel-item-custom licence-item clickable" onClick={() => clickOnSlider(videoSrcFromClick, alt)}>
-                    <div className="carousel-image-container item__third">
+                    <div className={"carousel-image-container item__third "}>
                         <img
                             className="d-block w-100 carousel-image"
                             src={src}
@@ -57,13 +57,14 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
                     </div>
                 </Carousel.Item>
     }
+    const casseteClass = isForCassete ? "cassete-arrow" : "";
 
     const getLeftIcon = () => {
-        return <img src={left} className="arrow-carousel" id="left-arrow"  alt="Left-Arrow"/>;
+        return <img src={left} className={"arrow-carousel " + casseteClass} id="left-arrow"  alt="Left-Arrow"/>;
     }
 
     const getRightIcon = () => {
-        return <img src={right} className="arrow-carousel" id="right-arrow" alt="Right-Arrow"/>;
+        return <img src={right} className={"arrow-carousel " + casseteClass} id="right-arrow" alt="Right-Arrow"/>;
     }
 
     const clickOnSlider = (videoSrcFromClick, title) => {
@@ -74,7 +75,7 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
 
     const getCarouselCassete = (src, id, audioSrc) => {
         return <Carousel.Item className="carousel-item-custom cassete-item clickable" >
-            <div className="carousel-image-container item__third">
+            <div className="carousel-image-container item__third margin-cassete">
                 <Cassete id={id} className="cassete-for-all" src={src} audio="" isMobile={isMobile} audioSrc={audioSrc}/>
             </div>
         </Carousel.Item>
