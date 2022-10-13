@@ -8,8 +8,6 @@
 }
 
 .carousel-indicators [data-bs-target] {
-    /*box-sizing: content-box;*/
-    /*flex: 0 1 auto;*/
     width: 10px; /* change width */
     height: 10px; /* change height */
     padding: 0;
@@ -49,6 +47,8 @@
     .slider-container{
         width: 109%;
         margin-left: -6%;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
     }
 
     .carousel-item-custom{
