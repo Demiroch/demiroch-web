@@ -90,7 +90,8 @@
         position: relative;
         margin-top: -12%;
         margin-left: -35%;
-        width: 70%;
+        width: 55%;
+        margin-bottom: 15%;
     }
 
     #content-creator{
@@ -113,7 +114,7 @@
 
     #artistic-note-continer{
         position: relative;
-        margin-top: 80%;
+        margin-top: 95%;
         margin-left: -5%;
         width: 53%;
     }
@@ -124,14 +125,14 @@
 
     #zamba-container{
         margin-top: 16%;
-        margin-left: 10%;
+        margin-left: 7%;
         width: 85%;
     }
 
     #zamba-note-container{
         width: 46%;
-        margin-top: -23%;
-        margin-left: -35%;
+        margin-top: 3%;
+        margin-left: 29%;
     }
 
     #kiko-container{
@@ -145,10 +146,20 @@
         margin-left: 60%;
     }
 
+    #actor-container{
+        position: relative;
+        width: 47%;
+        margin-top: -30%;
+    }
+
+    #actor-note{
+        transform: rotate(5deg);
+    }
+
     #sound-container{
-        width: 59%;
-        margin-top: 125%;
-        margin-left: 6%;
+        width: 51%;
+        margin-top: 130%;
+        margin-left: 4%;
     }
 
     #sound-note {
@@ -159,11 +170,11 @@
         transform: rotate(4deg);
         margin-left: -48%;
         width: 115%;
-        margin-top: 28%;
+        margin-top: 2%;
     }
 
     #theo-container{
-        margin-top: 2%;
+        margin-top: 8%;
         margin-left: 5%;
         width: 100%;
         transform: rotate(3deg);
@@ -247,7 +258,7 @@
         position: relative;
         margin-top: -8%;
         margin-left: -33%;
-        width: 85%;
+        width: 65%;
     }
 
     #content-creator{
@@ -280,13 +291,14 @@
 
     #zamba-note-container{
         width: 54%;
-        margin-top: -14%;
-        margin-left: -35%;
+        margin-top: 5%;
+        margin-left: 25%;
+        margin-bottom: 8%;
     }
 
     #kiko-container{
         margin-top: 10%;
-        margin-left: 42%;
+        margin-left: 39%;
         width: 105%;
     }
 
@@ -295,13 +307,32 @@
         margin-left: 68%;
     }
 
+    #actor-container{
+        position: relative;
+        width: 58%;
+        margin-top: -50%;
+        margin-left: -2%;
+    }
+
+    #actor-note{
+        transform: rotate(5deg);
+    }
+
+    #sound-container{
+        width: 59%;
+        margin-top: 143%;
+        margin-left: 10%;
+    }
+
     #menudeldia-publicidad{
         transform: rotate(4deg);
         margin-left: -45%;
         width: 126%;
+        margin-top: 9%;
     }
 
     #theo-container{
+        margin-top: 8%;
         width: 115%;
     }
 

@@ -32,6 +32,7 @@ import ZambaNote from "../../../resources/FotosPersonajes/etiquetas_Zamba.png";
 import EvanNote from "../../../resources/FotosPersonajes/etiquetas_Evan.png";
 import TheoNote from "../../../resources/FotosPersonajes/etiquetas_Theo.png";
 import KikoNote from "../../../resources/FotosPersonajes/etiquetas_Kiko.png";
+import ActorNote from "../../../resources/StickyNotes/stickyNote_ACTOR.png";
 
 export default function MapSubViewMobile(){
     const [showModal, setShowModal] = useState(false);
@@ -96,6 +97,11 @@ export default function MapSubViewMobile(){
                             </div>
                             <div id="kiko-note-container" className="black-shadow">
                                 <img src={KikoNote} className="personajes-img" alt="kiko-note"/>
+                            </div>
+                        </Row>
+                        <Row>
+                            <div id="actor-container" className="black-shadow">
+                                <img src={ActorNote} id="actor-note" alt="actor"/>
                             </div>
                         </Row>
                         <Row>
