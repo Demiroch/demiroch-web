@@ -61,6 +61,14 @@
         margin-bottom: 4%;
     }
 
+    #left-arrow{
+        margin-right: -30%;
+    }
+
+    #right-arrow{
+        margin-left: 0;
+    }
+
     .carousel-inner {
         width: 200% !important;
         left: -47% !important;
