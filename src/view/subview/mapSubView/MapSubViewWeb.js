@@ -146,8 +146,8 @@ export default function MapSubViewWeb(){
                     <Col>
                         <Row>
                             <Col>
-                                <div id="latinafy-container" className="black-shadow">
-                                    <img src={Latinafy} id="latinafy-publicidades" alt="latinafy"/>
+                                <div id="latinafy-container" className="black-shadow clickable">
+                                    <img src={Latinafy} className="zoom-mini" id="latinafy-publicidades" alt="latinafy" onClick={() => clickOnImage("https://www.youtube.com/embed/IxKWjY-A0Pk", "Latinafy")}/>
                                 </div>
                             </Col>
                             <Col>
@@ -166,8 +166,8 @@ export default function MapSubViewWeb(){
                             </div>
                         </Row>
                         <Row>
-                            <div id="theo-container" className="black-shadow">
-                                <img src={Theo} className="personajes-img" alt="theo-img"/>
+                            <div id="theo-container" className="black-shadow clickable">
+                                <img src={Theo} className="personajes-img zoom-mini" alt="theo-img" onClick={() => clickOnImage("https://player.vimeo.com/video/760024295?h=a128b8ff26", "Theo")}/>
                             </div>
                             <div id="theo-note-container" className="black-shadow">
                                 <img src={TheoNote} className="personajes-img" alt="theo-note"/>
