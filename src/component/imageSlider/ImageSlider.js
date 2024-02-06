@@ -9,7 +9,12 @@ import CasseteCrazyVoices from "../../resources/Mobile/Cassettes/Cassettes_Crazy
 import CasseteSongs from "../../resources/Mobile/Cassettes/Cassettes_Songs.png";
 import CasseteEspNeutro from "../../resources/Mobile/Cassettes/Cassettes_ESPNeutro.png";
 import CasseteLocuciones from "../../resources/Mobile/Cassettes/Cassettes_LocNeutro.png";
-import CrazyVoicesAudio from "../../resources/Audio/nothing-yet.mp3";
+import nothing from "../../resources/Audio/nothing-yet.mp3";
+import CrazyVoicesAudio from "../../resources/Audio/crazy-voices.mp3";
+import ArgActingAudio from "../../resources/Audio/arg-acting.mp3";
+import ArgVoiceOverAudio from "../../resources/Audio/arg-voice-over.mp3";
+import EnglishAudio from "../../resources/Audio/english.mp3";
+import EspanolNeutroAudio from "../../resources/Audio/espanol-neutro.mp3";
 import left from '../../resources/Iconos/Demiroch_arrows_Left.png';
 import right from '../../resources/Iconos/Demiroch_arrows_Right.png';
 import "./ImageSlider.css"
@@ -112,12 +117,12 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
                       interval={null}
                       onSlide={stopAudios}
                       touch={true}>
-                {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro", CrazyVoicesAudio) : ""}
-                {isForCassete ? getCarouselCassete(CasseteLocuciones, "locuciones", CrazyVoicesAudio) : ""}
-                {isForCassete ?   getCarouselCassete(CasseteArgActing, "arg-acting", CrazyVoicesAudio) : ""}
-                {isForCassete ?   getCarouselCassete(CasseteSongs, "songs", CrazyVoicesAudio) : ""}
+                {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro", EspanolNeutroAudio) : ""}
+                {isForCassete ? getCarouselCassete(CasseteLocuciones, "locuciones", EnglishAudio) : ""}
+                {isForCassete ?   getCarouselCassete(CasseteArgActing, "arg-acting", ArgActingAudio) : ""}
+                {isForCassete ?   getCarouselCassete(CasseteSongs, "songs", nothing) : ""}
                 {isForCassete ?  getCarouselCassete(CasseteCrazyVoices, "crazy-notes", CrazyVoicesAudio) : ""}
-                {isForCassete ?  getCarouselCassete(CasseteArgVoiceOver, "arg-voice-over", CrazyVoicesAudio) : ""}
+                {isForCassete ?  getCarouselCassete(CasseteArgVoiceOver, "arg-voice-over", ArgVoiceOverAudio) : ""}
 
                 {isForCassete ? "" : getCarouselLicence(Licence1, "AMPHIBIA", "https://www.youtube.com/embed/zeA3ItAoCaQ")}
                 {isForCassete ? "" : getCarouselLicence(Licence2, "GRAVITY FALLS", "https://www.youtube.com/embed/gWMcyYyVsjw")}
