@@ -66,7 +66,7 @@ export default function MapSubViewWeb(){
                         <Row>
                             <div id="cartoon-network-container" className="black-shadow zoom-mini clickable">
                                 <img src={CartoonNetwork} id="cartoon-network-publicidad" className="clickable" alt="cartoonetwork"
-                                     onClick={() => clickOnImage("https://www.youtube.com/embed/-T9pxXteUmQ", "Cartoon Network")}/>
+                                     onClick={() => clickOnImage("https://www.youtube.com/embed/4xO54_nOfCM", "Cartoon Network")}/>
                             </div>
                         </Row>
                         <Row>
@@ -82,14 +82,14 @@ export default function MapSubViewWeb(){
                         <Row>
                             <div id="danonino-container" className="black-shadow zoom-mini">
                                 <img src={Danonino} id="danonino-publicidad" className="clickable" alt="danonino"
-                                     onClick={() => clickOnImage("https://www.youtube.com/embed/dI4v2IAPSnw", "Danonino")}/>
+                                     onClick={() => clickOnImage("https://www.youtube.com/embed/iHZvajuao_Y", "Danonino")}/>
                             </div>
                         </Row>
                         <Row id="fernet-milka-container">
                             <Col>
                                 <div id="milka-publicidad-container" className="black-shadow">
                                     <img src={Milka} id="milka-publicidad" className="clickable zoom" alt="milka"
-                                         onClick={() => clickOnImage("https://www.youtube.com/embed/zUmeVzfR1J0", "Milka")}/>
+                                         onClick={() => clickOnImage("https://www.youtube.com/embed/UcvpCWyiVnc", "Milka")}/>
                                 </div>
                                 <div className="publi-note-container">
                                     <img src={MilkaNote} className="publi-note" alt="milka-note"/>
@@ -98,7 +98,7 @@ export default function MapSubViewWeb(){
                             <Col>
                                 <div id="fernet-container" className="black-shadow zoom-mini">
                                     <img src={Fernet} id="fernet-publicidad" className="clickable" alt="fernet"
-                                         onClick={() => clickOnImage("https://www.youtube.com/embed/lu8gXodHMWs", "Fernet Branca")}/>
+                                         onClick={() => clickOnImage("https://www.youtube.com/embed/aCHBJcSkqLI", "Fernet Branca")}/>
                                 </div>
                                 <div className="publi-note-container" id="fernet-ntoe">
                                     <img src={FernetNote} className="publi-note" alt="fernet-note"/>
@@ -115,7 +115,7 @@ export default function MapSubViewWeb(){
                         </Row>
                         <Row>
                             <div id="fan-club-container" className="clickable">
-                                <img src={FanClub} id="fan-club" alt="fan-club" className="zoom-mini" onClick={() => clickOnImage("https://www.youtube.com/embed/1HK-T6wAo8E", "Fan Club")}/>
+                                <img src={FanClub} id="fan-club" alt="fan-club" className="zoom-mini" onClick={() => clickOnImage("https://www.youtube.com/embed/kakRqIQtBTE", "Fan Club")}/>
                             </div>
                         </Row>
                         <Row>
@@ -131,7 +131,7 @@ export default function MapSubViewWeb(){
                         <Row>
                             <div id="zamba-container" className="black-shadow clickable zoom">
                                 <img src={Zamba} className="personajes-img" alt="zamba-img"
-                                     onClick={() => clickOnImage("https://www.youtube.com/embed/nQhNhXSUmDQ", "Zamba")}/>
+                                     onClick={() => clickOnImage("https://www.youtube.com/embed/zWOJQG6-hIs", "Zamba")}/>
                             </div>
                             <div id="zamba-note-container" className="black-shadow">
                                 <img src={ZambaNote} className="personajes-img" alt="zamba-note"/>
@@ -159,7 +159,7 @@ export default function MapSubViewWeb(){
                         <Row>
                             <div id="kiko-container" className="black-shadow clickable zoom">
                                 <img src={Kiko} className="personajes-img" alt="kiko-img"
-                                     onClick={() => clickOnImage("https://www.youtube.com/embed/MyRrRVp0ObU", "Kiko")}/>
+                                     onClick={() => clickOnImage("https://www.youtube.com/embed/gfixj1Fmclc", "Kiko")}/>
                             </div>
                             <div id="kiko-note-container" className="black-shadow">
                                 <img src={KikoNote} className="personajes-img" alt="kiko-note"/>
@@ -167,7 +167,7 @@ export default function MapSubViewWeb(){
                         </Row>
                         <Row>
                             <div id="theo-container" className="black-shadow clickable">
-                                <img src={Theo} className="personajes-img zoom-mini" alt="theo-img" onClick={() => clickOnImage("https://player.vimeo.com/video/760024295?h=a128b8ff26", "Theo")}/>
+                                <img src={Theo} className="personajes-img zoom-mini" alt="theo-img" onClick={() => clickOnImage("https://www.youtube.com/embed/s296FJDWaEY", "Theo")}/>
                             </div>
                             <div id="theo-note-container" className="black-shadow">
                                 <img src={TheoNote} className="personajes-img" alt="theo-note"/>
@@ -184,7 +184,7 @@ export default function MapSubViewWeb(){
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="menudeldia-publicidad">
                                 <img className="fotos-publicidades-mapa clickable zoom-mini"
-                                     onClick={() => clickOnImage("https://www.youtube.com/embed/5aHWDN2V8L4", "Menu del Día")}
+                                     onClick={() => clickOnImage("https://www.youtube.com/embed/uq3rX5OX-nU", "Menu del Día")}
                                      src={MenuDelDia} alt="mccain"/>
                             </div>
                         </Row>
@@ -193,21 +193,21 @@ export default function MapSubViewWeb(){
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="uala-publicidad" >
                                 <img className="fotos-publicidades-mapa clickable zoom-mini"
-                                     onClick={() => clickOnImage("https://www.youtube.com/embed/dJyRl1bq9eg", "Ualá")}
+                                     onClick={() => clickOnImage("https://www.youtube.com/embed/3ckmva6FNtM", "Ualá")}
                                      src={Uala} alt="uala"/>
                             </div>
                         </Row>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="mccain-publicidad">
                                 <img className="fotos-publicidades-mapa clickable zoom-mini"
-                                     onClick={() => clickOnImage("https://www.youtube.com/embed/ycuR_xsmGa0", "Mccain")}
+                                     onClick={() => clickOnImage("https://www.youtube.com/embed/ctkRSjTTTh4", "Mccain")}
                                      src={Mccain} alt="menudeldia"/>
                             </div>
                         </Row>
                         <Row>
                             <div className="fotos-publicidades-mapa-container" id="sprite-publicidad">
                                 <img className="fotos-publicidades-mapa clickable zoom-mini"
-                                     onClick={() => clickOnImage("https://www.youtube.com/embed/sAeEuGHyduc", "Sprite")}
+                                     onClick={() => clickOnImage("https://www.youtube.com/embed/OSlKRPdT9AA", "Sprite")}
                                      src={Sprite} alt="sprite"/>
                             </div>
                         </Row>
