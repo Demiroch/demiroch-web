@@ -14,91 +14,91 @@ class VideoHandler {
 
     _getMobileVideos() {
         return [
-            "https://www.youtube.com/embed/zeA3ItAoCaQ",
-            "https://www.youtube.com/embed/gWMcyYyVsjw",
-            "https://www.youtube.com/embed/TrtlYgU3IFI",
-            "https://www.youtube.com/embed/JBHv4D8e0bM",
+            "https://www.youtube.com/embed/T4mFMQMDBfA",
+            "https://www.youtube.com/embed/7ZAAvwtDE8o",
+            "https://www.youtube.com/embed/5gnoRHG3-MU",
+            "https://www.youtube.com/embed/1EmLRcXq7nA",
             "https://www.youtube.com/embed/IxKWjY-A0Pk",
-            "https://www.youtube.com/embed/-T9pxXteUmQ",
-            "https://www.youtube.com/embed/ycuR_xsmGa0",
-            "https://www.youtube.com/embed/lu8gXodHMWs",
-            "https://www.youtube.com/embed/1HK-T6wAo8E",
-            "https://www.youtube.com/embed/zUmeVzfR1J0",
-            "https://www.youtube.com/embed/dJyRl1bq9eg",
-            "https://www.youtube.com/embed/sAeEuGHyduc",
-            "https://www.youtube.com/embed/nQhNhXSUmDQ",
-            "https://www.youtube.com/embed/MyRrRVp0ObU",
-            "https://www.youtube.com/embed/5aHWDN2V8L4",
-            "https://player.vimeo.com/video/760024295?h=a128b8ff26",
-            "https://www.youtube.com/embed/dI4v2IAPSnw",
+            "https://www.youtube.com/embed/4xO54_nOfCM",
+            "https://www.youtube.com/embed/ctkRSjTTTh4",
+            "https://www.youtube.com/embed/aCHBJcSkqLI",
+            "https://www.youtube.com/embed/kakRqIQtBTE",
+            "https://www.youtube.com/embed/UcvpCWyiVnc",
+            "https://www.youtube.com/embed/3ckmva6FNtM",
+            "https://www.youtube.com/embed/OSlKRPdT9AA",
+            "https://www.youtube.com/embed/zWOJQG6-hIs",
+            "https://www.youtube.com/embed/gfixj1Fmclc",
+            "https://www.youtube.com/embed/uq3rX5OX-nU",
+            "https://www.youtube.com/embed/s296FJDWaEY",
+            "https://www.youtube.com/embed/iHZvajuao_Y",
 
         ];
     }
 
     _getMobileIndexes() {
         return {
-            "https://www.youtube.com/embed/zeA3ItAoCaQ": 0,  // lic
-            "https://www.youtube.com/embed/gWMcyYyVsjw": 1,  // lic
-            "https://www.youtube.com/embed/TrtlYgU3IFI": 2,  // lic
-            "https://www.youtube.com/embed/JBHv4D8e0bM": 3,  // lic
+            "https://www.youtube.com/embed/T4mFMQMDBfA": 0,  // lic
+            "https://www.youtube.com/embed/7ZAAvwtDE8o": 1,  // lic
+            "https://www.youtube.com/embed/5gnoRHG3-MU": 2,  // lic
+            "https://www.youtube.com/embed/1EmLRcXq7nA": 3,  // lic
             "https://www.youtube.com/embed/IxKWjY-A0Pk": 4,  // Latinafy
-            "https://www.youtube.com/embed/-T9pxXteUmQ": 5,  // Cartoon
-            "https://www.youtube.com/embed/ycuR_xsmGa0": 6,  // Mccain
-            "https://www.youtube.com/embed/lu8gXodHMWs": 7, // Fernet
-            "https://www.youtube.com/embed/1HK-T6wAo8E": 8,  // Fanclub
-            "https://www.youtube.com/embed/zUmeVzfR1J0": 9, // Milka
-            "https://www.youtube.com/embed/dJyRl1bq9eg": 10,  // Uala
-            "https://www.youtube.com/embed/sAeEuGHyduc": 11,  // Sprite
-            "https://www.youtube.com/embed/nQhNhXSUmDQ": 12, // Zamba
-            "https://www.youtube.com/embed/MyRrRVp0ObU": 13,  // Kiko
-            "https://www.youtube.com/embed/5aHWDN2V8L4": 14,  // Menu Del Día
-            "https://player.vimeo.com/video/760024295?h=a128b8ff26": 15, // Theo
-            "https://www.youtube.com/embed/dI4v2IAPSnw": 16, // Danonino
+            "https://www.youtube.com/embed/4xO54_nOfCM": 5,  // Cartoon
+            "https://www.youtube.com/embed/ctkRSjTTTh4": 6,  // Mccain
+            "https://www.youtube.com/embed/aCHBJcSkqLI": 7, // Fernet
+            "https://www.youtube.com/embed/kakRqIQtBTE": 8,  // Fanclub
+            "https://www.youtube.com/embed/UcvpCWyiVnc": 9, // Milka
+            "https://www.youtube.com/embed/3ckmva6FNtM": 10,  // Uala
+            "https://www.youtube.com/embed/OSlKRPdT9AA": 11,  // Sprite
+            "https://www.youtube.com/embed/zWOJQG6-hIs": 12, // Zamba
+            "https://www.youtube.com/embed/gfixj1Fmclc": 13,  // Kiko
+            "https://www.youtube.com/embed/uq3rX5OX-nU": 14,  // Menu Del Día
+            "https://www.youtube.com/embed/s296FJDWaEY": 15, // Theo
+            "https://www.youtube.com/embed/iHZvajuao_Y": 16, // Danonino
         }
     }
 
     _getWebVideos() {
         return [
-            "https://www.youtube.com/embed/zeA3ItAoCaQ",
-            "https://www.youtube.com/embed/gWMcyYyVsjw",
-            "https://www.youtube.com/embed/TrtlYgU3IFI",
-            "https://www.youtube.com/embed/JBHv4D8e0bM",
-            "https://www.youtube.com/embed/-T9pxXteUmQ",
-            "https://www.youtube.com/embed/IxKWjY-A0Pk",
-            "https://www.youtube.com/embed/dJyRl1bq9eg",
-            "https://www.youtube.com/embed/1HK-T6wAo8E",
-            "https://www.youtube.com/embed/ycuR_xsmGa0",
-            "https://www.youtube.com/embed/MyRrRVp0ObU",
-            "https://player.vimeo.com/video/760024295?h=a128b8ff26",
-            "https://www.youtube.com/embed/sAeEuGHyduc",
-            "https://www.youtube.com/embed/dI4v2IAPSnw",
-            "https://www.youtube.com/embed/nQhNhXSUmDQ",
-            "https://www.youtube.com/embed/zUmeVzfR1J0",
-            "https://www.youtube.com/embed/lu8gXodHMWs",
-            "https://www.youtube.com/embed/5aHWDN2V8L4"
+            "https://www.youtube.com/embed/T4mFMQMDBfA",
+            "https://www.youtube.com/embed/7ZAAvwtDE8o",
+            "https://www.youtube.com/embed/5gnoRHG3-MU",
+            "https://www.youtube.com/embed/1EmLRcXq7nA",
+            "https://www.youtube.com/embed/4xO54_nOfCM",
+            "https://www.youtube.com/embed/aCHBJcSkqLI",
+            "https://www.youtube.com/embed/3ckmva6FNtM",
+            "https://www.youtube.com/embed/kakRqIQtBTE",
+            "https://www.youtube.com/embed/ctkRSjTTTh4",
+            "https://www.youtube.com/embed/gfixj1Fmclc",
+            "https://www.youtube.com/embed/s296FJDWaEY",
+            "https://www.youtube.com/embed/OSlKRPdT9AA",
+            "https://www.youtube.com/embed/iHZvajuao_Y",
+            "https://www.youtube.com/embed/zWOJQG6-hIs",
+            "https://www.youtube.com/embed/UcvpCWyiVnc",
+            "https://www.youtube.com/embed/aCHBJcSkqLI",
+            "https://www.youtube.com/embed/uq3rX5OX-nU"
 
         ];
     }
 
     _getWebIndexes() {
         return {
-            "https://www.youtube.com/embed/zeA3ItAoCaQ": 0,  // lic
-            "https://www.youtube.com/embed/gWMcyYyVsjw": 1,  // lic
-            "https://www.youtube.com/embed/TrtlYgU3IFI": 2,  // lic
-            "https://www.youtube.com/embed/JBHv4D8e0bM": 3,  // lic
-            "https://www.youtube.com/embed/-T9pxXteUmQ": 4,  // Cartoon
+            "https://www.youtube.com/embed/T4mFMQMDBfA": 0,  // lic
+            "https://www.youtube.com/embed/7ZAAvwtDE8o": 1,  // lic
+            "https://www.youtube.com/embed/5gnoRHG3-MU": 2,  // lic
+            "https://www.youtube.com/embed/1EmLRcXq7nA": 3,  // lic
+            "https://www.youtube.com/embed/4xO54_nOfCM": 4,  // Cartoon
             "https://www.youtube.com/embed/IxKWjY-A0Pk": 5,  // Latinafy
-            "https://www.youtube.com/embed/dJyRl1bq9eg": 6,  // Uala
-            "https://www.youtube.com/embed/1HK-T6wAo8E": 7,  // Fanclub
-            "https://www.youtube.com/embed/ycuR_xsmGa0": 8,  // Mccain
-            "https://www.youtube.com/embed/MyRrRVp0ObU": 9,  // Kiko
-            "https://player.vimeo.com/video/760024295?h=a128b8ff26": 10, // Theo
-            "https://www.youtube.com/embed/sAeEuGHyduc": 11,  // Sprite
-            "https://www.youtube.com/embed/dI4v2IAPSnw": 12, // Danonino
-            "https://www.youtube.com/embed/nQhNhXSUmDQ": 13, // Zamba
-            "https://www.youtube.com/embed/zUmeVzfR1J0": 14, // Milka
-            "https://www.youtube.com/embed/lu8gXodHMWs": 15, // Fernet
-            "https://www.youtube.com/embed/5aHWDN2V8L4": 16  // Menu Del Día
+            "https://www.youtube.com/embed/3ckmva6FNtM": 6,  // Uala
+            "https://www.youtube.com/embed/kakRqIQtBTE": 7,  // Fanclub
+            "https://www.youtube.com/embed/ctkRSjTTTh4": 8,  // Mccain
+            "https://www.youtube.com/embed/gfixj1Fmclc": 9,  // Kiko
+            "https://www.youtube.com/embed/s296FJDWaEY": 10, // Theo
+            "https://www.youtube.com/embed/OSlKRPdT9AA": 11,  // Sprite
+            "https://www.youtube.com/embed/iHZvajuao_Y": 12, // Danonino
+            "https://www.youtube.com/embed/zWOJQG6-hIs": 13, // Zamba
+            "https://www.youtube.com/embed/UcvpCWyiVnc": 14, // Milka
+            "https://www.youtube.com/embed/aCHBJcSkqLI": 15, // Fernet
+            "https://www.youtube.com/embed/uq3rX5OX-nU": 16  // Menu Del Día
         }
     }
 

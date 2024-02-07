@@ -117,17 +117,17 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
                       interval={null}
                       onSlide={stopAudios}
                       touch={true}>
-                {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro", EspanolNeutroAudio) : ""}
-                {isForCassete ? getCarouselCassete(CasseteLocuciones, "locuciones", EnglishAudio) : ""}
+                {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro", EnglishAudio) : ""}
+                {isForCassete ? getCarouselCassete(CasseteLocuciones, "locuciones", EspanolNeutroAudio) : ""}
                 {isForCassete ?   getCarouselCassete(CasseteArgActing, "arg-acting", ArgActingAudio) : ""}
                 {isForCassete ?   getCarouselCassete(CasseteSongs, "songs", nothing) : ""}
                 {isForCassete ?  getCarouselCassete(CasseteCrazyVoices, "crazy-notes", CrazyVoicesAudio) : ""}
                 {isForCassete ?  getCarouselCassete(CasseteArgVoiceOver, "arg-voice-over", ArgVoiceOverAudio) : ""}
 
-                {isForCassete ? "" : getCarouselLicence(Licence1, "AMPHIBIA", "https://www.youtube.com/embed/zeA3ItAoCaQ")}
-                {isForCassete ? "" : getCarouselLicence(Licence2, "GRAVITY FALLS", "https://www.youtube.com/embed/gWMcyYyVsjw")}
-                {isForCassete ? "" : getCarouselLicence(Licence3, "PUKKA", "https://www.youtube.com/embed/TrtlYgU3IFI")}
-                {isForCassete ? "" : getCarouselLicence(Licence4, "MEWNI", "https://www.youtube.com/embed/JBHv4D8e0bM")}
+                {isForCassete ? "" : getCarouselLicence(Licence1, "AMPHIBIA", "https://www.youtube.com/embed/T4mFMQMDBfA")}
+                {isForCassete ? "" : getCarouselLicence(Licence2, "GRAVITY FALLS", "https://www.youtube.com/embed/7ZAAvwtDE8o")}
+                {isForCassete ? "" : getCarouselLicence(Licence3, "PUKKA", "https://www.youtube.com/embed/5gnoRHG3-MU")}
+                {isForCassete ? "" : getCarouselLicence(Licence4, "MEWNI", "https://www.youtube.com/embed/1EmLRcXq7nA")}
             </Carousel>
             <audio id="esp-neutro-audio" src={CrazyVoicesAudio}/>
             <audio id="locuciones-audio" src={CrazyVoicesAudio}/>

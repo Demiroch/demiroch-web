@@ -40,12 +40,12 @@ export default function CassetteSubViewWeb(){
                             <Cassete isMobile={false} id="arg-acting" className="cassete-for-all" src={CasseteArgActing} audio={new Audio(ArgActingAudio)} audioSrc={ArgActingAudio}/>
                         </Row>
                         <Row>
-                            <Cassete isMobile={false} id="locuciones" className="cassete-for-all" src={CasseteLocuciones} audio={new Audio(EnglishAudio)} audioSrc={EnglishAudio}/>
+                            <Cassete isMobile={false} id="locuciones" className="cassete-for-all" src={CasseteLocuciones} audio={new Audio(EspanolNeutroAudio)} audioSrc={EspanolNeutroAudio}/>
                         </Row>
                     </Col>
                     <Col>
                         <Row>
-                            <Cassete isMobile={false} id="esp-neutro" className="cassete-for-all" src={CasseteEspNeutro} audio={new Audio(EspanolNeutroAudio)} audioSrc={EspanolNeutroAudio}/>
+                            <Cassete isMobile={false} id="esp-neutro" className="cassete-for-all" src={CasseteEspNeutro} audio={new Audio(EnglishAudio)} audioSrc={EnglishAudio}/>
                         </Row>
                         <Row>
                             <Cassete isMobile={false} id="arg-voice-over" className="cassete-for-all" src={CasseteArgVoiceOver} audio={new Audio(ArgVoiceOverAudio)} audioSrc={ArgVoiceOverAudio}/>

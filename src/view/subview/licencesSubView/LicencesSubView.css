@@ -15,8 +15,13 @@
     max-height: 50vh;
 }
 
+@font-face {
+  font-family: mmsarica_csi;
+  src: url("../../../resources/Tipografias/mmsarica_csi.ttf");
+}
+
 #logo-description{
-    font-family: Arvo-Regular, serif;
+    font-family: mmsarica_csi, serif;
     /*font-family: "Times New Roman", serif;*/
     color: #601010;
     font-size: 2.5vw;
@@ -70,7 +75,7 @@
     }
 
     #logo-description{
-        font-family: Arvo-Regular, serif;
+        font-family: mmsarica_csi, serif;
         /*font-family: "Times New Roman", serif;*/
         color: #601010;
         font-size: 4vw;
