@@ -133,12 +133,12 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
                 {isForCassete ? "" : getCarouselLicence(Licence3, "PUKKA", "https://www.youtube.com/embed/5gnoRHG3-MU")}
                 {isForCassete ? "" : getCarouselLicence(Licence4, "MEWNI", "https://www.youtube.com/embed/1EmLRcXq7nA")}
             </Carousel>
-            <audio id="esp-neutro-audio" src={CrazyVoicesAudio}/>
-            <audio id="locuciones-audio" src={CrazyVoicesAudio}/>
-            <audio id="arg-acting-audio" src={CrazyVoicesAudio}/>
-            <audio id="songs-audio" src={CrazyVoicesAudio}/>
+            <audio id="esp-neutro-audio" src={EnglishAudio}/>
+            <audio id="locuciones-audio" src={EspanolNeutroAudio}/>
+            <audio id="arg-acting-audio" src={ArgActingAudio}/>
+            <audio id="songs-audio" src={SongsAudio}/>
             <audio id="crazy-notes-audio" src={CrazyVoicesAudio}/>
-            <audio id="arg-voice-over-audio" src={CrazyVoicesAudio}/>
+            <audio id="arg-voice-over-audio" src={ArgVoiceOverAudio}/>
 
             <VideoModal videoUrl={videoSrc} show={showModal} setShow={setShowModal} title={modalTitle} isMobile={isMobile}/>
         </div>
