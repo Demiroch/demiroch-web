@@ -6,7 +6,7 @@ import ButtonReplay from "../../resources/Demos_Cassettes/Buttons_REPLAY_ON.png"
 import ButtonDownload from "../../resources/Demos_Cassettes/Buttons_DOWNLOAD_ON.png";
 import $ from "jquery";
 
-export default function Cassete({id, src, className, audio, isMobile, audioSrc}){
+export default function Cassete({id, src, className, audio, isMobile, audioSrc, audioName}){
     const [isPlaying, setIsPlaying] = useState(false);
 
     let onHoverPlayIn = () => {
@@ -127,7 +127,7 @@ export default function Cassete({id, src, className, audio, isMobile, audioSrc})
             </figure>
             <figure className="cassete-button-container">
                 {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-                <a href={audioSrc} download id={"square-download-" + id} className="square-download square-cassete" onClick={onDownload} onMouseEnter={isMobile ? null : onHoverDownloadIn} onMouseLeave={isMobile ? null : onHoverDownloadOut}/>
+                <a href={audioSrc} download={audioName} id={"square-download-" + id} className="square-download square-cassete" onClick={onDownload} onMouseEnter={isMobile ? null : onHoverDownloadIn} onMouseLeave={isMobile ? null : onHoverDownloadOut}/>
                 <img id={"button-download-" + id} src={ButtonDownload} alt="button-download" className={"cassete-button img-download button-download-" + id}/>
             </figure>
         </section>)
