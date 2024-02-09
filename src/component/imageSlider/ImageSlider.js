@@ -7,9 +7,9 @@ import CasseteArgActing from "../../resources/Mobile/Cassettes/Cassettes_ARGActi
 import CasseteArgVoiceOver from "../../resources/Mobile/Cassettes/Cassettes_ARGVoiceOver.png";
 import CasseteCrazyVoices from "../../resources/Mobile/Cassettes/Cassettes_CrazyVoices.png";
 import CasseteSongs from "../../resources/Mobile/Cassettes/Cassettes_Songs.png";
-import CasseteEspNeutro from "../../resources/Mobile/Cassettes/Cassettes_ESPNeutro.png";
+import CasseteEspNeutro from "../../resources/Mobile/Cassettes/Cassettes_ENGLISH.png";
 import CasseteLocuciones from "../../resources/Mobile/Cassettes/Cassettes_LocNeutro.png";
-import nothing from "../../resources/Audio/nothing-yet.mp3";
+import SongsAudio from "../../resources/Audio/songs.mp3";
 import CrazyVoicesAudio from "../../resources/Audio/crazy-voices.mp3";
 import ArgActingAudio from "../../resources/Audio/arg-acting.mp3";
 import ArgVoiceOverAudio from "../../resources/Audio/arg-voice-over.mp3";
@@ -78,10 +78,10 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
         setmMdalTitle(title)
     }
 
-    const getCarouselCassete = (src, id, audioSrc) => {
+    const getCarouselCassete = (src, id, audioSrc, audioName) => {
         return <Carousel.Item className="carousel-item-custom cassete-item clickable" >
             <div className="carousel-image-container item__third margin-cassete">
-                <Cassete id={id} className="cassete-for-all" src={src} audio="" isMobile={isMobile} audioSrc={audioSrc}/>
+                <Cassete id={id} className="cassete-for-all" src={src} audio="" isMobile={isMobile} audioSrc={audioSrc} audioName={audioName}/>
             </div>
         </Carousel.Item>
     }
@@ -117,12 +117,12 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
                       interval={null}
                       onSlide={stopAudios}
                       touch={true}>
-                {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro", EnglishAudio) : ""}
-                {isForCassete ? getCarouselCassete(CasseteLocuciones, "locuciones", EspanolNeutroAudio) : ""}
-                {isForCassete ?   getCarouselCassete(CasseteArgActing, "arg-acting", ArgActingAudio) : ""}
-                {isForCassete ?   getCarouselCassete(CasseteSongs, "songs", nothing) : ""}
-                {isForCassete ?  getCarouselCassete(CasseteCrazyVoices, "crazy-notes", CrazyVoicesAudio) : ""}
-                {isForCassete ?  getCarouselCassete(CasseteArgVoiceOver, "arg-voice-over", ArgVoiceOverAudio) : ""}
+                {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro", EnglishAudio, "DEMIROCH - ENGLISH VO") : ""}
+                {isForCassete ? getCarouselCassete(CasseteLocuciones, "locuciones", EspanolNeutroAudio, "DEMIROCH - LOCUCION - ARG") : ""}
+                {isForCassete ?   getCarouselCassete(CasseteArgActing, "arg-acting", ArgActingAudio, "DEMIROCH - ACTING - ARG") : ""}
+                {isForCassete ?   getCarouselCassete(CasseteSongs, "songs", SongsAudio, "DEMIROCH - CANCIONES") : ""}
+                {isForCassete ?  getCarouselCassete(CasseteCrazyVoices, "crazy-notes", CrazyVoicesAudio, "DEMIROCH - VOCES LOCAS") : ""}
+                {isForCassete ?  getCarouselCassete(CasseteArgVoiceOver, "arg-voice-over", ArgVoiceOverAudio, "DEMIROCH - NEUTRO") : ""}
 
                 {isForCassete ? "" : getCarouselLicence(Licence1, "AMPHIBIA", "https://www.youtube.com/embed/T4mFMQMDBfA")}
                 {isForCassete ? "" : getCarouselLicence(Licence2, "GRAVITY FALLS", "https://www.youtube.com/embed/7ZAAvwtDE8o")}
