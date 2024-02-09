@@ -5,7 +5,7 @@ import CasseteArgActing from "../../../resources/Demos_Cassettes/Cassettes_ARGAc
 import CasseteArgVoiceOver from "../../../resources/Demos_Cassettes/Cassettes_ARGVoiceOver.png";
 import CasseteCrazyVoices from "../../../resources/Demos_Cassettes/Cassettes_CrazyVoices.png";
 import CasseteSongs from "../../../resources/Demos_Cassettes/Cassettes_Songs.png";
-import CasseteEspNeutro from "../../../resources/Demos_Cassettes/Cassettes_english.png";
+import CasseteEspNeutro from "../../../resources/Demos_Cassettes/Cassettes_ENGLISH.png";
 import CasseteLocuciones from "../../../resources/Demos_Cassettes/Cassettes_LocucionESP.png";
 import background from "../../../resources/Backgrounds/BK_Demos.png";
 import SongsAudio from "../../../resources/Audio/songs.mp3";
