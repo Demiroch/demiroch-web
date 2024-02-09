@@ -72,6 +72,10 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
         return <img src={right} className={"arrow-carousel " + casseteClass} id="right-arrow" alt="Right-Arrow"/>;
     }
 
+    const getCarouselInterval = () => {
+        return isForCassete ? null : 2000;
+    }
+
     const clickOnSlider = (videoSrcFromClick, title) => {
         setShowModal(true);
         setVideoSrc(videoSrcFromClick)
@@ -114,7 +118,7 @@ export default function ImageSlider({showIndicators, showControls, isMobile, isF
                       className={`slider-container show-neighbors ${className}`}
                       activeIndex={index}
                       onSelect={handleSelect}
-                      interval={null}
+                      interval={getCarouselInterval()}
                       onSlide={stopAudios}
                       touch={true}>
                 {isForCassete ? getCarouselCassete(CasseteEspNeutro, "esp-neutro", EnglishAudio, "DEMIROCH - ENGLISH VO") : ""}
