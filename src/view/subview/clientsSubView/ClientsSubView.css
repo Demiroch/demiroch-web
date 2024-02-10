@@ -23,8 +23,13 @@
     width: 88%;
 }
 
-#clients-img {
+.clients-image {
     width: 100%;
+    cursor: pointer;
+}
+
+#dada-client {
+    /*margin-top: 50%;*/
 }
 
 
