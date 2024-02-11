@@ -57,17 +57,23 @@ export default function ClientsSubView(){
                         <ClientImage id="dada" imgSrc={DADA} vidSrc="https://www.youtube.com/embed/cYLxj9TOwTY"/>
                         <ClientImage id="citric" imgSrc={CITRIC} vidSrc="https://www.youtube.com/embed/vcCl1km4SMM"/>
                         <ClientImage id="serenito" imgSrc={SERENITO} vidSrc="https://www.youtube.com/embed/qB6jz-MII_I"/>
+                    </Row>
+                    <Row>
                         <ClientImage id="uali" imgSrc={UALI} vidSrc="https://www.youtube.com/embed/CGmwR6F9N2E"/>
                         <ClientImage id="sura" imgSrc={SURA} vidSrc="https://www.youtube.com/embed/dHLnMkm34IY"/>
                         <ClientImage id="yoy" imgSrc={YOY} vidSrc="https://www.youtube.com/embed/rKJXgaT8KQY"/>
-                        <ClientImage id="directv" imgSrc={DIRECTV} vidSrc="https://www.youtube.com/embed/x_J8CJF-6BU"/>
                     </Row>
                     <Row>
+                        <ClientImage id="directv" imgSrc={DIRECTV} vidSrc="https://www.youtube.com/embed/x_J8CJF-6BU"/>
                         <ClientImage id="cn" imgSrc={CN} vidSrc={"https://www.youtube.com/embed/77dmyD06lz4"}/>
                         <ClientImage id="paramount" imgSrc={PARAMOUNT} vidSrc="https://www.youtube.com/embed/Wtdp22jK0YE"/>
+                    </Row>
+                    <Row>
                         <ClientImage id="arcor" imgSrc={ARCOR} vidSrc={"https://www.youtube.com/embed/sct-0Livw4Y?si=aDmu_wlNqdReLdZl"}/>
                         <ClientImage id="ripio" imgSrc={RIPIO} vidSrc={"https://www.youtube.com/embed/JXolYWV5yEM"}/>
                         <ClientImage id="bigbox" imgSrc={BIGBOX} vidSrc="https://www.youtube.com/embed/wK01Oo9-HeA"/>
+                    </Row>
+                    <Row>
                         <ClientImage id="itau" imgSrc={ITAU} vidSrc="https://www.youtube.com/embed/5V4rRblAGXU"/>
                         <ClientImage id="visitarg" imgSrc={VISITARG} vidSrc="https://www.youtube.com/embed/igxKVSYSf-E"/>
                         <ClientImage id="nick" imgSrc={NICK} vidSrc="https://www.youtube.com/embed/by-BncmLj_Y"/>

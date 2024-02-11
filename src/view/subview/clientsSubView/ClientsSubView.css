@@ -11,7 +11,7 @@
     display: inline;
     z-index: 2;
     margin-left: 2.5%;
-    margin-top: -1%;
+    margin-top: -3%;
 }
 
 #clients-title-img {
@@ -19,14 +19,24 @@
 }
 
 #clients-container{
+    margin-top: 5%;
     margin-left: 7%;
     width: 88%;
 }
 
-#clients-img {
-    width: 100%;
+.clients-image {
+    width: 110%;
+    cursor: pointer;
 }
 
+#dada-client {
+    margin-top: 40%;
+    transform: rotate(-3deg);
+}
+
+#cn-client {
+    margin-top: 20%;
+}
 
 @media (max-width: 1000px) {
     .clients-container{
@@ -38,13 +48,19 @@
 
     #clients-title-container{
         position: absolute;
-        width: 18%;
+        width: 25%;
         transform: rotate(6deg);
         display: inline;
         z-index: 2;
         margin-left: 6%;
         margin-top: -12%;
     }
+
+    #dada-client {
+        margin-top: 20%;
+        transform: rotate(-3deg);
+    }
+
     #clients-container{
         margin-left: 3%;
         width: 94%;

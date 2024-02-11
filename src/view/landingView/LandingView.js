@@ -5,6 +5,7 @@ import MapSubViewWeb from "../subview/mapSubView/MapSubViewWeb";
 import CassetteSubViewWeb from "../subview/cassetteSubView/CassetteSubViewWeb";
 import WantedSubView from "../subview/wantedSubView/WantedSubView";
 import ClientsSubView from "../subview/clientsSubView/ClientsSubView";
+import ClientsSubViewMobile from "../subview/clientsSubView/ClientsSubViewMobile";
 import backgroundWeb from "../../resources/Backgrounds/BK_Corcho.png";
 import backgroundMobile from "../../resources/Mobile/Backgrounds/BK_Corcho_Mobile.png";
 import NavBar from "../../component/navbar/NavBar";
@@ -35,7 +36,7 @@ export default function LandingView(){
                 <LicencesSubViewMobile/>
                 <div id="map-client-container" style={{backgroundImage: `url(${backgroundMobile})`}}>
                     <MapSubViewMobile/>
-                    <ClientsSubView/>
+                    <ClientsSubViewMobile/>
                 </div>
                 <CassetteSubViewMobile/>
                 <WantedSubView isMobile={isMobile}/>
