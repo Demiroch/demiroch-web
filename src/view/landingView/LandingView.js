@@ -8,7 +8,6 @@ import ClientsSubView from "../subview/clientsSubView/ClientsSubView";
 import ClientsSubViewMobile from "../subview/clientsSubView/ClientsSubViewMobile";
 import backgroundWeb from "../../resources/Backgrounds/BK_Corcho.png";
 import backgroundMobile from "../../resources/Mobile/Backgrounds/BK_Corcho_Mobile.png";
-import NavBar from "../../component/navbar/NavBar";
 import MapSubViewMobile from "../subview/mapSubView/MapSubViewMobile";
 import LicencesSubViewMobile from "../subview/licencesSubView/LicencesSubViewMobile";
 import CassetteSubViewMobile from "../subview/cassetteSubView/CassetteSubViewMobile";
@@ -32,7 +31,7 @@ export default function LandingView(){
     if (isMobile) {
         return (
             <div id="landing-view">
-                <NavBar isMobile={isMobile}/>
+                {/*<NavBar isMobile={isMobile}/>*/}
                 <LicencesSubViewMobile/>
                 <div id="map-client-container" style={{backgroundImage: `url(${backgroundMobile})`}}>
                     <MapSubViewMobile/>
@@ -43,7 +42,7 @@ export default function LandingView(){
             </div>)
     } else {
         return (<div id="landing-view">
-                <NavBar isMobile={isMobile}/>
+                {/*<NavBar isMobile={isMobile}/>*/}
                 <LicencesSubViewWeb/>
                 <div id="map-client-container" style={{backgroundImage: `url(${backgroundWeb})`}}>
                     <MapSubViewWeb/>

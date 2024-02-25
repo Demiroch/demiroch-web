@@ -7,7 +7,7 @@
 }
 
 #demiroch-logo{
-    margin-top: 8vh;
+    margin-top: 3vh;
     width: 50%;
 }
 
@@ -57,7 +57,7 @@
     }
 
     #demiroch-logo{
-        margin-top: 10vh;
+        /*margin-top: 10vh;*/
     }
 }
 
@@ -84,7 +84,7 @@
     }
 
     #demiroch-logo{
-        margin-top: 10%;
+        /*margin-top: 10%;*/
         width: 70%;
         margin-bottom: 1%;
     }
