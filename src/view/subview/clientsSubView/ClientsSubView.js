@@ -37,7 +37,7 @@ export default function ClientsSubView(){
         return (
             <Col>
                 <img onClick={() => clickOnImage(props.vidSrc, props.id)}
-                      className="clients-image"
+                      className="clients-image zoom-mini"
                       id={props.id+"-client"}
                       src={props.imgSrc}
                       alt={props.id}/>

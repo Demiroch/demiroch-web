@@ -31,7 +31,8 @@
 
 #dada-client {
     margin-top: 40%;
-    transform: rotate(-3deg);
+    /*transform: rotate(-3deg);*/
+    transition: transform .2s;
 }
 
 #cn-client {
